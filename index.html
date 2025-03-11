@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>a portfolio or smth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-black-blue">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold fade-in">Dexter Soriano</div>
+            <ul class="flex space-x-6 fade-in">
+                <li><a class="hover:text-orange-500" href="#">Experience</a></li>
+                <li><a class="hover:text-orange-500" href="#">Projects</a></li>
+                <li><a class="hover:text-orange-500" href="#">Education</a></li>
+            </ul>
+            <a class="bg-white text-gray-800 px-4 py-2 rounded hover:bg-gray-200 fade-in" href="#">Contact Me</a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="container mx-auto text-center py-20">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2 slide-in">
+                <h1 class="text-4xl font-bold mb-4">Good day!</h1>
+                <h2 class="text-4xl font-bold mb-4">I'm <span class="text-orange-500">Dexter!</span></h2>
+                <h3 class="text-4xl font-bold mb-4">A 2nd Year College Student</h3>
+                <p class="text-gray-600 mb-8">Some stuff here idk.</p>
+                <div class="flex justify-center space-x-4">
+                    <a class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800" href="https://www.facebook.com/sdexteraic/">Facebook</a>
+                    <a class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800" href="https://github.com/ToxicityRadius">GitHub</a>
+                    <a class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600" href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/">LinkedIn</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 fade-in">
+                <img alt="1x1 Picture" class="rounded-full mx-auto border-4 border-orange-500" height="300" src="https://media.discordapp.net/attachments/869943655610347563/1349065114082607134/d1a5791f-9c62-4d29-ae3b-9b9bc21ebd65.jpg?ex=67d1be4b&is=67d06ccb&hm=cbb1b9946a3a49a41284c9d51507658398391065445d7bc082d80de188ec9fff&=&format=webp&width=514&height=664" width="300"/>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section class="bg-gradient-to-b text-white py-20">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2 fade-in">
+                    <img alt="some flex pic or smth" class="rounded-full mx-auto border-4 border-orange-500" height="300" src="https://media.discordapp.net/attachments/869943655610347563/1349065452151898142/IMG_6787.jpg?ex=67d1be9c&is=67d06d1c&hm=55c92a65e090c077f94ba18376cd190bffdd20e010d1a3595fa32909e6d12b54&=&format=webp&width=859&height=1050" width="300"/>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0 slide-in">
+                    <h2 class="text-4xl font-bold mb-4">About <span class="text-orange-500">Me</span></h2>
+                    <h3 class="text-4xl font-bold mb-4">Current Student Council Officer</h3>
+                    <p class="text-gray-400 mb-8">Again, di ko alam ilalagay ko hehe.</p>
+                    <a class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me Section -->
+    <section class="container mx-auto py-20">
+        <h2 class="text-4xl font-bold text-center mb-8 fade-in">Contact <span class="text-orange-500">Me</span></h2>
+        <form class="max-w-lg mx-auto slide-in">
+            <div class="mb-4">
+                <label class="block text-gray-700" for="full-name">Full Name</label>
+                <input class="w-full px-4 py-2 border rounded" id="full-name" placeholder="Your Name" type="text"/>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700" for="email">Email</label>
+                <input class="w-full px-4 py-2 border rounded" id="email" placeholder="Your Email" type="email"/>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700" for="phone">Phone Number</label>
+                <input class="w-full px-4 py-2 border rounded" id="phone" placeholder="Your Phone Number" type="text"/>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700" for="subject">Subject</label>
+                <input class="w-full px-4 py-2 border rounded" id="subject" placeholder="Subject" type="text"/>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700" for="message">Your Message</label>
+                <textarea class="w-full px-4 py-2 border rounded" id="message" placeholder="Your Message" rows="4"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800" type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r text-white py-4">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a class="hover:text-orange-500" href="https://www.facebook.com/sdexteraic/"><i class="fab fa-facebook-f"></i></a>
+                <a class="hover:text-orange-500" href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="hover:text-orange-500" href="https://github.com/ToxicityRadius"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="text-gray-400">© 2025 Dextie. All rights are left.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a class="hover:text-orange-500" href="#">FAQ</a>
+                <a class="hover:text-orange-500" href="#">Support</a>
+                <a class="hover:text-orange-500" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
