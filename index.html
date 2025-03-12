@@ -7,9 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Custom gradient background */
+        body {
+            background: linear-gradient(to right, #1a202c, #2b6cb0); /* Adjust colors as needed */
+        }
+    </style>
 </head>
-<body class="bg-gradient-black-blue">
+<body>
     <!-- Navbar -->
     <nav class="bg-gradient-to-r text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
@@ -42,7 +48,7 @@
         </div>
     </section>
     <!-- About Me Section -->
-    <section class="bg-gradient-to-b text-white py-20">
+    <section class="bg-transparent text-white py-20">
         <div class="container mx-auto text-center">
             <div class="flex flex-col md:flex-row items-center justify-center">
                 <div class="md:w-1/2 fade-in">
@@ -57,8 +63,49 @@
             </div>
         </div>
     </section>
+    
+    <!-- Services Section -->
+    <section class="bg-transparent text-white py-12">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold text-center mb-4">Services</h1>
+            <p class="text-center text-gray-400 mb-12">Creating intuitive and user-friendly designs through UX research</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <i class="fas fa-paint-brush text-orange-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">UI/UX Design</h2>
+                    <p class="text-gray-400">Refers to the process of creating user-friendly and visually appealing digital experiences. It consists of two main components.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <i class="fas fa-desktop text-orange-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Website Design</h2>
+                    <p class="text-gray-400">The process of creating the visual layout, structure, and functionality of a website to ensure a seamless and engaging user experience.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <i class="fas fa-mobile-alt text-orange-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">App Design</h2>
+                    <p class="text-gray-400">Refers to the process of creating the visual and functional aspects of a mobile or web application to provide a seamless user experience.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <i class="fas fa-chart-line text-orange-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Dashboard Design</h2>
+                    <p class="text-gray-400">Focuses on creating an intuitive and visually appealing interface that displays key data and insights in a structured manner.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <i class="fas fa-laptop-code text-orange-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Web App Design</h2>
+                    <p class="text-gray-400">Is the process of creating user-friendly and visually appealing interfaces for web-based applications.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <i class="fas fa-pencil-ruler text-orange-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Graphic Design</h2>
+                    <p class="text-gray-400">Is the art of visually communicating ideas. It is used in branding, advertising, and digital media to create engaging designs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Me Section -->
-    <section class="container mx-auto py-20">
+    <section class="bg-transparent text-white py-20">
         <h2 class="text-4xl font-bold text-center mb-8 fade-in">Contact <span class="text-orange-500">Me</span></h2>
         <form class="max-w-lg mx-auto slide-in">
             <div class="mb-4">
