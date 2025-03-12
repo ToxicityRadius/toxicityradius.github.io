@@ -9,17 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet">
     <style>
-        /* Custom gradient background */
         body {
-            background: linear-gradient(to right, #1a202c, #2b6cb0); /* Adjust colors as needed */
+            background: linear-gradient(to right, #212A31, #2E3944, #124E66, #748D92, #D3D9D4);
+            background-size: 200%; 
+            transition: background-position 0.1s; 
         }
     </style>
 </head>
-<body>
+<body onmousemove="moveBackground(event)">
     <!-- Navbar -->
     <nav class="bg-gradient-to-r text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold fade-in">Dexter Soriano</div>
+            <div class="text-2xl font-bold fade-in" id="navbar-text">Dexter Soriano</div>
             <ul class="flex space-x-6 fade-in">
                 <li><a class="hover:text-orange-500" href="#">Experience</a></li>
                 <li><a class="hover:text-orange-500" href="#">Projects</a></li>
@@ -32,10 +33,10 @@
     <section class="container mx-auto text-center py-20">
         <div class="flex flex-col md:flex-row items-center justify-center">
             <div class="md:w-1/2 slide-in">
-                <h1 class="text-4xl font-bold mb-4">Good day!</h1>
+                <h1 class="text-7xl font-bold mb-4" id="hero-text">LET'S CONNECT!</h1>
                 <h2 class="text-4xl font-bold mb-4">I'm <span class="text-orange-500">Dexter!</span></h2>
-                <h3 class="text-4xl font-bold mb-4">A 2nd Year College Student</h3>
-                <p class="text-gray-600 mb-8">Some stuff here idk.</p>
+                <h3 class="text-2xl font-bold mb-4">A 2nd Year College Student</h3>
+                <p class="text-gray-600 mb-8">dreaming to be a Computer Engineer.</p>
                 <div class="flex justify-center space-x-4">
                     <a class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800" href="https://www.facebook.com/sdexteraic/">Facebook</a>
                     <a class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800" href="https://github.com/ToxicityRadius">GitHub</a>
@@ -56,7 +57,7 @@
                 </div>
                 <div class="md:w-1/2 mt-8 md:mt-0 slide-in">
                     <h2 class="text-4xl font-bold mb-4">About <span class="text-orange-500">Me</span></h2>
-                    <h3 class="text-4xl font-bold mb-4">Current Student Council Officer</h3>
+                    <h3 class="text-2xl font-bold mb-4">Current Student Council Officer</h3>
                     <p class="text-gray-400 mb-8">Again, di ko alam ilalagay ko hehe.</p>
                     <a class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Experience</a>
                 </div>
@@ -64,41 +65,41 @@
         </div>
     </section>
     
-    <!-- Services Section -->
+<!-- Skills Section -->
 <section class="bg-transparent text-white py-12">
     <div class="container mx-auto">
-        <h1 class="text-4xl font-bold text-center mb-4">Services</h1>
+        <h1 class="text-4xl font-bold text-center mb-4">Skills</h1>
         <p class="text-center text-gray-400 mb-12">Creating intuitive and user-friendly designs through UX research</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105">
-                <i class="fas fa-paint-brush text-orange-500 text-4xl mb-4 transition-colors duration-300 hover:text-yellow-400"></i>
-                <h2 class="text-xl font-bold mb-2">UI/UX Design</h2>
-                <p class="text-gray-400">Refers to the process of creating user-friendly and visually appealing digital experiences. It consists of two main components.</p>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
+                <i class="fas fa-microchip text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
+                <h2 class="text-xl font-bold mb-2">Arduino</h2>
+                <p class="text-gray-400">Building interactive projects with Arduino.</p>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105">
-                <i class="fas fa-desktop text-orange-500 text-4xl mb-4 transition-colors duration-300 hover:text-yellow-400"></i>
-                <h2 class="text-xl font-bold mb-2">Website Design</h2>
-                <p class="text-gray-400">The process of creating the visual layout, structure, and functionality of a website to ensure a seamless and engaging user experience.</p>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
+                <i class="fab fa-java text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
+                <h2 class="text-xl font-bold mb-2">C++</h2>
+                <p class="text-gray-400">Programming in C++ for various applications.</p>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105">
-                <i class="fas fa-mobile-alt text-orange-500 text-4xl mb-4 transition-colors duration-300 hover:text-yellow-400"></i>
-                <h2 class="text-xl font-bold mb-2">App Design</h2>
-                <p class="text-gray-400">Refers to the process of creating the visual and functional aspects of a mobile or web application to provide a seamless user experience.</p>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
+                <i class="fab fa-python text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
+                <h2 class="text-xl font-bold mb-2">Python</h2>
+                <p class="text-gray-400">Using Python for data and automation.</p>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105">
-                <i class="fas fa-chart-line text-orange-500 text-4xl mb-4 transition-colors duration-300 hover:text-yellow-400"></i>
-                <h2 class="text-xl font-bold mb-2">Dashboard Design</h2>
-                <p class="text-gray-400">Focuses on creating an intuitive and visually appealing interface that displays key data and insights in a structured manner.</p>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
+                <i class="fab fa-html5 text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
+                <h2 class="text-xl font-bold mb-2">HTML, CSS, JavaScript</h2>
+                <p class="text-gray-400">Creating responsive web pages.</p>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105">
-                <i class="fas fa-laptop-code text-orange-500 text-4xl mb-4 transition-colors duration-300 hover:text-yellow-400"></i>
-                <h2 class="text-xl font-bold mb-2">Web App Design</h2>
-                <p class="text-gray-400">Is the process of creating user-friendly and visually appealing interfaces for web-based applications.</p>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
+                <i class="fas fa-mobile-alt text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
+                <h2 class="text-xl font-bold mb-2">Mobile App Development</h2>
+                <p class="text-gray-400">Developing apps using Android Studio.</p>
             </div>
-            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105">
-                <i class="fas fa-pencil-ruler text-orange-500 text-4xl mb-4 transition-colors duration-300 hover:text-yellow-400"></i>
-                <h2 class="text-xl font-bold mb-2">Graphic Design</h2>
-                <p class="text-gray-400">Is the art of visually communicating ideas. It is used in branding, advertising, and digital media to create engaging designs.</p>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
+                <i class="fas fa-robot text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
+                <h2 class="text-xl font-bold mb-2">Vex Robotics</h2>
+                <p class="text-gray-400">Designing and programming robots.</p>
             </div>
         </div>
     </div>
@@ -149,6 +150,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        function moveBackground(event) {
+            const x = event.clientX / window.innerWidth;
+            const y = event.clientY / window.innerHeight;
+            document.body.style.backgroundPosition = `${x * 100}% ${y * 100}%`;
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
