@@ -25,3 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element); // Observe each slide-in element
     });
 });
+
+    
