@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slideInElements.forEach(element => observer.observe(element));
 
     // Text changing effect for #changing-subtext with letter-by-letter disappear and appear
-    const subtextPhrases = ["Data Scientist", "Fullstack Developer", "Problem Solver", "Team Player"];
+    const subtextPhrases = ["Data Scientist", "Fullstack Developer", "Problem Solver", "Team Player", "Lifelong Learner"];
     let currentSubtextIndex = 0;
     const changingSubtextElement = document.getElementById('changing-subtext');
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             changingSubtextElement.textContent = text.substring(0, i + 1) + '_';
             setTimeout(() => typeWriter(text, i + 1, callback), 100);
         } else if (callback) {
-            setTimeout(callback, 1000);
+            setTimeout(callback, 500);
         }
     }
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         deleteWriter(currentText, currentText.length, () => {
             currentSubtextIndex = (currentSubtextIndex + 1) % subtextPhrases.length;
             typeWriter(subtextPhrases[currentSubtextIndex], 0, () => {
-                setTimeout(changeSubtext, 2000);
+                setTimeout(changeSubtext, 1000);
             });
         });
     }
@@ -74,9 +74,9 @@ console.log("Camera positioned at z =", camera.position.z);
 const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector("#webgl"),
     antialias: true,
-    alpha: false
+    alpha: true
 });
-renderer.setClearColor(0x1d1f20); // dark background color to match body background
+renderer.setClearColor(0x000000, 0); // transparent background
 renderer.setSize(heroContainer.clientWidth, heroContainer.clientHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
@@ -378,3 +378,25 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("sticky");
     }
 });
+
+const dexterButton = document.getElementById('dexter-button');
+const mybutton = dexterButton;
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (mybutton) mybutton.style.display = "block";
+  } else {
+    if (mybutton) mybutton.style.display = "none";
+  }
+}
+
+if (mybutton) {
+  mybutton.addEventListener('click', (event) => {
+    event.preventDefault();
+    // Scroll to top for Safari and other browsers
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+}
