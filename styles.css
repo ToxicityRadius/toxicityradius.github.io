@@ -427,9 +427,9 @@ button {
 
 /* Large pixelated text */
 .hero-text {
-  font-family: 'Courier New', cursive;
+  font-family: 'Roboto', cursive;
   font-weight: 1000; 
-  color: #D95F76; 
+  color: #FE347E;
   text-shadow: 0 0 12px #D95F76; 
   user-select: none;
   white-space: nowrap;
