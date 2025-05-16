@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slideInElements.forEach(element => observer.observe(element));
 
     // Text changing effect for #changing-subtext with letter-by-letter disappear and appear
-    const subtextPhrases = ["Data Scientist", "Fullstack Developer", "Problem Solver", "Team Player", "Lifelong Learner"];
+    const subtextPhrases = ["Data Scientist", "Frontend Developer", "Problem Solver", "Team Player", "Lifelong Learner"];
     let currentSubtextIndex = 0;
     const changingSubtextElement = document.getElementById('changing-subtext');
 

@@ -111,7 +111,8 @@ button {
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #f97316; /* orange-500 */
+  color: #D95F76; 
+  text-shadow: 0 0 12px #D95F76; 
 }
 
 #navbar {
@@ -175,7 +176,8 @@ button {
 }
 
 #nav-links li a:hover {
-  color: #f97316; /* orange-500 */
+  color: #D95F76; 
+  text-shadow: 0 0 12px #D95F76; 
 }
 
 .dexter-button {
@@ -225,8 +227,6 @@ button {
   outline: none;
   box-shadow: none;
 }
-
-
 
 #navbar.sticky {
   background-color: rgba(0, 0, 0, 0.85);
@@ -407,10 +407,10 @@ button {
 
 /* Large pixelated text */
 .hero-text {
-  font-family: 'Comfortaa', cursive;
-  font-weight: 1000; /* Bold */
-  color: #D95F76; /* updated font color */
-  text-shadow: 0 0 12px #D95F76; /* updated shadow to match font color */
+  font-family: 'Courier New', cursive;
+  font-weight: 1000; 
+  color: #D95F76; 
+  text-shadow: 0 0 12px #D95F76; 
   user-select: none;
   white-space: nowrap;
   letter-spacing: 0.05em;
@@ -519,3 +519,90 @@ button {
 .hero-label.visible {
   opacity: 1;
 }
+
+/* From Uiverse.io by Yaya12085 */ 
+.code-editor {
+  max-width: 500px;
+  background-color: #1d1e22;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.title {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.57px;
+  color: rgb(212 212 212);
+}
+
+.icon {
+  width: 20px;
+  transition: .2s ease;
+}
+
+.icon:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #6e7281;
+}
+
+.editor-content {
+  margin: 0 10px 10px;
+  color: white;
+}
+
+.property {
+  margin-left: 30px;
+}
+
+.property:hover {
+  cursor: text;
+}
+
+.editor-content .color-0 {
+  color: rgb(86 156 214);
+}
+
+.editor-content .color-1 {
+  color: rgb(182 206 168);
+}
+
+.editor-content .color-2 {
+  color: rgb(156 220 254);
+}
+
+.editor-content .color-3 {
+  color: #f4d891;
+}
+
+.editor-content .color-4 {
+  color: rgb(207 146 120);
+}
+
+.editor-content .color-5 {
+  color: #FFFF00;
+}
+
+.editor-content .color-6 {
+  color: #cc25bf !important;
+}
+
+.color-preview-1 {
+  height: 8px;
+  width: 8px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 3px;
+  background-color: #1d1e22;
+}
+
+
