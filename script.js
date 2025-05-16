@@ -400,3 +400,9 @@ if (mybutton) {
     document.documentElement.scrollTop = 0;
   });
 }
+
+function moveBackground(event) {
+    const x = event.clientX / window.innerWidth;
+    const y = event.clientY / window.innerHeight;
+    document.body.style.backgroundPosition = `${x * 100}% ${y * 100}%`;
+        }
