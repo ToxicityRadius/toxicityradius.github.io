@@ -16,7 +16,7 @@
   <script async data-id="five-server" data-file="c:\Users\Dexter Soriano\Documents\GitHub\toxicityradius.github.io\index.html" type="application/javascript" src="/fiveserver.js"></script>
   </head>
 
-<body onmousemove="moveBackground(event)">
+<body>
     <header>
 <!-- Navbar -->
     <nav id="navbar" class="bg-gradient-to-r from-[#0a192f] via-[#112240] to-[#0a192f] text-white p-2 fixed w-full top-0 left-0 z-50 shadow-md flex items-center" role="navigation" aria-label="Main navigation">
@@ -64,11 +64,11 @@
                         <h1 class="text-7xl font-bold mb-4" id="hero-text">LET'S CONNECT!</h1>
                         <h2 class="text-4xl font-bold mb-4">I'm <span style="color: #D95F76; text-shadow: 0 0 12px #D95F76;">Dexter!</span></h2>
                         <h3 class="text-2xl font-bold mb-4">A <span id="changing-subtext" style="color: #D95F76;" class="inline-block"></span></h3>
-                        <p class="text-gray-600 mb-8">Dreaming to be a Computer Engineer.</p>
+                        <p class="text-2xl font-bold mb-8">Dreaming to be a Computer Engineer.</p>
                         <div class="flex justify-left space-x-4">
-                            <a class="social-button" href="https://www.facebook.com/sdexteraic/">Facebook</a>
-                            <a class="social-button" href="https://github.com/ToxicityRadius">GitHub</a>
-                            <a class="social-button" href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/">LinkedIn</a>
+                            <a class="social-button font-bold" href="https://www.facebook.com/sdexteraic/">Facebook</a>
+                            <a class="social-button font-bold" href="https://github.com/ToxicityRadius">GitHub</a>
+                            <a class="social-button font-bold" href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/">LinkedIn</a>
                         </div>
                         <!-- From Uiverse.io by Darlley --> 
                         <svg
@@ -77,7 +77,7 @@
                         viewBox="0 0 614 390"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        style="position: absolute; top: -50; left: -80px; width: calc(100% + 80px); height: 160%; pointer-events: none; z-index: 1;"
+                        style="position: absolute; top: -50; left: -120px; width: calc(100% + 80px); height: 160%; pointer-events: none; z-index: 1;"
                         >
                             <g id="box">
                                 <path
@@ -166,6 +166,7 @@
             </div>
         </section>
 
+
         <section id="education" class="bg-transparent text-white py-20" aria-labelledby="education-heading">
             <div class="container mx-auto">
                 <h3 id="education-heading" class="text-center">WHAT I HAVE LEARNED SO FAR</h3>
@@ -175,7 +176,7 @@
                     <div class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
                         <div class="w-1 bg-gray-500 h-full"></div>
                     </div>
-
+                    
                     <!-- Educational Entry 1 -->
                     <article class="relative flex flex-col items-center mb-8" aria-label="Bachelor of Science in Computer Engineering">
                         <div class="flex justify-between items-center w-full">
@@ -191,22 +192,20 @@
                                 </div>
                             </div>
                             <div class="w-1/2 flex justify-center relative">
-                                <div class="bg-white p-2 rounded-full shadow-lg logo-container">
-                                    <div class="rectangle"></div>
-                                    <img alt="University logo" class="logo" src="tip logo.png" />
+                                <div class="bg-white p-2 rounded-full shadow-lg logo-container" aria-label="Technological Institute of the Philippines logo">
+                                    <img alt="Technological Institute of the Philippines logo" class="logo" src="tip logo.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute right-0 text-lg">2023 – Present</div>
+                        <time class="absolute right-0 text-lg" datetime="2023-2024">2023 – Present</time>
                     </article>
 
                     <!-- Educational Entry 2 -->
                     <article class="relative flex flex-col items-center mb-8" aria-label="Senior High School (K-12)">
                         <div class="flex justify-between items-center w-full">
                             <div class="w-1/2 flex justify-center relative">
-                                <div class="bg-white p-2 rounded-full shadow-lg logo-container">
-                                    <div class="rectangle"></div>
-                                    <img alt="High School logo" class="logo" src="tip logo.png" />
+                                <div class="bg-white p-2 rounded-full shadow-lg logo-container" aria-label="Technological Institute of the Philippines logo">
+                                    <img alt="Technological Institute of the Philippines logo" class="logo" src="tip logo.png" />
                                 </div>
                             </div>
                             <div class="w-1/2 pl-8">
@@ -222,7 +221,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute left-0 text-lg">2021–2023</div>
+                        <time class="absolute left-0 text-lg" datetime="2021-2023">2021–2023</time>
                     </article>
 
                     <!-- Educational Entry 3 -->
@@ -230,61 +229,20 @@
                         <div class="flex justify-between items-center w-full">
                             <div class="w-1/2 pr-8">
                                 <div class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in">
-                                    <h2 class="text-2xl font -bold mb-2">Junior High School</h2>
+                                    <h2 class="text-2xl font-bold mb-2">Junior High School</h2>
                                     <p class="text-lg mb-2">Divine Light Academy</p>
                                     <ul class="list-disc list-inside">
                                         <li>Graduated with High Honors</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="w-1/2 flex  relative">
-                                <div class="bg-white p-2 rounded-full shadow-lg logo-container">
-                                    <div class="rectangle item-center"></div>
-                                    <img alt="Middle School logo" class="logo" src="https://placehold.co/50x50" />
+                            <div class="w-1/2 flex justify-center relative">
+                                <div class="bg-white p-2 rounded-full shadow-lg logo-container" aria-label="Divine Light Academy logo">
+                                    <img alt="Divine Light Academy logo" class="logo" src="https://placehold.co/50x50" />
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute right-0 text-lg">2017–2021</div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="bg-transparent text-white py-12" aria-labelledby="skills-heading">
-            <div class="container mx-auto">
-                <h1 id="skills-heading" class="text-4xl font-bold text-center mb-4">Skills</h1>
-                <p class="text-center text-gray-400 mb-12">Creating intuitive and user-friendly designs through UX research</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <article class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in" aria-label="Arduino skill">
-                        <i class="fas fa-microchip text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
-                        <h2 class="text-xl font-bold mb-2">Arduino</h2>
-                        <p class="text-gray-400">Building interactive projects with Arduino.</p>
-                    </article>
-                    <article class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in" aria-label="C++ skill">
-                        <i class="fab fa-java text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
-                        <h2 class="text-xl font-bold mb-2">C++</h2>
-                        <p class="text-gray-400">Programming in C++ for various applications.</p>
-                    </article>
-                    <article class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in" aria-label="Python skill">
-                        <i class="fab fa-python text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
-                        <h2 class="text-xl font-bold mb-2">Python</h2>
-                        <p class="text-gray-400">Using Python for data and automation.</p>
-                    </article>
-                    <article class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in" aria-label="HTML, CSS, JavaScript skill">
-                        <i class="fab fa-html5 text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
-                        <h2 class="text-xl font-bold mb-2">HTML, CSS, JavaScript</h2>
-                        <p class="text-gray-400">Creating responsive web pages.</p>
-                    </article>
-                    <article class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in" aria-label="Mobile App Development skill">
-                        <i class="fas fa-mobile-alt text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
-                        <h2 class="text-xl font-bold mb-2">Mobile App Development</h2>
-                        <p class="text-gray-400">Developing apps using Android Studio.</p>
-                    </article>
-                    <article class="bg-gray-800 p-6 rounded-lg text-center transition-transform transform hover:scale-105 hover:bg-gray-700 slide-in fade-in" aria-label="Vex Robotics skill">
-                        <i class="fas fa-robot text-orange-500 text-4xl mb-4 transition-colors duration-100 hover:text-yellow-400"></i>
-                        <h2 class="text-xl font-bold mb-2">Vex Robotics</h2>
-                        <p class="text-gray-400">Designing and programming robots.</p>
+                        <time class="absolute right-0 text-lg" datetime="2017-2021">2017–2021</time>
                     </article>
                 </div>
             </div>
@@ -304,12 +262,12 @@
                         <div class="editor-content">
                             <code class="code">
                             <p><span class="color-0"> ＜!DOCTYPE html＞</span></p>
-                            <p><span class="color-0">＜html＞<html></span></p>
+                            <p><span class="color-0">＜html＞</span></p>
 
                             <p class="property">
                                 <span class="color-2">＜head＞＜title＞</span> <br>
                                 <span class="color-1">Sample Page</span> <br>
-                                <span class="color-2">＜/head＞＜/title＞</span><span></span>
+                                <span class="color-2">＜/title＞＜/head＞</span><span></span>
                             </p>
                             <p><span class="color-0">＜body＞</span></p>
                             <p class="property">
@@ -342,7 +300,7 @@
                             <p><span class="color-0">h1</span><span> {</span></p>
                             <p class="property">
                                 <span class="color-2">color</span><span>:</span>
-                                <span class="color-preview-1"></span><span class="color-1">#0055aa<span>;</span>
+                                <span class="color-preview-1"></span><span class="color-1">#0055aa<span>;</span></span>
                             </p>
                             <p class="property">
                                 <span class="color-2">text-align</span><span>:</span>

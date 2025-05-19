@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  cursor: none;
 }
 
 html,
@@ -25,14 +26,22 @@ body {
   height: 100%;
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 /* Background pattern */
 body {
-  background: rgba(29, 31, 32, 0.904)
-    radial-gradient(rgba(255, 255, 255, 0.712) 10%, transparent 1%);
-  background-size: 11px 11px;
-}
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: 
+    linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 25px 25px;
+  cursor: none;
+  }
+
 
 /* Canvas */
 canvas {
@@ -48,7 +57,7 @@ canvas {
 .mouse-effect {
   opacity: 0;
   position: fixed;
-  top: 10px; /* Adjusted from 0 to 10px to reduce gap */
+  top: 10px;
   left: 0;
   pointer-events: none;
   user-select: none;
@@ -85,12 +94,12 @@ h2 {
 button {
   outline: none;
   border: none;
-  cursor: pointer;
+  cursor: none;
 }
 
 .circle {
   position: absolute;
-  background-color: #101117;
+  background-color: #ffffff;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -98,7 +107,7 @@ button {
 }
 .circle-follow {
   position: absolute;
-  border: 1px solid #101117;
+  border: 1px solid #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -284,7 +293,7 @@ button {
 }
 
 .logo:hover {
-  transform: translateX(-50%) scale(1.15);
+  transform: translateX(-50%) scale(1.1);
 }
 
 /* Animations */
@@ -374,9 +383,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(29, 31, 32, 0.904) !important;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.712) 10%, transparent 1%) !important;
-  background-size: 11px 11px !important;
   font-family: 'Courier New', Courier, monospace;
   overflow: visible;
   z-index: 10;
@@ -685,4 +691,127 @@ transition: background-color 0.3s ease;
 .social-button:hover {
 background-color: #D95F76;
 color: white;
+}
+
+/* Education Section Custom Styles */
+#education .relative {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#education .absolute.inset-0 {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #D95F76;
+  border-radius: 2px;
+  opacity: 0.3;
+}
+
+#education article {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+#education article .bg-gray-800 {
+  background-color: #1f2937; /* Slightly darker for better contrast */
+  box-shadow: 0 4px 15px rgba(217, 95, 118, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#education article:hover .bg-gray-800 {
+  background-color: #d95f76;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(217, 95, 118, 0.6);
+}
+
+#education .logo-container {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s ease;
+  border-radius: 50%;
+  background-color: #000000cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#education .logo-container:hover {
+  box-shadow: 0 0 25px rgba(217, 95, 118, 0.8);
+}
+
+#education .logo {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  transition: transform 0.3s ease;
+}
+
+#education .logo:hover {
+  transform: scale(1.15);
+}
+
+#education time {
+  font-weight: 600;
+  color: #d95f76;
+  font-size: 1.125rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+#education time[datetime="2023-2024"],
+#education time[datetime="2017-2021"] {
+  right: 0;
+}
+
+#education time[datetime="2021-2023"] {
+  left: 0;
+}
+
+/* Responsive adjustments for education section */
+@media (max-width: 768px) {
+  #education .relative {
+    padding: 0 0.5rem;
+  }
+  #education .absolute.inset-0 {
+    left: 8px;
+    transform: none;
+    width: 3px;
+  }
+  #education article {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  #education article .bg-gray-800 {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  #education .logo-container {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  #education .logo {
+    width: 70% !important;
+    height: 70% !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+  #education time {
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+    margin-bottom: 0.5rem;
+    font-size: 1rem !important;
+  }
 }
