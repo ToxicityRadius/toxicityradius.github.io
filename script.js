@@ -1,4 +1,4 @@
-(function() {
+(function () {
   // Utility function for safe DOM querying
   function safeQuerySelector(selector) {
     try {
@@ -136,10 +136,10 @@
         { x: 2.9, y: -0.25, z: 1.86 }, { x: 2.2, y: -0.4, z: 1.86 }, { x: 5.1, y: -0.24, z: 1.86 },
         { x: 5.27, y: 1.24, z: 0.76 }, { x: 5.27, y: 2, z: -0.4 }, { x: 6.4, y: 0.4, z: 1 },
         { x: 5.15, y: 0.95, z: 2 }, { x: 6.2, y: 0.5, z: -0.8 }, { x: 4, y: 0.08, z: 1.8 },
-        { x: 5, y: 0.5, z: 1.5}, { x: 5.5, y: 0.8, z: 0.3}, { x: 4.8, y: -0.5, z: 1.2},
-        { x: 5.2, y: -1, z: 0.8}, { x: 4.5, y: 0.8, z: 0.3}, { x: 5.8, y: 0.3, z: 1},
-        { x: 6, y: 1, z: 0.7}, { x: 5.3, y: -0.8, z: 0.6}, { x: 4.9, y: 0.4, z: 1.3}, 
-        { x: 5.1, y: 0.9, z: 0.9}, { x: 4.6, y: -0.3, z: 0.4}
+        { x: 5, y: 0.5, z: 1.5 }, { x: 5.5, y: 0.8, z: 0.3 }, { x: 4.8, y: -0.5, z: 1.2 },
+        { x: 5.2, y: -1, z: 0.8 }, { x: 4.5, y: 0.8, z: 0.3 }, { x: 5.8, y: 0.3, z: 1 },
+        { x: 6, y: 1, z: 0.7 }, { x: 5.3, y: -0.8, z: 0.6 }, { x: 4.9, y: 0.4, z: 1.3 },
+        { x: 5.1, y: 0.9, z: 0.9 }, { x: 4.6, y: -0.3, z: 0.4 }
       ];
 
       const group = new THREE.Group();
@@ -253,7 +253,7 @@
         });
 
         // When all timelines complete, trigger hero text and label transition
-        Promise.all(timelines.map(tl => tl.then ? tl.then(() => {}) : Promise.resolve()))
+        Promise.all(timelines.map(tl => tl.then ? tl.then(() => { }) : Promise.resolve()))
           .then(() => {
             const heroTexts = document.querySelectorAll('.hero-text');
             heroTexts.forEach(el => {
@@ -378,7 +378,7 @@
       // Scroll to top button functionality
       const dexterButton = safeQuerySelector('#dexter-button');
       if (dexterButton) {
-        window.onscroll = function() {
+        window.onscroll = function () {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             dexterButton.style.display = "block";
           } else {
