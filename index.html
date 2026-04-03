@@ -2,480 +2,862 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>A Portfolio or Something</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Comfortaa:wght@700&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="styles.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <!-- Code injected by Five-server -->
-  <script async data-id="five-server"
-    data-file="c:\Users\Dexter Soriano\Documents\GitHub\toxicityradius.github.io\index.html"
-    type="application/javascript" src="/fiveserver.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dexter Soriano — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <!-- Navbar -->
-    <nav id="navbar"
-      class="bg-gradient-to-r from-[#0a192f] via-[#112240] to-[#0a192f] text-white p-2 fixed w-full top-0 left-0 z-50 shadow-md flex items-center"
-      role="navigation" aria-label="Main navigation">
-      <div class="container mx-auto flex justify-between items-center">
-        <a class="dexter-button" id="dexter-button">
-          <span class="actual-text">Dexter Soriano</span>
-        </a>
-        <ul id="nav-links" class="flex space-x-6">
-          <li><a class="nav-link" href="#about-me">About Me</a></li>
-          <li><a class="nav-link" href="#education">Education</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#blog">Projects</a></li>
-        </ul>
-        <a href="#contact"
-          class="bg-[#0a192f] border border-white rounded-full px-4 py-2 hover:bg-white hover:text-[#0a192f] transition-colors duration-300"
-          id="lets-connect-button">Let's Connect</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="mouse-effect" aria-hidden="true">
-      <div class="circle"></div>
-      <div class="circle-follow"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="dexter-button" aria-label="Back to top">Dexter Soriano</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+      </ul>
+      <a href="#contact" class="btn-connect">Let's Connect</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <!-- Hero Section -->
-    <section id="intro" class="hero-container" aria-labelledby="hero-text" role="banner">
-      <canvas class="webgl" id="webgl" aria-label="3D animated background"></canvas>
-      <div class="hero-grid no-image">
-        <h1 class="hero-text hero-text-radka">{ Dexter }</h1>
-        <h1 class="hero-text hero-text-webflow">{ Student Leader }</h1>
-        <h1 class="hero-text hero-text-developer">{ Developer }</h1>
-        <span class="hero-label hero-label-welcome">{ WELCOME }</span>
-        <span class="hero-label hero-label-webdesign">{ WEB DESIGN }</span>
-        <span class="hero-label hero-label-webflow-expert">{ RESEARCHER }</span>
-        <span class="hero-label hero-label-js">{ HTML, CSS, JAVASCRIPT, AND MORE! }</span>
-        <span class="hero-label hero-label-portfolio">{ ONLINE PORTFOLIO }</span>
-      </div>
-    </section>
-      <br><br><br><br><br>
-      <!-- Connect Section -->
-      <section id="connect" class="bg-transparent text-white py-20" aria-label="Connect with Dexter">
-        <div class="container mx-auto">
-          <div class="flex flex-col md:flex-row items-center justify-center">
-            <div class="md:w-1/2 slide-in text-left max-w-md px-4 mx-auto" style="position: relative;">
-              <h1 class="text-7xl font-bold mb-4 whitespace-nowrap" id="hero-text">LET'S CONNECT!</h1>
-              <h2 class="text-4xl font-bold mb-4">I'm <span
-                  style="color: #D95F76; text-shadow: 0 0 12px #D95F76;">Dexter!</span></h2>
-              <h3 class="text-2xl font-bold mb-4">A <span id="changing-subtext" style="color: #D95F76;"
-                  class="inline-block"></span></h3>
-              <p class="text-2xl font-bold mb-8">Dreaming to be a Computer Engineer.</p>
-              <div class="flex space-x-4 justify-start">
-                <a class="social-button font-bold" href="https://www.facebook.com/sdexteraic/">Facebook</a>
-                <a class="social-button font-bold" href="https://www.instagram.com/dexteraz23/">Instagram</a>
-                <a class="social-button font-bold" href="https://github.com/ToxicityRadius">GitHub</a>
-                <a class="social-button font-bold"
-                  href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/">LinkedIn</a>
-              </div>
-              <svg width="614" height="390" viewBox="0 0 614 390" fill="none" xmlns="http://www.w3.org/2000/svg"
-                style="position: absolute; top: -50; left: -140px; width: calc(100% + 400px); height: 160%; pointer-events: none; z-index: 1;">
-                <g id="box">
-                  <path id="figny9-box" d="M587 20H28V306H587V20Z" fill="#D95F76" fill-opacity="0.05" stroke="#D95F76"
-                    stroke-width="2"></path>
-                  <path id="figny9-adjust-1" d="M33 15H23V25H33V15Z" fill="white" stroke="#D95F76" stroke-width="2">
-                  </path>
-                  <path id="figny9-adjust-3" d="M33 301H23V311H33V301Z" fill="white" stroke="#D95F76" stroke-width="2">
-                  </path>
-                  <path id="figny9-adjust-4" d="M592 301H582V311H592V301Z" fill="white" stroke="#D95F76"
-                    stroke-width="2"></path>
-                  <path id="figny9-adjust-2" d="M592 15H582V25H592V15Z" fill="white" stroke="#D95F76" stroke-width="2">
-                  </path>
-                </g>
-                <g id="cursor">
-                  <path id="Vector 273" d="M453.383 343L448 317L471 331L459.745 333.5L453.383 343Z" fill="#FFFFFF"
-                    stroke="white" stroke-width="2"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="md:w-1/2 mt-8 md:mt-0 fade-in">
-              <img alt="1x1 Picture" class="rounded-full mx-auto border-1 object-cover overflow-hidden"
-                style="box-shadow: 0 0 50.5px 10.5px #d0d5d8;" height="300"
-                src="https://github.com/ToxicityRadius/toxicityradius.github.io/blob/main/484045153_498465746651199_6569911079363595658_n.jpg?raw=true"
-                width="300" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <br><br><br><br><br>
+  </nav>
 
-      <!-- About Me Section -->
-      <section id="about-me" class="bg-transparent text-white py-20" aria-labelledby="about-me-heading">
-        <div class="container mx-auto text-center">
-          <div class="flex flex-col md:flex-row items-center justify-center">
-            <div class="md:w-1/2 fade-in">
-              <img alt="Portrait of Dexter Soriano" class="rounded-full mx-auto border-1 object-cover overflow-hidden"
-                style="box-shadow: 0 0 50.5px 10.5px #d0d5d8;" height="300" src="" width="300" />
-            </div>
-            <div class="md:w-1/2 mt-8 md:mt-0 slide-in">
-              <h2 id="about-me-heading" class="text-4xl font-bold mb-4">About <span class="text-orange-500">Me</span>
-              </h2>
-              <h3 class="text-2xl font-bold mb-4">Current Student Council Officer</h3>
-              <p class="text-gray-400 mb-8">Standing at the forefront as an agent of change.</p>
-              <a class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600"
-                href="https://raw.githubusercontent.com/DBMS-S1/RecipeChecker/main/Pictures/dex">Experience</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <br><br><br><br><br>
-      <section id="education" class="bg-transparent text-white py-20" aria-labelledby="education-heading">
-        <div class="container mx-auto">
-          <h3 id="education-heading" class="text-center">WHAT I HAVE LEARNED SO FAR</h3>
-          <br>
-          <h1 class="text-4xl font-bold text-center mb-12">Educational Background</h1>
-          <div class="space-y-12 relative">
-            <div aria-hidden="true" class="h-full absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0">
-              <div class="w-1 bg-gray-500 h-full"></div>
-            </div>
-            <!-- Educational Entry 1 -->
-            <div class="card mt-6">
-              <div class="wrap">
-                <div class="terminal">
-                  <hgroup class="head">
-                    <p class="title">
-                      <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                        stroke="currentColor" fill="none">
-                        <path
-                          d="M7 15L10 12L7 9M13 15H17M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z">
-                        </path>
-                      </svg>
-                      College - Bachelor of Science in Computer Engineering
-                    </p>
-                    <button class="copy_toggle" tabindex="-1" type="button">
-                      <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                        stroke="currentColor" fill="none">
-                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
-                        </path>
-                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
-                      </svg>
-                    </button>
-                  </hgroup>
-                  <div class="body">
-                    <pre class="pre">
-<code class="cmd">Technological Institute of the Philippines - Manila (2023 - Present) <br>
-C:\\Users\\CPE-Dexter＞Elected President of the Supreme Student Council A.Y. '25-'26
-C:\\Users\\CPE-Dexter＞Vice-Mayor of CPE-DSC A.Y. '24-'25
-C:\\Users\\CPE-Dexter＞Member of CESC A.Y. '24-'25
-C:\\Users\\CPE-Dexter＞Vice-Mayor Mentee of CPE-DSC A.Y. '23-'24
-C:\\Users\\CPE-Dexter＞Organizational Mentee of CEA-C A.Y. '23-'24
-</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Educational Entry 2 -->
-            <div class="card">
-              <div class="wrap">
-                <div class="terminal">
-                  <hgroup class="head">
-                    <p class="title">
-                      <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                        stroke="currentColor" fill="none">
-                        <path
-                          d="M7 15L10 12L7 9M13 15H17M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z">
-                        </path>
-                      </svg>
-                      Senior High School
-                    </p>
-                    <button class="copy_toggle" tabindex="-1" type="button">
-                      <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                        stroke="currentColor" fill="none">
-                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
-                        </path>
-                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
-                      </svg>
-                    </button>
-                  </hgroup>
-                  <div class="body">
-                    <pre class="pre">
-<code class="cmd">Technological Institute of the Philippines - Manila (2021 - 2023) <br>
-C:\\Users\\SHS-Dexter＞Graduated with Honors
-C:\\Users\\SHS-Dexter＞Best in Research Award (Overall)
-C:\\Users\\SHS-Dexter＞Grade 12: General Average of 92
-C:\\Users\\SHS-Dexter＞Grade 11: General Average of 95.19
-</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Educational Entry 3 -->
-            <div class="card mt-6">
-              <div class="wrap">
-                <div class="terminal">
-                  <hgroup class="head">
-                    <p class="title">
-                      <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                        stroke="currentColor" fill="none">
-                        <path
-                          d="M7 15L10 12L7 9M13 15H17M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z">
-                        </path>
-                      </svg>
-                      Junior High School
-                    </p>
-                    <button class="copy_toggle" tabindex="-1" type="button">
-                      <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                        stroke="currentColor" fill="none">
-                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
-                        </path>
-                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
-                      </svg>
-                    </button>
-                  </hgroup>
-                  <div class="body">
-                    <pre class="pre">
-<code class="cmd">Divine Light Academy - Molino (2017-2021) <br>
-C:\\Users\\JHS-Dexter＞Graduated with High Honors
-</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </section>
-          <!-- Programming Languages Section -->
-          <section id="skills" class="bg-transparent text-white py-12" aria-labelledby="skills-heading">
-            <div class="container mx-auto">
-              <h2 id="skills-heading" class="text-4xl font-bold text-center mb-4">Programming Languages</h2>
-              <br>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- HTML -->
-                <div class="code-editor">
-                  <div class="header">
-                    <span class="title">html</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
-                      <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                      <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="editor-content">
-                    <code class="code">
-                            <p><span class="color-0"> ＜!DOCTYPE html＞</span></p>
-                            <p><span class="color-0">＜html＞</span></p>
-
-                            <p class="property">
-                                <span class="color-2">＜head＞＜title＞</span> <br>
-                                <span class="color-1">Sample Page</span> <br>
-                                <span class="color-2">＜/title＞＜/head＞</span><span></span>
-                            </p>
-                            <p><span class="color-0">＜body＞</span></p>
-                            <p class="property">
-                                <span class="color-1">＜h1＞Hello, World!＜/h1＞</span>
-                            </p>
-                            <p><span class="color-0">＜/body＞</span></p>
-                            <p><span class="color-0">＜/html＞</span></p>
-                            </code>
-                  </div>
-                </div>
-                <!-- CSS -->
-                <div class="code-editor">
-                  <div class="header">
-                    <span class="title">css</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
-                      <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                      <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="editor-content">
-                    <code class="code">
-                            <p><span class="color-0">body</span><span> {</span></p>
-                            <p class="property">
-                                <span class="color-2">background-color</span><span>:</span>
-                                <span class="color-preview-1"></span><span class="">#f9f9f9</span>;
-                            </p>
-                            <p class="property">
-                                <span class="color-2">font-family</span><span>:</span>
-                                <span class="color-1"> 'Arial'</span><span>;</span>
-                                <span class="color-2">margin</span><span>:</span>
-                                <span class="color-1"> 20px</span><span>;</span>
-                            <br><span>}</span>
-                            </p> <br>
-                            <p><span class="color-0">h1</span><span> {</span></p>
-                            <p class="property">
-                                <span class="color-2">color</span><span>:</span>
-                                <span class="color-preview-1"></span><span class="color-1">#0055aa<span>;</span></span>
-                            </p>
-                            <p class="property">
-                                <span class="color-2">text-align</span><span>:</span>
-                                <span class="color-1"> center</span><span>;</span>
-                            </p>
-                            <span>}</span>
-                            </code>
-                  </div>
-                </div>
-                <!-- JavaScript Section -->
-                <div class="code-editor">
-                  <div class="header">
-                    <span class="title">javascript</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
-                      <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                      <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="editor-content">
-                    <code class="code">
-                            <p><span class="color-1">window</span><span>.</span>
-                                <span class = "color-3">addEventListener</span>
-                                <span class = "color-5">(</span><span class = "color-4">'resize'</span><span>,</span>
-                                <span class = "color-6">()</span><span class = "color-8"> => </span> <span class = "color-6">{</span>
-                            </p>
-                            <p class="property">
-                                <span class="color-0">const</span>
-                                <span class = "color-2">width</span><span> = </span><span class = "color-2">heroContainer</span>.<span class ="color-2">clientWidth</span>;
-                                <span class = "color-2">height</span><span> = </span><span class = "color-2">heroContainer</span>.<span class ="color-2">clientHeight</span>;
-                                </p>
-                            <p class="property"> <br>
-                                <span class = "color-0">camera</span><span>.</span><span class = "color-2">aspect</span> = <span class ="color-2">width</span> / <span class = "color-2">height</span>;
-                                <span class = "color-0">camera</span><span>.</span><span class = "color-3">updateProjectionMatrix</span><span class ="color-0">()</span>;
-                            </p> <br>
-                            <p class="property">
-                            <span class = "color-0">renderer</span><span>.</span><span class = "color-3">setSize</span><span class ="color-0">(</span><span class ="color-0">width</span>, <span class ="color-0">height</span><span class ="color-0">)</span>;
-                            </p> 
-                            <span class ="color-6">}</span><span class="color-5">)</span>;
-                            </code>
-                  </div>
-                </div>
-                <!-- Python -->
-                <div class="code-editor">
-                  <div class="header">
-                    <span class="title">python</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
-                      <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                      <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
-                        <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="editor-content">
-                    <code class="code">
-                            <p><span class="color-4">def </span><span class ="color-6">factorial</span><span>(n):</span></p>
-                                <p class="property">
-                                <span class="color-4">if</span> n<span class="color-4"> ＜</span><span class="color-3"> 0</span>:
-                                </p>
-                                <p class="property">
-                                <span class="color-4">&nbsp;&nbsp;&nbsp;raise</span> ValueError(<span class="color-1">"Negative numbers do not have a factorial."</span>)
-                                </p>
-                            <p class="property">
-                                <span class="color-4">if</span> n<span class="color-4"> ==</span><span class="color-3"> 0</span>:
-                                <p class="property">
-                                <span class="color-4">&nbsp;&nbsp;&nbsp;return</span><span class ="color-3"> 1</span>
-                                </p>
-                            </p>
-                      </code>
-                    </div>
-                </div>
-            </div>
-        </section>
-      </main>
-<footer>
-  <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-    <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="sm:col-span-2">
-        <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-          <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-            <rect x="3" y="1" width="7" height="12"></rect>
-            <rect x="3" y="17" width="7" height="6"></rect>
-            <rect x="14" y="1" width="7" height="6"></rect>
-            <rect x="14" y="11" width="7" height="12"></rect>
-          </svg>
-          <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Dexter Soriano</span>
-        </a>
-        <div class="mt-6 lg:max-w-sm">
-          <p class="text-sm text-gray-800">
-            is a passionate computer engineering student and aspiring developer dedicated to creating innovative web solutions. With a strong foundation in programming and leadership experience, who aims to make a positive impact through technology and continuous learning.
-          </p>
-        </div>
-      </div>
-      <div class="space-y-2 text-sm">
-        <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
-        <div class="flex">
-          <p class="mr-1 text-gray-800">Phone:</p>
-          <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+63 906 347 2264</a>
-        </div>
-        <div class="flex">
-          <p class="mr-1 text-gray-800">Email:</p>
-          <a aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">mdasoriano01@tip.edu.ph</a>
-        </div>
-        <div class="flex">
-          <p class="mr-1 text-gray-800">Address:</p>
-          <a target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-            Suntrust Parkview, Manila
-          </a>
-        </div>
-      </div>
-      <div>
-        <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
-        <div class="flex items-center mt-1 space-x-3">
-          <a href="https://www.facebook.com/sdexteraic/" class="text-gray-500 transition-colors duration-300 hover:text-[#D95F76]" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook fa-lg"></i>
-          </a>
-          <a href="https://www.instagram.com/dexteraz23/" class="text-gray-500 transition-colors duration-300 hover:text-[#D95F76]" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram fa-lg"></i>
-          </a>
-          <a href="https://github.com/ToxicityRadius" class="text-gray-500 transition-colors duration-300 hover:text-[#D95F76]" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github fa-lg"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/" class="text-gray-500 transition-colors duration-300 hover:text-[#D95F76]" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </a>
-        </div>
-        <p class="mt-4 text-sm text-gray-500">
-          Connect with me on social media to stay updated on my latest projects and insights.
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-      <p class="text-sm text-gray-600">
-        © Copyright 2025 Dexter Soriano. All rights reserved.
-      </p>
-      <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-        <li>
-          <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
-        </li>
-        <li>
-          <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
-        </li>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" id="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Let's Connect</a></li>
       </ul>
     </div>
   </div>
-</footer>
-    <script src="script.js"></script>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 id="hero-heading" class="hero-name">Dexter<br /><span class="hero-name-accent">Soriano</span></h1>
+        <p class="hero-spec">BS Computer Engineering &nbsp;·&nbsp; <strong>Data Science</strong></p>
+        <p class="hero-role">A <span id="changing-subtext" class="hero-role-accent"></span></p>
+        <p class="hero-tagline">Building intelligent systems through data and code.</p>
+        <div class="hero-socials">
+          <a href="https://www.facebook.com/sdexteraic/" class="social-pill" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a>
+          <a href="https://www.instagram.com/dexteraz23/" class="social-pill" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
+          <a href="https://github.com/ToxicityRadius" class="social-pill" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/" class="social-pill" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+        <div class="hero-cta">
+          <a href="https://raw.githubusercontent.com/DBMS-S1/RecipeChecker/main/Pictures/dex" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Download CV">
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+          </a>
+          <a href="#projects" class="btn-secondary" aria-label="View projects">
+            View Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring"></div>
+        <img
+          src="https://github.com/ToxicityRadius/toxicityradius.github.io/blob/main/484045153_498465746651199_6569911079363595658_n.jpg?raw=true"
+          alt="Portrait of Dexter Soriano"
+          class="hero-image"
+          width="320"
+          height="320"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-image-col">
+            <div class="about-image-frame">
+              <img
+                src="https://github.com/ToxicityRadius/toxicityradius.github.io/blob/70613712e7f525ed1fe764213e2b77b737269435/482737332_2056250118213015_342528401006379920_n.jpg?raw=true"
+                alt="Dexter Soriano"
+                class="about-image"
+                width="380"
+                height="380"
+                loading="lazy"
+              />
+              <div class="about-image-accent" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="about-text-col">
+            <p class="section-eyebrow">01 — About Me</p>
+            <h2 id="about-heading" class="section-title">Data Science Student<br />&amp; Council President</h2>
+            <p class="about-body">I'm a Computer Engineering student majoring in <strong>Data Science</strong> at T.I.P. Manila, with a deep interest in machine learning, computer vision, and building intelligent applications. As the current SSC President, I combine technical problem-solving with leadership — aiming to create meaningful impact through data-driven technology and continuous learning.</p>
+            <a href="https://raw.githubusercontent.com/DBMS-S1/RecipeChecker/main/Pictures/dex" class="btn-primary" target="_blank" rel="noopener noreferrer">View Experience <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-eyebrow">02 — Technical Toolkit</p>
+          <h2 id="skills-heading" class="section-title">Languages &amp; Tools</h2>
+        </div>
+        <div class="bento-grid">
+          <!-- HTML Card -->
+          <div class="bento-card bento-wide glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">HTML</h3>
+                <p class="bento-card-desc">Semantic markup &amp; structure</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-tag">&lt;!DOCTYPE</span> <span class="tok-attr">html</span><span class="tok-tag">&gt;</span>
+<span class="tok-tag">&lt;html</span> <span class="tok-attr">lang</span>=<span class="tok-str">"en"</span><span class="tok-tag">&gt;</span>
+  <span class="tok-tag">&lt;head&gt;&lt;title&gt;</span><span class="tok-txt">Sample</span><span class="tok-tag">&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="tok-tag">&lt;body&gt;</span>
+    <span class="tok-tag">&lt;h1&gt;</span><span class="tok-txt">Hello, World!</span><span class="tok-tag">&lt;/h1&gt;</span>
+  <span class="tok-tag">&lt;/body&gt;</span>
+<span class="tok-tag">&lt;/html&gt;</span></code></pre>
+            </div>
+          </div>
+          <!-- CSS Card -->
+          <div class="bento-card glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">CSS</h3>
+                <p class="bento-card-desc">Styles &amp; layouts</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-sel">body</span> {
+  <span class="tok-prop">background</span>: <span class="tok-val">#f9f9f9</span>;
+  <span class="tok-prop">font-family</span>: <span class="tok-str">'Arial'</span>;
+}
+<span class="tok-sel">h1</span> {
+  <span class="tok-prop">color</span>: <span class="tok-val">#0055aa</span>;
+}</code></pre>
+            </div>
+          </div>
+          <!-- JavaScript Card -->
+          <div class="bento-card glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">JavaScript</h3>
+                <p class="bento-card-desc">Dynamic interactions</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">window</span>.<span class="tok-fn">addEventListener</span>(
+  <span class="tok-str">'resize'</span>, () =&gt; {
+  <span class="tok-kw">const</span> <span class="tok-var">w</span> = <span class="tok-kw">window</span>.<span class="tok-prop">innerWidth</span>;
+  <span class="tok-kw">const</span> <span class="tok-var">h</span> = <span class="tok-kw">window</span>.<span class="tok-prop">innerHeight</span>;
+});<br><br></code></pre>
+            </div>
+          </div>
+          <!-- React Card -->
+          <div class="bento-card glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">React</h3>
+                <p class="bento-card-desc">Component-based UI</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">function</span> <span class="tok-fn">ProjectCard</span>() {
+  <span class="tok-kw">return</span> (
+    <span class="tok-tag">&lt;article</span> <span class="tok-attr">className</span>=<span class="tok-str">"card"</span><span class="tok-tag">&gt;</span>
+      <span class="tok-tag">&lt;h3&gt;</span><span class="tok-txt">React Project</span><span class="tok-tag">&lt;/h3&gt;</span>
+    <span class="tok-tag">&lt;/article&gt;</span>
+  );
+}</code></pre>
+            </div>
+          </div>
+          <!-- PyTorch Card -->
+          <div class="bento-card glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-solid fa-fire" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">PyTorch</h3>
+                <p class="bento-card-desc">Deep learning &amp; training</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">import</span> torch
+model = <span class="tok-fn">YOLO</span>(<span class="tok-str">'yolov8s.pt'</span>)
+x = torch.<span class="tok-fn">rand</span>(<span class="tok-num">1</span>, <span class="tok-num">3</span>, <span class="tok-num">640</span>, <span class="tok-num">640</span>)
+out = model.<span class="tok-fn">predict</span>(x)<br><br><br></code></pre>
+            </div>
+          </div>
+          <div class="bento-card glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-brands fa-python" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">Python</h3>
+                <p class="bento-card-desc">Data science &amp; ML</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">from</span> ultralytics <span class="tok-kw">import</span> <span class="tok-fn">YOLO</span>
+model = <span class="tok-fn">YOLO</span>(<span class="tok-str">'yolov8n.pt'</span>)
+results = model.<span class="tok-fn">train</span>(
+  data=<span class="tok-str">'data.yaml'</span>,
+  epochs=<span class="tok-num">100</span>, imgsz=<span class="tok-num">960</span>)<br><br></code></pre>
+            </div>
+          </div>
+          <!-- Pandas / NumPy Card -->
+          <div class="bento-card bento-wide glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-solid fa-table" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">Pandas &amp; NumPy</h3>
+                <p class="bento-card-desc">Data wrangling &amp; analysis</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">import</span> pandas <span class="tok-kw">as</span> <span class="tok-var">pd</span>
+df = pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">'data.csv'</span>)
+df.<span class="tok-fn">dropna</span>(inplace=<span class="tok-kw">True</span>)
+print(df.<span class="tok-fn">describe</span>())<br><br><br></code></pre>
+            </div>
+          </div>
+          <!-- SQL Card -->
+          <div class="bento-card glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">SQL</h3>
+                <p class="bento-card-desc">Queries &amp; databases</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">SELECT</span> name,
+  <span class="tok-fn">AVG</span>(score) <span class="tok-kw">AS</span> avg
+<span class="tok-kw">FROM</span> results
+<span class="tok-kw">GROUP BY</span> name
+<span class="tok-kw">ORDER BY</span> avg <span class="tok-kw">DESC</span>;<br><br></code></pre>
+            </div>
+          </div>
+          <!-- OpenCV / Computer Vision Card -->
+          <div class="bento-card bento-wide glass-card">
+            <div class="bento-card-header">
+              <div class="bento-card-icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
+              <div class="bento-card-meta">
+                <h3 class="bento-card-title">OpenCV</h3>
+                <p class="bento-card-desc">Computer vision</p>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <pre><code><span class="tok-kw">import</span> cv2
+cap = cv2.<span class="tok-fn">VideoCapture</span>(<span class="tok-num">0</span>)
+circles = cv2.<span class="tok-fn">HoughCircles</span>(
+  gray, cv2.HOUGH_GRADIENT,
+  dp=<span class="tok-num">1.2</span>, minDist=<span class="tok-num">40</span>)<br><br></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-eyebrow">03 — What I've Built</p>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <!-- Coin-Scan — featured DS project -->
+          <div class="project-card project-card--ds glass-card">
+            <div class="project-card-accent" style="--project-color:#c678dd;"></div>
+            <div class="project-card-body">
+              <span class="project-number">01 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Coin-Scan</h3>
+              <p class="project-desc">Real-time Philippine coin detector and counter using a YOLOv8 ensemble (nano + small models). Features OpenCV circle detection, size-based auto-calibration, and dual inference — a browser WebAssembly UI and a Python CLI. Classifies ₱1, ₱5, ₱10, ₱20, and arcade tokens with live PHP value totaling.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">YOLOv8</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">ONNX</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Coin-Scan" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#61afef;"></div>
+            <div class="project-card-body">
+              <span class="project-number">02 &nbsp;<span class="project-featured-badge" style="color:#61afef;background:rgba(97,175,239,0.12);">Fullstack</span></span>
+              <h3 class="project-title">RecipeChecker</h3>
+              <p class="project-desc">A fullstack recipe management system built as a group project. Features a relational SQL database backend, normalized schema design, and a Python GUI — covering CRUD operations, search, and user-facing browsing.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">DBMS</span>
+                <span class="tech-tag">Fullstack</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/DBMS-S1/RecipeChecker" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+              <a href="https://dbms-s1.github.io/RecipeChecker/" class="project-link project-link--live" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#4895ef;"></div>
+            <div class="project-card-body">
+              <span class="project-number">03</span>
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-desc">A fully custom-designed personal portfolio built from scratch — particle canvas, GSAP scroll animations, glassmorphism cards, and a fully responsive layout with zero dependencies.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GSAP</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/toxicityradius.github.io" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+              <a href="#hero" class="project-link project-link--live"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live</a>
+            </div>
+          </div>
+          <!-- Match-Prediction -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#4895ef;"></div>
+            <div class="project-card-body">
+              <span class="project-number">04 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Match Prediction</h3>
+              <p class="project-desc">League of Legends match outcome predictor trained on large-scale ranked game data. Parses champion, item, summoner, and team tables to build ML models that forecast win probability before a match ends.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">ML</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Match-Prediction" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- NeuralLab -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#c678dd;"></div>
+            <div class="project-card-body">
+              <span class="project-number">05 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">NeuralLab</h3>
+              <p class="project-desc">Neural network lab notebook implementing feedforward architectures for multi-class classification on the Iris dataset. Covers forward propagation, backpropagation, and activation function experiments.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Neural Networks</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/NeuralLab" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- Chip -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#56b6c2;"></div>
+            <div class="project-card-body">
+              <span class="project-number">06 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Chip</h3>
+              <p class="project-desc">Exploratory data analysis on a semiconductor chip dataset. Investigates CPU/GPU performance characteristics, identifies trends across chip generations, and extracts insights through statistical analysis and visualization.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Chip" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- Neural (Ames linear regression) -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#e5c07b;"></div>
+            <div class="project-card-body">
+              <span class="project-number">07 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Neural</h3>
+              <p class="project-desc">Linear regression on the Ames Housing dataset for house price prediction. Features feature engineering, model training, and both a Jupyter notebook walkthrough and a standalone Python implementation.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Neural" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- Classification -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#98c379;"></div>
+            <div class="project-card-body">
+              <span class="project-number">08 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Classification</h3>
+              <p class="project-desc">Multi-model classification study on the Iris dataset. Benchmarks Decision Tree, K-Nearest Neighbors, Logistic Regression, and Random Forest classifiers — with confusion matrices and accuracy comparisons.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Classification" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- Titanic -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#61afef;"></div>
+            <div class="project-card-body">
+              <span class="project-number">09 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Titanic</h3>
+              <p class="project-desc">Kaggle Titanic survival prediction challenge. Performs EDA on passenger demographics, engineers features, and trains classification models — visualized through feature importance and model comparison plots.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Jupyter</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Titanic" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- Regression-Models -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#d19a66;"></div>
+            <div class="project-card-body">
+              <span class="project-number">10 &nbsp;<span class="project-featured-badge">Data Science</span></span>
+              <h3 class="project-title">Regression Models</h3>
+              <p class="project-desc">House price regression on the Ames Housing dataset. Compares multiple regression models with actual vs. predicted plots, sale price log-transformation analysis, and comprehensive error metrics.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">NumPy</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Regression-Models" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+            </div>
+          </div>
+          <!-- Project UNITE -->
+          <div class="project-card glass-card">
+            <div class="project-card-accent" style="--project-color:#4895ef;"></div>
+            <div class="project-card-body">
+              <span class="project-number">11 &nbsp;<span class="project-featured-badge" style="color:#9cc9ff;background:rgba(72,149,239,0.14);border-color:rgba(72,149,239,0.32);">Frontend</span></span>
+              <h3 class="project-title">Project UNITE</h3>
+              <p class="project-desc">A deployed web application focused on a clean, product-style frontend experience. Built to present Project UNITE with accessible interface patterns and a practical, real-world deployment workflow.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Web App</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/ToxicityRadius/Project-Unite" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+              <a href="https://project-unite.onrender.com" class="project-link project-link--live" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-card project-card--cta glass-card">
+            <div class="project-cta-inner">
+              <div class="project-cta-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+              <h3 class="project-cta-title">More on GitHub</h3>
+              <p class="project-cta-desc">Explore all my repositories, contributions, and ongoing experiments on GitHub.</p>
+              <a href="https://github.com/ToxicityRadius" class="btn-primary" target="_blank" rel="noopener noreferrer">View Profile <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Project Lab -->
+    <section id="project-lab" class="section" aria-labelledby="project-lab-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-eyebrow">04 — Interactive Project Lab</p>
+          <h2 id="project-lab-heading" class="section-title">Explore My Projects Live</h2>
+        </div>
+
+        <div class="lab-layout">
+          <aside class="lab-list glass-card" aria-label="Project selector">
+            <button
+              class="lab-item is-active"
+              type="button"
+              aria-pressed="true"
+              aria-controls="lab-frame-shell"
+              data-label="Data Science"
+              data-title="Coin-Scan"
+              data-desc="Real-time Philippine coin detector and counter using a YOLOv8 ensemble (nano + small models). Features OpenCV circle detection, size-based auto-calibration, and dual inference with browser WebAssembly UI and Python CLI. Classifies ₱1, ₱5, ₱10, ₱20, and arcade tokens."
+              data-stack="YOLOv8,PyTorch,OpenCV,ONNX,Python"
+              data-embed="https://github.com/ToxicityRadius/Coin-Scan"
+              data-repo="https://github.com/ToxicityRadius/Coin-Scan"
+              data-secondary="https://github.com/ToxicityRadius/Coin-Scan"
+              data-secondary-label="Open Repository"
+            >
+              <span class="lab-item-title">Coin-Scan</span>
+              <span class="lab-item-meta">YOLOv8 detector</span>
+            </button>
+
+            <button
+              class="lab-item"
+              type="button"
+              aria-pressed="false"
+              aria-controls="lab-frame-shell"
+              data-label="Data Science"
+              data-title="NeuralLab"
+              data-desc="Neural network lab notebook with feedforward modeling and Iris classification experiments."
+              data-stack="Python,Jupyter,Neural Networks"
+              data-embed="https://nbviewer.org/github/ToxicityRadius/NeuralLab/blob/main/Lab3_Neural_Networks.ipynb"
+              data-repo="https://github.com/ToxicityRadius/NeuralLab"
+              data-secondary="https://nbviewer.org/github/ToxicityRadius/NeuralLab/blob/main/Lab3_Neural_Networks.ipynb"
+              data-secondary-label="Open Notebook"
+            >
+              <span class="lab-item-title">NeuralLab</span>
+              <span class="lab-item-meta">Iris NN notebook</span>
+            </button>
+
+            <button
+              class="lab-item"
+              type="button"
+              aria-pressed="false"
+              aria-controls="lab-frame-shell"
+              data-label="Data Science"
+              data-title="Classification"
+              data-desc="Classifier benchmark on Iris dataset comparing Decision Tree, KNN, Logistic Regression, and Random Forest."
+              data-stack="Python,scikit-learn,Jupyter"
+              data-embed="https://nbviewer.org/github/ToxicityRadius/Classification/blob/main/iris.ipynb"
+              data-repo="https://github.com/ToxicityRadius/Classification"
+              data-secondary="https://nbviewer.org/github/ToxicityRadius/Classification/blob/main/iris.ipynb"
+              data-secondary-label="Open Notebook"
+            >
+              <span class="lab-item-title">Classification</span>
+              <span class="lab-item-meta">Model benchmark</span>
+            </button>
+
+            <button
+              class="lab-item"
+              type="button"
+              aria-pressed="false"
+              aria-controls="lab-frame-shell"
+              data-label="Data Science"
+              data-title="Titanic"
+              data-desc="Titanic survival prediction workflow with EDA, feature engineering, and model performance analysis."
+              data-stack="Python,Pandas,scikit-learn"
+              data-embed="https://nbviewer.org/github/ToxicityRadius/Titanic/blob/main/Titanic.ipynb"
+              data-repo="https://github.com/ToxicityRadius/Titanic"
+              data-secondary="https://nbviewer.org/github/ToxicityRadius/Titanic/blob/main/Titanic.ipynb"
+              data-secondary-label="Open Notebook"
+            >
+              <span class="lab-item-title">Titanic</span>
+              <span class="lab-item-meta">Kaggle workflow</span>
+            </button>
+
+            <button
+              class="lab-item"
+              type="button"
+              aria-pressed="false"
+              aria-controls="lab-frame-shell"
+              data-label="Fullstack"
+              data-title="RecipeChecker"
+              data-desc="A fullstack recipe management system using SQL backend logic and a Python client app for CRUD and search workflows."
+              data-stack="Python,SQL,DBMS"
+              data-embed="https://dbms-s1.github.io/RecipeChecker/"
+              data-repo="https://github.com/DBMS-S1/RecipeChecker"
+              data-secondary="https://dbms-s1.github.io/RecipeChecker/"
+              data-secondary-label="Open Live Site"
+            >
+              <span class="lab-item-title">RecipeChecker</span>
+              <span class="lab-item-meta">Fullstack DBMS app</span>
+            </button>
+
+            <button
+              class="lab-item"
+              type="button"
+              aria-pressed="false"
+              aria-controls="lab-frame-shell"
+              data-label="Frontend"
+              data-title="Project UNITE"
+              data-desc="Web platform for Project UNITE, deployed on Render with a focused product-style frontend experience."
+              data-stack="HTML,CSS,JavaScript,Web App"
+              data-embed="https://project-unite.onrender.com"
+              data-repo="https://github.com/ToxicityRadius/Project-Unite"
+              data-secondary="https://project-unite.onrender.com"
+              data-secondary-label="Open Live Site"
+            >
+              <span class="lab-item-title">Project UNITE</span>
+              <span class="lab-item-meta">Render deployment</span>
+            </button>
+
+          </aside>
+
+          <div class="lab-view glass-card">
+            <div class="lab-meta" aria-live="polite">
+              <span class="lab-badge" id="lab-badge">Data Science</span>
+              <h3 class="lab-title" id="lab-title">Coin-Scan</h3>
+              <p class="lab-desc" id="lab-desc">Real-time Philippine coin detector and counter using a YOLOv8 ensemble (nano + small models). Features OpenCV circle detection, size-based auto-calibration, and dual inference with browser WebAssembly UI and Python CLI. Classifies ₱1, ₱5, ₱10, ₱20, and arcade tokens.</p>
+              <div class="lab-stack" id="lab-stack"></div>
+            </div>
+
+            <div class="lab-frame-shell" id="lab-frame-shell">
+              <iframe id="lab-embed" title="Project preview" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin"></iframe>
+              <div class="lab-fallback" id="lab-fallback" hidden>
+                <div class="lab-fallback-icon"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i></div>
+                <h4>Interactive Preview Unavailable</h4>
+                <p>This project cannot be embedded directly here due to external site restrictions. Use the links below to open it in a new tab.</p>
+              </div>
+            </div>
+
+            <div class="lab-actions">
+              <a id="lab-repo-link" class="btn-primary" href="https://github.com/ToxicityRadius/Coin-Scan" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Open Repo
+              </a>
+              <a id="lab-secondary-link" class="btn-secondary" href="https://github.com/ToxicityRadius/Coin-Scan" target="_blank" rel="noopener noreferrer">
+                Open Repository <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-eyebrow">05 — Leadership &amp; Involvement</p>
+          <h2 id="experience-heading" class="section-title">Leadership &amp; Roles</h2>
+        </div>
+        <div class="exp-grid">
+          <div class="exp-card exp-card--featured glass-card">
+            <div class="exp-card-period">2025 — 2026</div>
+            <div class="exp-card-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+            <h3 class="exp-card-role">President</h3>
+            <p class="exp-card-org">Supreme Student Council</p>
+            <p class="exp-card-school">Technological Institute of the Philippines — Manila</p>
+          </div>
+          <div class="exp-card exp-card--featured exp-card--globe glass-card">
+            <div class="exp-card-period">April 2025 — Present</div>
+            <div class="exp-card-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3 class="exp-card-role">Campus Ambassador Head</h3>
+            <p class="exp-card-org">Globe Digital Thumbprint Program</p>
+            <p class="exp-card-school">Technological Institute of the Philippines — Manila</p>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-card-period">2024 — 2025</div>
+            <div class="exp-card-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+            <h3 class="exp-card-role">Vice-Mayor</h3>
+            <p class="exp-card-org">CPE Dept. Student Council (CPE-DSC)</p>
+            <p class="exp-card-school">Technological Institute of the Philippines — Manila</p>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-card-period">2024 — 2025</div>
+            <div class="exp-card-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+            <h3 class="exp-card-role">Member</h3>
+            <p class="exp-card-org">Community Engagement Services Committee (CESC)</p>
+            <p class="exp-card-school">Technological Institute of the Philippines — Manila</p>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-card-period">2023 — 2024</div>
+            <div class="exp-card-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+            <h3 class="exp-card-role">Vice-Mayor Mentee</h3>
+            <p class="exp-card-org">CPE Dept. Student Council (CPE-DSC)</p>
+            <p class="exp-card-school">Technological Institute of the Philippines — Manila</p>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-card-period">2023 — 2024</div>
+            <div class="exp-card-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+            <h3 class="exp-card-role">Organizational Mentee</h3>
+            <p class="exp-card-org">College of Engineering &amp; Architecture Council (CEA-C)</p>
+            <p class="exp-card-school">Technological Institute of the Philippines — Manila</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section id="certifications" class="section" aria-labelledby="cert-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-eyebrow">06 — Credentials</p>
+          <h2 id="cert-heading" class="section-title">Honors &amp; Awards</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">CPE-DSC — Vice Mayor</span>
+              <h3 class="cert-title">Citation for Commendable Service</h3>
+              <p class="cert-meta">Academic Year 2024–2025</p>
+            </div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">CPE-DSC — Vice Mayor</span>
+              <h3 class="cert-title">Emerging Leader Award</h3>
+              <p class="cert-meta">Academic Year 2024–2025</p>
+            </div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">TIP Manila — Senior High</span>
+              <h3 class="cert-title">Best in Research Award</h3>
+              <p class="cert-meta">Overall — Academic Year 2022-2023</p>
+            </div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">TIP Manila — Senior High</span>
+              <h3 class="cert-title">Graduated with Honors</h3>
+              <p class="cert-meta">GA: 95.19 (Gr. 11) <br> GA: 92 (Gr. 12)</p>
+            </div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">Divine Light Academy — Junior High</span>
+              <h3 class="cert-title">Graduated with High Honors</h3>
+              <p class="cert-meta">Academic Year 2020-2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Activity Section -->
+    <section id="github-stats" class="section" aria-labelledby="github-heading">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-eyebrow">07 — Open Source</p>
+          <h2 id="github-heading" class="section-title">GitHub Activity</h2>
+        </div>
+        <div class="github-stats-wrap">
+          <div class="github-profile-card glass-card">
+            <div class="github-profile-header">
+              <img id="github-avatar" src="https://github.com/ToxicityRadius.png" alt="GitHub avatar" class="github-avatar" width="64" height="64" loading="lazy" />
+              <div>
+                <p class="github-name">Dexter Soriano</p>
+                <a href="https://github.com/ToxicityRadius" class="github-profile-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> @ToxicityRadius</a>
+              </div>
+            </div>
+            <div class="github-stat-row">
+              <div class="github-stat-item">
+                <span class="github-stat-value" id="gh-repos">—</span>
+                <span class="github-stat-label">Repos</span>
+              </div>
+              <div class="github-stat-item">
+                <span class="github-stat-value" id="gh-stars">—</span>
+                <span class="github-stat-label">Stars</span>
+              </div>
+              <div class="github-stat-item">
+                <span class="github-stat-value" id="gh-followers">—</span>
+                <span class="github-stat-label">Followers</span>
+              </div>
+            </div>
+          </div>
+          <div class="github-langs-card glass-card">
+            <h3 class="github-langs-title">Top Languages</h3>
+            <div class="github-langs-list" id="gh-langs">
+              <p style="font-size:0.83rem;color:var(--text-tertiary)">Loading...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">Dexter Soriano</a>
+          <p class="footer-bio">A passionate computer engineering student and aspiring developer dedicated to creating innovative web solutions. With a strong foundation in programming and leadership experience, who aims to make a positive impact through technology and continuous learning.</p>
+        </div>
+        <div class="footer-contacts">
+          <h4 class="footer-section-title">Contacts</h4>
+          <ul class="footer-contact-list" role="list">
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+639063472264">+63 906 347 2264</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:mdasoriano01@tip.edu.ph">mdasoriano01@tip.edu.ph</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Suntrust Parkview, Manila</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4 class="footer-section-title">Social</h4>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/sdexteraic/" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/dexteraz23/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://github.com/ToxicityRadius" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+          <p class="footer-social-note">Connect with me to stay updated on my latest projects and insights.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Copyright 2025 Dexter Soriano. All rights reserved.</p>
+        <ul class="footer-bottom-links" role="list">
+          <li><a href="/">F.A.Q</a></li>
+          <li><a href="/">Privacy Policy</a></li>
+          <li><a href="/">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
