@@ -189,7 +189,7 @@
 
     // Interactive project lab
     gsap.from('.lab-list, .lab-view', {
-      scrollTrigger: { trigger: '#project-lab', start: 'top 82%' },
+      scrollTrigger: { trigger: '.lab-layout', start: 'top 82%' },
       opacity: 0, y: 30, duration: 0.75, ease: 'power2.out', stagger: 0.12
     });
 
@@ -441,6 +441,25 @@
     });
 
     activate(items[0]);
+
+    // "Explore Live" deep-link from project cards
+    document.querySelectorAll('.project-link--lab').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const card = btn.closest('[data-lab-target]');
+        if (!card) return;
+        const target = card.dataset.labTarget;
+        const matchingItem = Array.from(items).find(function (i) {
+          return i.dataset.title === target;
+        });
+        if (matchingItem) {
+          activate(matchingItem);
+          const divider = document.querySelector('.lab-divider');
+          if (divider) {
+            divider.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
   }
 
   /* ─── Custom Cursor ─── */
