@@ -3,6 +3,31 @@
 
   /* ─── Utility ─── */
   function qs(sel, ctx) { return (ctx || document).querySelector(sel); }
+  function qsa(sel, ctx) { return (ctx || document).querySelectorAll(sel); }
+
+  const GH_CACHE_KEY = 'portfolio-gh-stats-v1';
+  const GH_CACHE_TTL_MS = 10 * 60 * 1000;
+
+  function getCachedJson(key, ttlMs) {
+    try {
+      const raw = sessionStorage.getItem(key);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      if (!parsed || !parsed.ts || !parsed.data) return null;
+      if (Date.now() - parsed.ts > ttlMs) return null;
+      return parsed.data;
+    } catch (_err) {
+      return null;
+    }
+  }
+
+  function setCachedJson(key, data) {
+    try {
+      sessionStorage.setItem(key, JSON.stringify({ ts: Date.now(), data: data }));
+    } catch (_err) {
+      // Ignore storage failures (private mode/quota).
+    }
+  }
 
   /* ─── Particle Canvas ─── */
   function initParticles() {
@@ -15,7 +40,6 @@
     const MAX_DIST = 140;
 
     let particles = [];
-    let mouseX = -9999, mouseY = -9999;
 
     function resize() {
       canvas.width = window.innerWidth;
@@ -32,7 +56,7 @@
           y: rand(0, canvas.height),
           vx: rand(-0.22, 0.22),
           vy: rand(-0.22, 0.22),
-          r: rand(1, 2.2),
+          r: rand(2.1, 3.8),
         });
       }
     }
@@ -81,7 +105,6 @@
     draw();
 
     window.addEventListener('resize', () => { resize(); createParticles(); }, { passive: true });
-    window.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; }, { passive: true });
   }
 
   /* ─── Typing Effect ─── */
@@ -226,68 +249,132 @@
 
   function initGitHubStats() {
     const username = 'ToxicityRadius';
+    const colors = {
+      JavaScript: '#f7df1e', Python: '#3572A5', HTML: '#e34c26',
+      CSS: '#563d7c', Java: '#b07219', TypeScript: '#2b7489',
+      'C++': '#f34b7d', C: '#555555', PHP: '#777bb4'
+    };
 
-    fetch('https://api.github.com/users/' + username)
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-      .then(function (data) {
-        const avatar = qs('#github-avatar');
-        if (avatar && data.avatar_url) avatar.src = data.avatar_url;
-        animateCount(qs('#gh-repos'), data.public_repos || 0);
-        animateCount(qs('#gh-followers'), data.followers || 0);
-      })
-      .catch(function () {});
+    function renderUser(data) {
+      const avatar = qs('#github-avatar');
+      if (avatar && data.avatar_url) avatar.src = data.avatar_url;
+      animateCount(qs('#gh-repos'), data.public_repos || 0);
+      animateCount(qs('#gh-followers'), data.followers || 0);
+    }
 
-    fetch('https://api.github.com/users/' + username + '/repos?per_page=100&sort=updated')
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-      .then(function (repos) {
-        if (!Array.isArray(repos)) return;
+    function renderRepos(repos) {
+      if (!Array.isArray(repos)) return;
 
-        const totalStars = repos.reduce(function (sum, r) { return sum + (r.stargazers_count || 0); }, 0);
-        animateCount(qs('#gh-stars'), totalStars);
+      const totalStars = repos.reduce(function (sum, r) { return sum + (r.stargazers_count || 0); }, 0);
+      animateCount(qs('#gh-stars'), totalStars);
 
-        const langCounts = {};
-        repos.forEach(function (r) {
-          if (r.language) langCounts[r.language] = (langCounts[r.language] || 0) + 1;
-        });
+      const langCounts = {};
+      repos.forEach(function (r) {
+        if (r.language) langCounts[r.language] = (langCounts[r.language] || 0) + 1;
+      });
 
-        const sorted = Object.entries(langCounts)
-          .sort(function (a, b) { return b[1] - a[1]; })
-          .slice(0, 5);
+      const sorted = Object.entries(langCounts)
+        .sort(function (a, b) { return b[1] - a[1]; })
+        .slice(0, 5);
 
-        const total = sorted.reduce(function (s, e) { return s + e[1]; }, 0);
-        const colors = {
-          JavaScript: '#f7df1e', Python: '#3572A5', HTML: '#e34c26',
-          CSS: '#563d7c', Java: '#b07219', TypeScript: '#2b7489',
-          'C++': '#f34b7d', C: '#555555', PHP: '#777bb4'
-        };
+      const total = sorted.reduce(function (s, e) { return s + e[1]; }, 0);
+      const langsEl = qs('#gh-langs');
+      if (!langsEl || !sorted.length) return;
 
-        const langsEl = qs('#gh-langs');
-        if (langsEl && sorted.length) {
-          langsEl.innerHTML = sorted.map(function (entry) {
-            const lang = entry[0], count = entry[1];
-            const pct = Math.round(count / total * 100);
-            const color = colors[lang] || '#8a8a8a';
-            return '<div class="github-lang-item">' +
-              '<div class="github-lang-header">' +
-              '<span class="github-lang-name">' +
-              '<span class="github-lang-dot" style="background:' + color + '"></span>' +
-              lang + '</span>' +
-              '<span class="github-lang-pct">' + pct + '%</span>' +
-              '</div>' +
-              '<div class="github-lang-bar">' +
-              '<div class="github-lang-bar-fill" style="width:' + pct + '%;background:' + color + '"></div>' +
-              '</div></div>';
-          }).join('');
-        }
-      })
-      .catch(function () {});
+      langsEl.textContent = '';
+      sorted.forEach(function (entry) {
+        const lang = entry[0];
+        const count = entry[1];
+        const pct = Math.round(count / total * 100);
+        const color = colors[lang] || '#8a8a8a';
+
+        const item = document.createElement('div');
+        item.className = 'github-lang-item';
+
+        const header = document.createElement('div');
+        header.className = 'github-lang-header';
+
+        const name = document.createElement('span');
+        name.className = 'github-lang-name';
+
+        const dot = document.createElement('span');
+        dot.className = 'github-lang-dot';
+        dot.style.background = color;
+        name.appendChild(dot);
+        name.appendChild(document.createTextNode(lang));
+
+        const pctEl = document.createElement('span');
+        pctEl.className = 'github-lang-pct';
+        pctEl.textContent = pct + '%';
+
+        header.appendChild(name);
+        header.appendChild(pctEl);
+
+        const bar = document.createElement('div');
+        bar.className = 'github-lang-bar';
+        const fill = document.createElement('div');
+        fill.className = 'github-lang-bar-fill';
+        fill.style.width = pct + '%';
+        fill.style.background = color;
+        bar.appendChild(fill);
+
+        item.appendChild(header);
+        item.appendChild(bar);
+        langsEl.appendChild(item);
+      });
+    }
+
+    function renderFallback(message) {
+      const reposEl = qs('#gh-repos');
+      const starsEl = qs('#gh-stars');
+      const followersEl = qs('#gh-followers');
+      const langsEl = qs('#gh-langs');
+
+      if (reposEl && reposEl.textContent === '—') reposEl.textContent = 'N/A';
+      if (starsEl && starsEl.textContent === '—') starsEl.textContent = 'N/A';
+      if (followersEl && followersEl.textContent === '—') followersEl.textContent = 'N/A';
+      if (langsEl && !langsEl.children.length) {
+        langsEl.textContent = message;
+      }
+    }
+
+    const cached = getCachedJson(GH_CACHE_KEY, GH_CACHE_TTL_MS) || {};
+
+    if (cached.user) {
+      renderUser(cached.user);
+    } else {
+      fetch('https://api.github.com/users/' + username)
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (data) {
+          renderUser(data);
+          const current = getCachedJson(GH_CACHE_KEY, Number.MAX_SAFE_INTEGER) || {};
+          current.user = data;
+          setCachedJson(GH_CACHE_KEY, current);
+        })
+        .catch(function () { renderFallback('GitHub stats are temporarily unavailable.'); });
+    }
+
+    if (cached.repos) {
+      renderRepos(cached.repos);
+    } else {
+      fetch('https://api.github.com/users/' + username + '/repos?per_page=100&sort=updated')
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (repos) {
+          renderRepos(repos);
+          const current = getCachedJson(GH_CACHE_KEY, Number.MAX_SAFE_INTEGER) || {};
+          current.repos = repos;
+          setCachedJson(GH_CACHE_KEY, current);
+        })
+        .catch(function () { renderFallback('GitHub languages are temporarily unavailable.'); });
+    }
   }
 
   /* ─── Interactive Project Lab ─── */
   function initProjectLab() {
-    const section = qs('#project-lab');
+    const section = qs('#projects');
     if (!section) return;
 
+    const listEl = section.querySelector('.lab-list');
     const items = section.querySelectorAll('.lab-item');
     const badgeEl = qs('#lab-badge');
     const titleEl = qs('#lab-title');
@@ -434,11 +521,29 @@
       iframeEl.src = embedUrl;
     }
 
-    items.forEach(function (item) {
-      item.addEventListener('click', function () {
-        activate(item);
+    function handleActivationFromEventTarget(target) {
+      const item = target.closest('.lab-item');
+      if (!item || !section.contains(item)) return;
+      activate(item);
+    }
+
+    if (listEl) {
+      listEl.addEventListener('click', function (event) {
+        handleActivationFromEventTarget(event.target);
       });
-    });
+
+      listEl.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        handleActivationFromEventTarget(event.target);
+      });
+    } else {
+      items.forEach(function (item) {
+        item.addEventListener('click', function () {
+          activate(item);
+        });
+      });
+    }
 
     activate(items[0]);
 
@@ -505,7 +610,13 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(link => {
-            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            const isActive = link.getAttribute('href') === '#' + entry.target.id;
+            link.classList.toggle('active', isActive);
+            if (isActive) {
+              link.setAttribute('aria-current', 'page');
+            } else {
+              link.removeAttribute('aria-current');
+            }
           });
         }
       });
@@ -527,12 +638,37 @@
     const overlay     = qs('#menu-overlay');
     const closeBtn    = qs('#menu-close');
     const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+    let lastFocused = null;
+
+    function getFocusable() {
+      return Array.from(qsa('button, a[href], [tabindex]:not([tabindex="-1"])', mobileMenu))
+        .filter(function (el) { return !el.hasAttribute('disabled'); });
+    }
+
+    function handleTabTrap(e) {
+      if (!mobileMenu.classList.contains('open') || e.key !== 'Tab') return;
+      const focusable = getFocusable();
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
 
     function open() {
+      lastFocused = document.activeElement;
       hamburger.classList.add('open');
       mobileMenu.classList.add('open');
       hamburger.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
+      const focusable = getFocusable();
+      if (focusable.length) focusable[0].focus();
     }
 
     function close() {
@@ -540,24 +676,110 @@
       mobileMenu.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+      }
     }
 
     hamburger?.addEventListener('click', () => mobileMenu.classList.contains('open') ? close() : open());
     overlay?.addEventListener('click', close);
     closeBtn?.addEventListener('click', close);
     mobileLinks.forEach(l => l.addEventListener('click', close));
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') close();
+      handleTabTrap(e);
+    });
+  }
+
+  function initProjectFilters() {
+    const buttons = qsa('.project-filter-btn');
+    const cards = qsa('.projects-grid .project-card');
+    const count = qs('#project-filter-count');
+    if (!buttons.length || !cards.length) return;
+
+    function applyFilter(filter) {
+      let visible = 0;
+      cards.forEach(function (card) {
+        const categoryList = (card.dataset.category || 'other')
+          .split(',')
+          .map(function (entry) { return entry.trim(); })
+          .filter(Boolean);
+        const show = filter === 'all' || categoryList.indexOf(filter) !== -1;
+        card.classList.toggle('is-hidden', !show);
+        if (show) {
+          // Prevent stale GSAP inline transforms/opacities after filtering.
+          card.style.opacity = '1';
+          card.style.transform = 'none';
+        }
+        if (show) visible += 1;
+      });
+
+      if (typeof ScrollTrigger !== 'undefined') {
+        ScrollTrigger.refresh();
+      }
+
+      if (count) {
+        const suffix = visible === 1 ? 'project' : 'projects';
+        count.textContent = 'Showing ' + visible + ' ' + suffix;
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const filter = button.dataset.filter || 'all';
+        buttons.forEach(function (b) {
+          const active = b === button;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        applyFilter(filter);
+      });
+    });
+
+    applyFilter('all');
+  }
+
+  function initBackToTop() {
+    const button = qs('#back-to-top');
+    if (!button) return;
+
+    window.addEventListener('scroll', function () {
+      button.classList.toggle('show', window.scrollY > window.innerHeight * 0.65);
+    }, { passive: true });
+
+    button.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  function initCurrentYear() {
+    const yearEl = qs('#current-year');
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
   }
 
   /* ─── Init ─── */
   document.addEventListener('DOMContentLoaded', () => {
-    initParticles();
-    initTyping();
-    initCursor();
-    initNavbar();
-    initMobileMenu();
-    initProjectLab();
-    initGitHubStats();
+    function safeInit(fn) {
+      try {
+        fn();
+      } catch (_err) {
+        // Keep other UI modules interactive even if one initializer fails.
+      }
+    }
+
+    [
+      initParticles,
+      initTyping,
+      initCursor,
+      initNavbar,
+      initMobileMenu,
+      initProjectFilters,
+      initBackToTop,
+      initCurrentYear,
+      initProjectLab,
+      initGitHubStats
+    ].forEach(safeInit);
+
     window.addEventListener('load', initAnimations);
   });
 })();

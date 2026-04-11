@@ -4,9 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dexter Soriano is a Computer Engineering student majoring in Data Science at TIP Manila, building machine learning, computer vision, and frontend projects." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dexter Soriano - Portfolio" />
+  <meta property="og:description" content="Computer Engineering student focused on Data Science, ML/CV, and modern web experiences." />
+  <meta property="og:url" content="https://toxicityradius.github.io/" />
+  <meta property="og:image" content="https://toxicityradius.github.io/images/hero-portrait.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dexter Soriano - Portfolio" />
+  <meta name="twitter:description" content="Computer Engineering student focused on Data Science, ML/CV, and modern web experiences." />
+  <meta name="twitter:image" content="https://toxicityradius.github.io/images/hero-portrait.jpg" />
+  <link rel="canonical" href="https://toxicityradius.github.io/" />
   <title>Dexter Soriano — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="images/hero-portrait.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -66,10 +80,11 @@
           <span class="badge-dot"></span>
           Available for opportunities
         </div>
+        <p class="hero-current">Currently: SSC President @ TIP Manila</p>
         <h1 id="hero-heading" class="hero-name">Dexter<br /><span class="hero-name-accent">Soriano</span></h1>
         <p class="hero-spec">BS Computer Engineering &nbsp;·&nbsp; <strong>Data Science</strong></p>
         <p class="hero-role">A <span id="changing-subtext" class="hero-role-accent"></span></p>
-        <p class="hero-tagline">Building intelligent systems through data and code.</p>
+        <p class="hero-tagline">Building computer vision systems and data-driven applications at TIP Manila.</p>
         <div class="hero-socials">
           <a href="https://www.facebook.com/sdexteraic/" class="social-pill" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a>
           <a href="https://www.instagram.com/dexteraz23/" class="social-pill" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
@@ -77,8 +92,8 @@
           <a href="https://www.linkedin.com/in/dexter-aic-soriano-382063335/" class="social-pill" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
         </div>
         <div class="hero-cta">
-          <a href="https://raw.githubusercontent.com/DBMS-S1/RecipeChecker/main/Pictures/dex" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Download CV">
-            <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+          <a href="mailto:mdasoriano01@tip.edu.ph?subject=CV%20Request%20-%20Dexter%20Soriano" class="btn-primary" aria-label="Request CV by email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Request CV
           </a>
           <a href="#projects" class="btn-secondary" aria-label="View projects">
             View Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
@@ -92,7 +107,7 @@
       <div class="hero-image-wrap">
         <div class="hero-image-ring"></div>
         <img
-          src="https://github.com/ToxicityRadius/toxicityradius.github.io/blob/main/484045153_498465746651199_6569911079363595658_n.jpg?raw=true"
+          src="images/hero-portrait.jpg"
           alt="Portrait of Dexter Soriano"
           class="hero-image"
           width="320"
@@ -109,7 +124,7 @@
           <div class="about-image-col">
             <div class="about-image-frame">
               <img
-                src="https://github.com/ToxicityRadius/toxicityradius.github.io/blob/70613712e7f525ed1fe764213e2b77b737269435/482737332_2056250118213015_342528401006379920_n.jpg?raw=true"
+                src="images/about-portrait.jpg"
                 alt="Dexter Soriano"
                 class="about-image"
                 width="380"
@@ -123,7 +138,7 @@
             <p class="section-eyebrow">01 — About Me</p>
             <h2 id="about-heading" class="section-title">Data Science Student<br />&amp; Council President</h2>
             <p class="about-body">I'm a Computer Engineering student majoring in <strong>Data Science</strong> at T.I.P. Manila, with a deep interest in machine learning, computer vision, and building intelligent applications. As the current SSC President, I combine technical problem-solving with leadership — aiming to create meaningful impact through data-driven technology and continuous learning.</p>
-            <a href="https://raw.githubusercontent.com/DBMS-S1/RecipeChecker/main/Pictures/dex" class="btn-primary" target="_blank" rel="noopener noreferrer">View Experience <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#experience" class="btn-primary">View Experience <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -304,9 +319,16 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
           <p class="section-eyebrow">03 — What I've Built</p>
           <h2 id="projects-heading" class="section-title">Featured Projects</h2>
         </div>
+        <div class="project-filters" role="group" aria-label="Project categories">
+          <button class="project-filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="project-filter-btn" type="button" data-filter="data-science" aria-pressed="false">Data Science</button>
+          <button class="project-filter-btn" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="project-filter-btn" type="button" data-filter="fullstack" aria-pressed="false">Fullstack</button>
+          <span class="project-filter-count" id="project-filter-count" aria-live="polite">Showing projects</span>
+        </div>
         <div class="projects-grid">
           <!-- Coin-Scan — featured DS project -->
-          <div class="project-card project-card--ds glass-card" data-lab-target="Coin-Scan">
+          <div class="project-card project-card--ds glass-card" data-lab-target="Coin-Scan" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#c678dd;"></div>
             <div class="project-card-body">
               <span class="project-number">01 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -325,7 +347,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
               <button class="project-link project-link--lab" type="button" aria-label="Explore Coin-Scan in the interactive lab"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i> Explore Live</button>
             </div>
           </div>
-          <div class="project-card glass-card" data-lab-target="RecipeChecker">
+          <div class="project-card glass-card" data-lab-target="RecipeChecker" data-category="fullstack">
             <div class="project-card-accent" style="--project-color:#61afef;"></div>
             <div class="project-card-body">
               <span class="project-number">02 &nbsp;<span class="project-featured-badge" style="color:#61afef;background:rgba(97,175,239,0.12);">Fullstack</span></span>
@@ -344,7 +366,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
               <button class="project-link project-link--lab" type="button" aria-label="Explore RecipeChecker in the interactive lab"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i> Explore Live</button>
             </div>
           </div>
-          <div class="project-card glass-card" data-lab-target="Portfolio Website">
+          <div class="project-card glass-card" data-lab-target="Portfolio Website" data-category="frontend">
             <div class="project-card-accent" style="--project-color:#4895ef;"></div>
             <div class="project-card-body">
               <span class="project-number">03</span>
@@ -360,11 +382,10 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             <div class="project-card-footer">
               <a href="https://github.com/ToxicityRadius/toxicityradius.github.io" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
               <a href="#hero" class="project-link project-link--live"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live</a>
-              <button class="project-link project-link--lab" type="button" aria-label="Explore Portfolio Website in the interactive lab"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i> Explore Live</button>
             </div>
           </div>
           <!-- Match-Prediction -->
-          <div class="project-card glass-card" data-lab-target="Match Prediction">
+          <div class="project-card glass-card" data-lab-target="Match Prediction" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#4895ef;"></div>
             <div class="project-card-body">
               <span class="project-number">04 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -383,7 +404,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- NeuralLab -->
-          <div class="project-card glass-card" data-lab-target="NeuralLab">
+          <div class="project-card glass-card" data-lab-target="NeuralLab" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#c678dd;"></div>
             <div class="project-card-body">
               <span class="project-number">05 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -401,7 +422,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- Chip -->
-          <div class="project-card glass-card" data-lab-target="Chip">
+          <div class="project-card glass-card" data-lab-target="Chip" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#56b6c2;"></div>
             <div class="project-card-body">
               <span class="project-number">06 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -419,7 +440,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- Neural (Ames linear regression) -->
-          <div class="project-card glass-card" data-lab-target="Neural">
+          <div class="project-card glass-card" data-lab-target="Neural" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#e5c07b;"></div>
             <div class="project-card-body">
               <span class="project-number">07 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -437,7 +458,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- Classification -->
-          <div class="project-card glass-card" data-lab-target="Classification">
+          <div class="project-card glass-card" data-lab-target="Classification" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#98c379;"></div>
             <div class="project-card-body">
               <span class="project-number">08 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -455,7 +476,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- Titanic -->
-          <div class="project-card glass-card" data-lab-target="Titanic">
+          <div class="project-card glass-card" data-lab-target="Titanic" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#61afef;"></div>
             <div class="project-card-body">
               <span class="project-number">09 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -474,7 +495,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- Regression-Models -->
-          <div class="project-card glass-card" data-lab-target="Regression Models">
+          <div class="project-card glass-card" data-lab-target="Regression Models" data-category="data-science">
             <div class="project-card-accent" style="--project-color:#d19a66;"></div>
             <div class="project-card-body">
               <span class="project-number">10 &nbsp;<span class="project-featured-badge">Data Science</span></span>
@@ -492,17 +513,18 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             </div>
           </div>
           <!-- Project UNITE -->
-          <div class="project-card glass-card" data-lab-target="Project UNITE">
+          <div class="project-card glass-card" data-lab-target="Project UNITE" data-category="frontend,fullstack">
             <div class="project-card-accent" style="--project-color:#4895ef;"></div>
             <div class="project-card-body">
-              <span class="project-number">11 &nbsp;<span class="project-featured-badge" style="color:#9cc9ff;background:rgba(72,149,239,0.14);border-color:rgba(72,149,239,0.32);">Frontend</span></span>
+              <span class="project-number">11 &nbsp;<span class="project-featured-badge" style="color:#9cc9ff;background:rgba(72,149,239,0.14);border-color:rgba(72,149,239,0.32);">Fullstack</span></span>
               <h3 class="project-title">Project UNITE</h3>
-              <p class="project-desc">A deployed web application focused on a clean, product-style frontend experience. Built to present Project UNITE with accessible interface patterns and a practical, real-world deployment workflow.</p>
+              <p class="project-desc">A deployed fullstack web application built with a Django backend and a clean, product-style frontend experience. Designed for accessible interface patterns and a practical real-world deployment workflow.</p>
               <div class="tech-tags">
+                <span class="tech-tag">Django</span>
                 <span class="tech-tag">HTML</span>
                 <span class="tech-tag">CSS</span>
                 <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Fullstack</span>
               </div>
             </div>
             <div class="project-card-footer">
@@ -511,7 +533,7 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
               <button class="project-link project-link--lab" type="button" aria-label="Explore Project UNITE in the interactive lab"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i> Explore Live</button>
             </div>
           </div>
-          <div class="project-card project-card--cta glass-card">
+          <div class="project-card project-card--cta glass-card" data-category="other">
             <div class="project-cta-inner">
               <div class="project-cta-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
               <h3 class="project-cta-title">More on GitHub</h3>
@@ -623,10 +645,10 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
               type="button"
               aria-pressed="false"
               aria-controls="lab-frame-shell"
-              data-label="Frontend"
+              data-label="Fullstack"
               data-title="Project UNITE"
-              data-desc="Web platform for Project UNITE, deployed on Render with a focused product-style frontend experience."
-              data-stack="HTML,CSS,JavaScript,Web App"
+              data-desc="Web platform for Project UNITE built with Django on the backend and a focused product-style frontend, deployed on Render."
+              data-stack="Django,HTML,CSS,JavaScript,Fullstack"
               data-embed="https://project-unite.onrender.com"
               data-repo="https://github.com/ToxicityRadius/Project-Unite"
               data-secondary="https://project-unite.onrender.com"
@@ -634,24 +656,6 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
             >
               <span class="lab-item-title">Project UNITE</span>
               <span class="lab-item-meta">Render deployment</span>
-            </button>
-
-            <button
-              class="lab-item"
-              type="button"
-              aria-pressed="false"
-              aria-controls="lab-frame-shell"
-              data-label="Frontend"
-              data-title="Portfolio Website"
-              data-desc="A fully custom-designed personal portfolio built from scratch — particle canvas, GSAP scroll animations, glassmorphism cards, and a fully responsive layout with zero framework dependencies."
-              data-stack="HTML,CSS,JavaScript,GSAP"
-              data-embed=""
-              data-repo="https://github.com/ToxicityRadius/toxicityradius.github.io"
-              data-secondary="https://github.com/ToxicityRadius/toxicityradius.github.io"
-              data-secondary-label="Open Repository"
-            >
-              <span class="lab-item-title">Portfolio Website</span>
-              <span class="lab-item-meta">This site</span>
             </button>
 
             <button
@@ -944,15 +948,19 @@ circles = cv2.<span class="tok-fn">HoughCircles</span>(
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© Copyright 2025 Dexter Soriano. All rights reserved.</p>
+        <p>© Copyright <span id="current-year">2026</span> Dexter Soriano. All rights reserved.</p>
         <ul class="footer-bottom-links" role="list">
-          <li><a href="/">F.A.Q</a></li>
-          <li><a href="/">Privacy Policy</a></li>
-          <li><a href="/">Terms &amp; Conditions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
