@@ -190,6 +190,12 @@
       opacity: 0, y: 36, duration: 0.7, ease: 'power2.out', stagger: 0.1
     });
 
+    // Impact highlights
+    gsap.from('.stat-card', {
+      scrollTrigger: { trigger: '.stats-bento', start: 'top 86%' },
+      opacity: 0, y: 28, duration: 0.65, ease: 'power2.out', stagger: 0.08
+    });
+
     // Section headers
     document.querySelectorAll('.section-header').forEach(el => {
       gsap.from(el, {
@@ -752,6 +758,73 @@
     });
   }
 
+  function initTiltInteractions() {
+    const cards = qsa('.stat-card, .project-card, .cert-card');
+    if (!cards.length) return;
+
+    const mobileMq = window.matchMedia('(max-width: 1024px)');
+    const reduceMq = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const handlers = new WeakMap();
+
+    function shouldDisable() {
+      return mobileMq.matches || reduceMq.matches;
+    }
+
+    function resetTransforms() {
+      cards.forEach(function (card) {
+        gsap.set(card, { y: 0, rotateX: 0, rotateY: 0 });
+      });
+    }
+
+    function attach() {
+      cards.forEach(function (card) {
+        if (handlers.has(card)) return;
+
+        const mouseMove = function (event) {
+          if (shouldDisable()) return;
+          const rect = card.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width;
+          const y = (event.clientY - rect.top) / rect.height;
+          const rotateY = (x - 0.5) * 6;
+          const rotateX = (0.5 - y) * 5;
+          gsap.to(card, { y: -4, rotateX: rotateX, rotateY: rotateY, duration: 0.15, ease: 'power2.out', overwrite: 'auto' });
+        };
+
+        const mouseLeave = function () {
+          gsap.to(card, { y: 0, rotateX: 0, rotateY: 0, duration: 0.35, ease: 'power2.out', overwrite: true });
+        };
+
+        card.addEventListener('mousemove', mouseMove);
+        card.addEventListener('mouseleave', mouseLeave);
+        handlers.set(card, { mouseMove: mouseMove, mouseLeave: mouseLeave });
+      });
+    }
+
+    function detach() {
+      cards.forEach(function (card) {
+        const entry = handlers.get(card);
+        if (!entry) return;
+        card.removeEventListener('mousemove', entry.mouseMove);
+        card.removeEventListener('mouseleave', entry.mouseLeave);
+        handlers.delete(card);
+      });
+      resetTransforms();
+    }
+
+    function syncTiltMode() {
+      if (shouldDisable()) {
+        detach();
+      } else {
+        attach();
+      }
+    }
+
+    syncTiltMode();
+    mobileMq.addEventListener('change', syncTiltMode);
+    reduceMq.addEventListener('change', syncTiltMode);
+  }
+
   function initCurrentYear() {
     const yearEl = qs('#current-year');
     if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -776,6 +849,7 @@
       initProjectFilters,
       initBackToTop,
       initCurrentYear,
+      initTiltInteractions,
       initProjectLab,
       initGitHubStats
     ].forEach(safeInit);
