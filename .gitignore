@@ -1,0 +1,7 @@
+node_modules/
+dist/
+work/
+.wrangler/
+.impeccable/review/
+playwright-report/
+test-results/
