@@ -7,7 +7,7 @@ Scope: Pixel-art town portfolio redesign
 
 ## Objective and dependencies
 
-Deliver the static town portfolio and case-study experience defined by R-1–R-7. The site is implemented on branch `codex/storybook-town`; the branch is being prepared for a pull request. Cloudflare Pages project `dexter-soriano-portfolio` has a completed production deployment, and limited public GET checks passed for the homepage, archive, FormProof page, and deployment URL. The existing GitHub Pages site remains available until the pull request is merged. After merge, the root index and 404 are intended to redirect visitors to Cloudflare; verify that transition before considering the migration complete.
+Deliver the static town portfolio and case-study experience defined by R-1–R-7. The site is implemented on branch `codex/storybook-town`; draft pull request #1 is open for review. Cloudflare Pages project `dexter-soriano-portfolio` has a completed production deployment, and limited public GET checks passed for the homepage, archive, FormProof page, and deployment URL. The existing GitHub Pages site remains available until the pull request is merged. After merge, the root index and 404 are intended to redirect visitors to Cloudflare; verify that transition before considering the migration complete.
 
 ## Work order
 

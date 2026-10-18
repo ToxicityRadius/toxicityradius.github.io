@@ -1,6 +1,6 @@
 # Continue this portfolio work at home
 
-The current implementation and planning documents are on Git branch `codex/storybook-town` in `ToxicityRadius/toxicityradius.github.io`. The branch is being pushed for continuation from another computer. Use the same Codex task if it appears in your account; this file preserves the essential project state if you need to resume from a fresh chat.
+The current implementation and planning documents are on Git branch `codex/storybook-town` in `ToxicityRadius/toxicityradius.github.io`. Draft pull request #1 is open at <https://github.com/ToxicityRadius/toxicityradius.github.io/pull/1>. Use the same Codex task if it appears in your account; this file preserves the essential project state if you need to resume from a fresh chat.
 
 ## Get the files
 
@@ -37,6 +37,7 @@ Requires Node.js for local work. Run `npm run build`, `npm test`, then `npm run 
 - Last deployment-specific URL: <https://142fabed.dexter-soriano-portfolio.pages.dev>.
 - Limited HTTP checks returned 200 for the homepage, archive, FormProof case study, and deployment URL. See [`VERIFICATION.md`](VERIFICATION.md) for what remains unverified.
 - GitHub Pages migration is pending. Do not treat the old URL redirect as active until the repository change is merged and checked.
+- Review the open draft pull request before merging; the root redirect files affect the old public address only after merge.
 - The project README documents local development and manual Wrangler deployment. Cloudflare CLI authentication must be set up on the home computer separately; never commit credentials or local authentication files.
 - Full keyboard testing, automated accessibility scan, performance testing, remaining live routes/assets, and post-merge redirects remain to be checked.
 

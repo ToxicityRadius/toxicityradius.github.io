@@ -2,7 +2,7 @@
 
 Project: Dexter Soriano portfolio  
 Record date: 2026-10-18  
-Source state: branch `codex/storybook-town`; pull request not yet created
+Source state: branch `codex/storybook-town`; draft pull request #1 open
 Scope: local build, automated checks, representative browser/visual review, and limited public deployment smoke checks
 
 This record separates checks that passed from checks that remain unrun. It does not establish complete WCAG conformance or production deployment success.
@@ -47,6 +47,6 @@ The implementation targets accessible behavior, but these checks are incomplete.
 
 ## Deployment and migration status
 
-Cloudflare Pages access was confirmed and project `dexter-soriano-portfolio` was created. A production deployment completed at `https://142fabed.dexter-soriano-portfolio.pages.dev/`, and the public project URL is `https://dexter-soriano-portfolio.pages.dev/`. Limited GET checks passed for the homepage, archive, FormProof case study, and deployment-specific URL. The pull request for branch `codex/storybook-town` has not yet been created. The existing GitHub Pages site remains the active host until the repository change is merged and migration behavior is verified. The planned root `index.html` and `404.html` redirects to Cloudflare must be checked after merge.
+Cloudflare Pages access was confirmed and project `dexter-soriano-portfolio` was created. A production deployment completed at `https://142fabed.dexter-soriano-portfolio.pages.dev/`, and the public project URL is `https://dexter-soriano-portfolio.pages.dev/`. Limited GET checks passed for the homepage, archive, FormProof case study, and deployment-specific URL. Draft pull request #1 for branch `codex/storybook-town` is open. The existing GitHub Pages site remains the active host until the repository change is merged and migration behavior is verified. The planned root `index.html` and `404.html` redirects to Cloudflare must be checked after merge.
 
 Do not mark the migration complete until the remaining deployed pages and assets, generated canonical/social metadata, project routes, archive, and redirects have been checked against the public deployment.

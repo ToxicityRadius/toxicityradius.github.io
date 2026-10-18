@@ -43,3 +43,5 @@ Wrangler authentication is managed outside the repository. Do not put credential
 - Actual check results and limits: [`docs/VERIFICATION.md`](docs/VERIFICATION.md)
 - Image provenance: [`docs/ASSET_SOURCES.md`](docs/ASSET_SOURCES.md)
 - At-home continuation: [`docs/HANDOFF.md`](docs/HANDOFF.md)
+
+Review the open [draft pull request](https://github.com/ToxicityRadius/toxicityradius.github.io/pull/1) before merging the GitHub Pages redirect.
