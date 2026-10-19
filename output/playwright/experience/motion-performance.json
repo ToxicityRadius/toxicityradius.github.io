@@ -1,0 +1,16 @@
+{
+  "pauseDuringApproach": true,
+  "slowedMotion": "4x entry, return and artifact transition recording",
+  "performance": {
+    "viewport": "390x844 touch",
+    "cpuThrottle": 4,
+    "intervalMs": 3500,
+    "scope": "warm local ambient interval after arrival; not real-device FPS",
+    "layoutCount": 0,
+    "layoutDurationSeconds": 0,
+    "scriptDurationSeconds": 0,
+    "longTasks": [],
+    "layoutShifts": []
+  },
+  "ambientStoppedInsideWorkshop": true
+}

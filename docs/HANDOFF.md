@@ -1,3 +1,32 @@
+# Laptop handoff - 19 October 2026
+
+Continue only the town portfolio on `codex/storybook-town`. The separate AERIS / Inference Observatory work is excluded from this handoff.
+
+Clone directly into its own folder on the laptop (the folder name is local; the repository is shared with the older site):
+
+```powershell
+git clone --branch codex/storybook-town https://github.com/ToxicityRadius/toxicityradius.github.io.git town-portfolio
+cd town-portfolio
+npm ci
+npm run build
+npm test
+npm run dev
+```
+
+Open <http://127.0.0.1:4173>. For an existing clean checkout, use `git fetch origin`, `git switch codex/storybook-town`, and `git pull --ff-only` before `npm ci`. Keep any local changes before switching or pulling.
+
+## Saved progress and next steps
+
+- Source, layered pixel-art assets, motion implementations, automated tests, review prototypes under `review/`, and captured evidence under `output/` are included.
+- `npm run build` and all 71 tests passed during this handoff. Earlier test counts below and in planning documents describe previous checkpoints.
+- Review the combined experience at `/review/experience/` and the prototypes documented under `review/` before choosing the next visual change. Tests passing do not mean the motion has final visual approval.
+- Read `docs/VERIFICATION.md`, `docs/MOTION_REVIEW.md`, `docs/JAMES_MOTION_STUDY.md`, and `docs/planning/IMPLEMENTATION_PLAN.md` for decisions, evidence, and remaining review gaps.
+- Continue the pending accessibility, keyboard, cross-browser, real-device performance, and deployment/migration checks. No deployment or merge is part of this handoff.
+- Node.js and npm are required; dependencies are reproducible through `package-lock.json`. `node_modules/`, `dist/`, ignored local `work/` tooling/captures, browser downloads, and authentication are not transferred. Skills installed in the workstation's Codex home are also machine-local. The optional reverse-engineering environment must be recreated before its activation script can work; see `docs/REVERSE_ENGINEERING_SETUP.md`. Normal development requires only the commands above.
+
+The earlier handoff below preserves the hosting and product context; its test counts and local environment descriptions are historical.
+
+---
 # Continue this portfolio work at home
 
 The current implementation and planning documents are on Git branch `codex/storybook-town` in `ToxicityRadius/toxicityradius.github.io`. Draft pull request #1 is open at <https://github.com/ToxicityRadius/toxicityradius.github.io/pull/1>. Use the same Codex task if it appears in your account; this file preserves the essential project state if you need to resume from a fresh chat.
@@ -51,3 +80,4 @@ Requires Node.js for local work. Run `npm run build`, `npm test`, then `npm run 
 - [`../DESIGN.md`](../DESIGN.md): implemented design tokens and behavior.
 
 The old root [`../REVAMP_PLAN.md`](../REVAMP_PLAN.md) describes an earlier direction and is marked superseded. Follow the current documents under `docs/planning/`.
+

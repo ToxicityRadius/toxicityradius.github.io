@@ -1,0 +1,44 @@
+{
+  "source": "soft-atlas.png",
+  "generator": "built-in image_gen",
+  "direction": "Six distinct asymmetrical soft rounded game cloud banks; creamy ivory sunlight from upper left; subtle pale periwinkle undersides; restrained detail; transparent background and gutters; no scenery, outlines, text or hard bases.",
+  "cropRectangles": [
+    [
+      0,
+      0,
+      550,
+      510
+    ],
+    [
+      550,
+      0,
+      510,
+      510
+    ],
+    [
+      1060,
+      0,
+      476,
+      510
+    ],
+    [
+      0,
+      510,
+      535,
+      514
+    ],
+    [
+      535,
+      510,
+      525,
+      514
+    ],
+    [
+      1060,
+      510,
+      476,
+      514
+    ]
+  ],
+  "instances": 24
+}

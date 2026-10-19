@@ -6,6 +6,9 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
-    "test": "node --test tests/site.test.mjs"
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "three": "^0.186.1"
   }
 }

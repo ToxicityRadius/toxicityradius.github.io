@@ -1,0 +1,40 @@
+export const projects = [
+  {slug:'student-advising-portal', name:'Student Advising Portal', building:'The campus', type:'Web application', role:'Co-creator & major contributor', color:'sage', headline:'A clearer path through academic advising.', intro:'Curricula, academic records, and study plans belong in one connected workflow. This platform brings them together for Computer Engineering programs.', tech:['React','Express','PostgreSQL','Sequelize'], repo:'https://github.com/ToxicityRadius/Student-Advising-Portal', summary:'Connecting students, advisers, and academic plans in one place.', problem:'Academic advising involves more than choosing courses. Teams need to coordinate curriculum rules, prerequisite checks, student records, and changing study plans without losing context.', contribution:'I am a co-creator and major contributor to the platform. The project brings together role-specific workflows for students, advisers, program chairs, and a super administrator.', decisions:[['A shared academic workflow','Curriculum management, Student Academic Records, versioned study plans, and course-demand forecasting connect within one application.'],['Access follows responsibility','Backend checks scope academic operations by role and program. Students view their own records; advisers and program chairs work within their assigned responsibilities.'],['Plans that can be revisited','Versioned study plans, prerequisite and course-load validation, and PDF reports support an ongoing advising process.']], note:'The repository documents the platform’s features and architecture. A current public demonstration and independently measured usage outcomes are not presented here.', steps:['Curriculum','Academic record','Study plan','Review & report']},
+  {slug:'formproof', name:'FormProof', building:'The workshop', type:'Developer tool', role:'Creator', color:'clay', headline:'A repair should come with evidence.', intro:'An accessibility warning is only the beginning. FormProof connects browser findings to a proposed source repair, then checks what changed.', tech:['TypeScript','Playwright','axe-core','Codex'], repo:'https://github.com/ToxicityRadius/FormProof', summary:'AI-assisted accessibility repairs with a reviewable trail of evidence.', problem:'Developers can find accessibility warnings, but translating a rendered finding into a safe source edit is a separate problem. A plausible patch is not enough to show that behavior still works.', contribution:'I created FormProof to make that repair process inspectable: capture a baseline, identify source candidates, require human approval, and examine the result after an AI-assisted edit.', decisions:[['Evidence before edits','The CLI captures browser findings and maps rendered elements to likely source files, giving a repair a defined starting point.'],['Human approval at the boundary','Codex runs only after explicit approval, within a bounded workspace. The repair process retains a trajectory and before-and-after evidence.'],['Checks determine the outcome','A rescan and required regression command distinguish a verified automated fix, a blocked regression, and an outcome that still needs human review.']], note:'FormProof does not certify WCAG conformance. Its formal benchmark is infrastructure-limited; development examples are not a general success-rate claim.', steps:['Inspect','Approve','Repair','Verify']},
+  {slug:'claimcheck', name:'ClaimCheck', building:'The library', type:'AI workflow', role:'Creator', color:'blue', headline:'Bring the evidence back into the conversation.', intro:'A workspace for asking whether supplied sources support a claim—and inspecting the passages behind the answer.', tech:['React','Cloudflare','Supabase','Browser OCR'], live:'https://claimcheck.pages.dev', summary:'A source-grounded workspace for reviewing claims and their supporting passages.', problem:'When reviewing a claim, the useful question is often specific: what do these sources actually support? That requires clear provenance, readable passages, and room for human judgment.', contribution:'I created ClaimCheck to connect source extraction, passage retrieval, and review in one workspace. It supports a manual ChatGPT handoff and keeps human review separate from model judgments.', decisions:[['Inspect the source text','Browser extraction and OCR make source text available for review before it becomes evidence. Users can check the extracted text against the original.'],['Keep passages close','Deterministic retrieval finds candidate passages, and users can select additional evidence rather than relying on an unexplained answer.'],['Make uncertainty visible','Support, contradiction, and missing evidence are different outcomes. The workspace keeps notes and review decisions distinct from model output.']], note:'The public sample uses illustrative fixtures. Live inference is disabled in the documented deployment; the complete private owner workflow remains to be verified. Source support is not proof of real-world truth.', steps:['Add sources','Inspect text','Find passages','Review claim']}
+];
+export const evidence = {
+  'student-advising-portal': {
+    file: 'advising-demo.webp', width: 1440, height: 1050,
+    alt: 'Student Advising Portal academic progress dashboard with fictional demo student data',
+    caption: 'Recorded application screen with fictional demo student data: Alex Reyes, DEMO-2026.',
+    heading: 'Make the complicated easier to navigate.',
+    detail: 'Curriculum rules, academic records, and changing study plans meet in one connected workflow. I am a co-creator and major contributor to the platform.',
+    category: 'Academic workflows',
+  },
+  formproof: {
+    file: 'formproof-report.webp', width: 1280, height: 720,
+    alt: 'FormProof historical static-state-01 automated evidence report',
+    caption: 'Historical static-state-01 report. A recorded automated result, not a new evaluation or WCAG certification.',
+    heading: 'A repair should leave a trail.',
+    detail: 'I created FormProof to connect an accessibility finding to a proposed source repair, human approval, and before-and-after checks. The evidence stays close to the change.',
+    category: 'Developer tooling',
+  },
+  claimcheck: {
+    file: 'claimcheck-sample.jpg', width: 1265, height: 712,
+    alt: 'ClaimCheck public sample showing claims alongside their source passages',
+    caption: 'Public sample captured October 18, 2026. Judgments and source data are illustrative fixtures; live inference is disabled in this deployment.',
+    heading: 'Keep the source in the conversation.',
+    detail: 'I created ClaimCheck to bring source extraction, passage retrieval, and human review into one workspace. It helps examine what supplied sources support, without treating a model judgment as the final word.',
+    category: 'AI-assisted research',
+  },
+};
+
+export const milestones = [
+  ['2022–2023', 'Start with a question.', 'Student & researcher', 'Best in Research Award and Graduated with Honors at T.I.P. Manila Senior High. An early chapter in learning how to investigate a problem and communicate the result.'],
+  ['2023–2024', 'Learn by showing up.', 'Student leadership mentee', 'Vice-Mayor Mentee in the CPE Department Student Council and Organizational Mentee in the College of Engineering & Architecture Council.'],
+  ['2024–2025', 'Take responsibility.', 'Vice-Mayor · CPE Department Student Council', 'Also a member of the Community Engagement Services Committee. Recognized with the Emerging Leader Award and Citation for Commendable Service from CPE-DSC.'],
+  ['2025–2026', 'Build with people.', 'SSC President · T.I.P. Manila · Past role', 'Served as President of the Supreme Student Council. Also serving as Campus Ambassador Head for the Globe Digital Thumbprint Program, April 2025–Present.'],
+  ['Today', 'Keep making useful things.', 'Computer Engineering · Data Science', 'A student at T.I.P. Manila, exploring web development, machine learning, computer vision, and intelligent applications. The work below is where those interests become something you can inspect.'],
+];
+
