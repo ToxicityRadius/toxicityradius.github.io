@@ -1,0 +1,59 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "stages": 4,
+    "keyboard": true,
+    "focus": true,
+    "history": true,
+    "rapidInput": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "stages": 4,
+    "keyboard": true,
+    "focus": true,
+    "history": true,
+    "rapidInput": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "stages": 4,
+    "keyboard": true,
+    "focus": true,
+    "history": true,
+    "rapidInput": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "noScript": true
+  },
+  {
+    "failedArt": true
+  },
+  {
+    "cloudComparisons": [
+      "opening",
+      "15 percent",
+      "27 percent"
+    ],
+    "before": "previous uniform alpha recreated by module interception",
+    "after": "static per-cloud alpha"
+  }
+]

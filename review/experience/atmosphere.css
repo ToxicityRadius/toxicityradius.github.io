@@ -1,0 +1,9 @@
+.experience-shell .pointer-depth,.experience-shell .foreground-depth{position:absolute;inset:0;transition:transform 160ms var(--ease-out,cubic-bezier(.23,1,.32,1));pointer-events:none}
+.experience-shell .destinations{transition:opacity 140ms var(--ease),transform 160ms var(--ease-out,cubic-bezier(.23,1,.32,1))}
+.experience-shell .valley-atmosphere{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.experience-shell .river-reflections{animation:river-reflections 6s cubic-bezier(.77,0,.175,1) infinite alternate paused}
+.experience-shell .chimney-wisp{transform-box:fill-box;transform-origin:50% 100%;animation:chimney-wisp 8s linear infinite paused}
+.experience-shell .valley-atmosphere[data-running="true"] .river-reflections,.experience-shell .valley-atmosphere[data-running="true"] .chimney-wisp{animation-play-state:running}
+@keyframes river-reflections{from{transform:translateX(-4px)}to{transform:translateX(4px)}}
+@keyframes chimney-wisp{0%{opacity:0;transform:translateY(0) scale(.95)}25%,55%{opacity:.16}100%{opacity:0;transform:translateY(-16px) scale(1.03)}}
+@media(prefers-reduced-motion:reduce){.experience-shell .pointer-depth,.experience-shell .foreground-depth{transition:none;transform:none!important}.experience-shell .destinations{transition:opacity 140ms var(--ease);transform:none!important}.experience-shell .river-reflections,.experience-shell .chimney-wisp{animation:none}}

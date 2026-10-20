@@ -1,0 +1,91 @@
+/* The town is the entrance; the rest of the page remains readable without motion. */
+.experience-home{overflow:clip;padding-bottom:92px}
+body:has(.experience-home){--entrance-sky:#79c4e3}
+html[data-theme=night] body:has(.experience-home){--entrance-sky:#173243}
+body:has(.experience-home) .site-header{position:relative;border-bottom:0;min-height:76px;background:var(--entrance-sky)}
+body:has(.experience-home) .site-header nav{display:none}
+.experience-home :is(section,article)[id]{scroll-margin-top:30px}
+.experience-home .chapter-label{color:var(--ink);font-size:13px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:18px}
+.experience-home .experience-heading{max-width:760px}
+.experience-home .experience-heading>p:last-child:not(.chapter-label){max-width:48ch;margin-top:26px;font-size:19px}
+.experience-home .entrance{position:relative;margin:0 auto;isolation:isolate;background:var(--entrance-sky)}
+.experience-home .entrance-copy{position:absolute;top:32px;left:max(6%,calc((100vw - 1530px)/2));z-index:3;text-align:left;max-width:760px;padding:0;pointer-events:none}
+.experience-home .entrance-copy a{pointer-events:auto}
+.experience-home .entrance-greeting{font-size:16px;color:var(--ink);margin-bottom:12px}
+.experience-home .entrance h1{font-size:clamp(48px,4.5vw,68px);line-height:1.02;max-width:760px;margin:0}
+.experience-home .entrance-intro{font-size:17px;line-height:1.5;margin:18px 0 8px;color:var(--ink)}
+.experience-home .entrance-invitation{display:inline-flex;align-items:center;gap:14px;font-size:14px;min-height:44px}
+.experience-home .entrance-invitation span{font-size:23px}
+.experience-home .entrance-stage{position:relative;padding-top:220px;transform-origin:center 65%;max-width:1800px;margin-inline:auto}
+.experience-home .entrance-stage .town-scene{margin-top:0;background:var(--entrance-sky)}
+.experience-home .entrance-caption{text-align:center;font-size:13px;padding:16px 20px 20px;background:var(--paper)}
+.experience-home .experience-journey{position:relative;padding-top:130px;padding-bottom:120px}
+.experience-home .experience-work>.experience-heading{max-width:1280px;padding-top:54px;padding-bottom:36px}
+.experience-home .work-tech{display:flex;flex-wrap:wrap;gap:5px 16px;list-style:none;padding:0;margin:24px 0;font-size:12px;color:var(--muted)}
+.experience-home .experience-archive{display:flex;justify-content:space-between;gap:24px;align-items:center;padding-block:45px}
+.experience-home .experience-archive>p{font-family:Fraunces,Georgia,serif;font-size:28px;color:var(--ink)}
+.experience-home .experience-about{display:grid;grid-template-columns:.78fr 1.2fr;gap:100px;align-items:center;padding-top:115px;padding-bottom:115px}
+.experience-home .experience-portrait{margin:0}
+.experience-home .experience-portrait img{width:100%;height:510px;object-fit:cover;object-position:center 28%;border-radius:130px 130px 4px 4px}
+.experience-home .experience-portrait figcaption{margin-top:16px;color:var(--muted);font-size:13px}
+.experience-home .experience-about-copy h2{font-size:clamp(36px,3.5vw,52px)}
+.experience-home .experience-about-copy>p:not(.chapter-label){margin-top:24px;font-size:17px;max-width:60ch}
+.experience-home .experience-roles{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:30px 0}
+.experience-home .experience-roles p{display:flex;flex-direction:column;padding-top:15px}
+.experience-home .experience-roles span,.experience-home .experience-roles small{font-size:12px}
+.experience-home .experience-roles strong{font-size:16px;font-weight:500;color:var(--ink);margin:5px 0}
+.experience-home .experience-services{display:grid;grid-template-columns:1fr 1.3fr;gap:100px;padding-top:50px}
+.experience-home .experience-service-list{display:grid;gap:28px}
+.experience-home .experience-service-list article{padding-bottom:24px;}
+.experience-home .experience-service-list h3{font-size:26px;margin-bottom:10px}
+.experience-home .experience-service-list p{font-size:16px;max-width:50ch}
+.experience-home .contact{padding-bottom:110px}
+.experience-nav{position:fixed;z-index:40;bottom:max(18px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;align-items:center;padding:5px;background:var(--ink);color:var(--paper);border-radius:0;max-width:calc(100% - 24px)}
+.experience-nav a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;font-size:14px;border-radius:0;transition:background-color 140ms ease,color 140ms ease}
+.experience-nav a[aria-current="location"]{background:var(--paper);color:var(--ink)}
+.experience-nav a:focus-visible{outline-color:#e6b16e;outline-offset:2px}
+.experience-nav a:active{transform:scale(.97)}
+@media(hover:hover) and (pointer:fine){.experience-nav a:hover{background:var(--warm);color:var(--ink)}.experience-home .entrance-invitation:hover{text-decoration:underline;text-underline-offset:5px}}
+@media(max-width:1000px){.experience-home .work-chapter-inner{padding-inline:30px;gap:35px;grid-template-columns:1fr 1.15fr}.experience-home .experience-about{gap:45px}.experience-home .experience-services{gap:40px}.experience-home .experience-portrait img{height:440px}.experience-home .entrance h1{font-size:48px}.experience-home .entrance-copy{top:30px}.experience-home .entrance-intro{font-size:15px}.experience-home .journey-stop{gap:75px}.experience-home .journey-next{margin-left:calc(50% + 38px)}}
+@media(max-width:650px){
+  body:has(.experience-home) .site-header{min-height:70px;flex-wrap:nowrap;padding:12px 20px}
+  .experience-home{padding-bottom:85px}
+  .experience-home :is(section,article)[id]{scroll-margin-top:20px}
+  .experience-home .entrance{padding-top:18px}
+  .experience-home .entrance-copy{position:relative;top:auto;left:auto;text-align:center;padding:0 20px 8px;max-width:none}
+  .experience-home .entrance-greeting{font-size:14px;margin-bottom:15px}
+  .experience-home .entrance h1{font-size:clamp(39px,10vw,60px);margin-inline:auto}
+  .experience-home .entrance-intro{font-size:15px;max-width:31ch;margin:20px auto 8px}
+  .experience-home .entrance-intro br{display:none}
+  .experience-home .entrance-stage{padding-top:0;margin-top:0}
+  .experience-home .entrance-caption{font-size:12px;margin-inline:0}
+  .experience-home .experience-heading>p:last-child:not(.chapter-label){font-size:17px;margin-top:22px}
+  .experience-home .experience-journey{padding-top:75px;padding-bottom:65px}
+  .experience-home .journey-date{font-size:13px;margin-bottom:9px}
+  .experience-home .journey-role{font-size:14px}
+  .experience-home .experience-work>.experience-heading{padding-top:30px;padding-bottom:35px}
+  .experience-home .work-chapter{padding:40px 0}
+  .experience-home .work-chapter-inner{grid-template-columns:1fr;padding-inline:22px;gap:30px}
+  .experience-home .work-chapter-1 .work-story,.experience-home .work-chapter-1 .work-evidence{order:initial}
+  .experience-home .work-story h3{font-size:39px;max-width:15ch}
+  .experience-home .work-story .work-premise{font-size:20px}
+  .experience-home .work-evidence img{max-height:none}
+  .experience-home .work-evidence figcaption{font-size:11px}
+  .experience-home .experience-archive{display:block;padding-block:35px}
+  .experience-home .experience-archive>p{font-size:27px;margin-bottom:12px}
+  .experience-home .experience-archive .text-link{font-size:14px}
+  .experience-home .experience-about{grid-template-columns:1fr;gap:35px;padding-top:65px;padding-bottom:65px}
+  .experience-home .experience-portrait{max-width:330px;width:85%;margin-inline:auto}
+  .experience-home .experience-portrait img{height:370px}
+  .experience-home .experience-about-copy h2{font-size:39px}
+  .experience-home .experience-about-copy>p:not(.chapter-label){font-size:16px}
+  .experience-home .experience-roles{gap:20px}
+  .experience-home .experience-roles strong{font-size:15px}
+  .experience-home .experience-services{grid-template-columns:1fr;gap:35px;padding-top:25px}
+  .experience-home .experience-service-list{gap:25px}
+  .experience-home .contact{padding-bottom:65px}
+  .experience-nav{bottom:max(10px,env(safe-area-inset-bottom));width:max-content;max-width:calc(100% - 16px);padding:4px}
+  .experience-nav a{padding-inline:14px;font-size:12px;min-width:48px;min-height:48px}
+}
+@media(max-width:350px){.experience-nav a{padding-inline:10px}.experience-home .experience-roles{grid-template-columns:1fr}.experience-home .work-story h3{font-size:35px}}
+@media(prefers-reduced-motion:reduce){.experience-home .entrance-stage{transform:none!important}.experience-nav a{transition:none}}

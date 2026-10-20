@@ -1,0 +1,15 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{readFile}from'node:fs/promises';import{frameAt,cloudOffsetAt}from'../review/animatic/motion.js';
+test('cloud batches split outward before project destinations appear',()=>{assert.equal(frameAt(0).cloudSplit,0);assert.ok(frameAt(.5).cloudSplit>50);assert.equal(frameAt(1).cloudSplit,110);assert.equal(frameAt(1).destinations,1);});
+test('animatic holds overview, advances continuously, and lands before revealing destinations',()=>{assert.equal(frameAt(-1).scale,1);assert.equal(frameAt(.1).scale,1);assert.equal(frameAt(.5).phase,'Approach');assert.ok(frameAt(.5).foregroundScale>frameAt(.5).scale);assert.equal(frameAt(.5).destinations,0);assert.equal(frameAt(1).phase,'Arrival');assert.equal(frameAt(1).destinations,1);assert.equal(frameAt(2).scale,frameAt(1).scale);let previous=1;for(let p=0;p<=1;p+=.01){const current=frameAt(p).scale;assert.ok(current>=previous);previous=current;}});
+test('24 separate transparent cloud sprites cover the opening in two outward-moving batches',async()=>{const html=await readFile(new URL('../review/animatic/index.html',import.meta.url),'utf8'),css=await readFile(new URL('../review/animatic/style.css',import.meta.url),'utf8'),sprites=await Promise.all(Array.from({length:6},(_,i)=>readFile(new URL(`../review/animatic/clouds/soft-${String(i+1).padStart(2,'0')}.png`,import.meta.url))));for(const path of ['/projects/student-advising-portal/','/projects/formproof/','/projects/claimcheck/','href="/"'])assert.ok(html.includes(path),`missing direct route ${path}`);assert.match(html,/<nav class="destinations" aria-label="Project destinations">/);assert.match(html,/<footer hidden>/);assert.match(html,/class="cloud-batch cloud-batch-left"/);assert.match(html,/class="cloud-batch cloud-batch-right"/);const sources=[...html.matchAll(/class="cloud-sprite[^>]+src="([^"]+)/g)].map(([,src])=>src);assert.equal(sources.length,24);assert.equal(new Set(sources).size,6);assert.match(css,/\.cloud-batch\{[^}]*opacity:0[^}]*\}/);for(const sprite of sprites)assert.equal(sprite[25],6,'each cloud sprite must preserve transparency');});
+
+test('cloud spread is deterministic, staggered, and reversible without accumulating drift',()=>{assert.equal(Math.abs(cloudOffsetAt(0,0).x),0);assert.ok(cloudOffsetAt(.4,0).x<0);assert.ok(cloudOffsetAt(.4,12).x>0);assert.notEqual(cloudOffsetAt(.2,0).x,cloudOffsetAt(.2,1).x);assert.deepEqual(cloudOffsetAt(.4,3),cloudOffsetAt(.4,3));assert.equal(Math.abs(cloudOffsetAt(-1,0).x),0);assert.deepEqual(cloudOffsetAt(2,4),cloudOffsetAt(1,4));});
+
+test('the 4.5-second choreography holds and reaches every named beat',()=>{
+ const at=seconds=>frameAt(seconds/4.5),near=(actual,expected)=>assert.ok(Math.abs(actual-expected)<1e-10);
+ near(at(.25).cloudSplit,0);near(at(1.7).cloudSplit,110);
+ near(at(.8).scale,1);near(at(3.9).scale,1.1);
+ near(at(1).intro,0);near(at(1.3).intro,1);near(at(2.7).intro,1);near(at(3.1).intro,0);
+ near(at(3.9).destinations,0);near(at(4.3).destinations,1);
+ assert.deepEqual(at(4.5),frameAt(1));assert.deepEqual(frameAt(2),frameAt(1));
+});

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toxicityradius.github.io/sitemap.xml
+Sitemap: https://dexter-soriano-portfolio.pages.dev/sitemap.xml
