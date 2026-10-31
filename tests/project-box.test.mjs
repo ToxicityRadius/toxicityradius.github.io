@@ -1,52 +1,93 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
-import {renderProjectBox} from '../scripts/project-box.mjs';
+import { renderProjectBox } from '../scripts/project-box.mjs';
+import { projects, evidence } from '../scripts/portfolio-content.mjs';
 const source = await readFile(new URL('../project-box.js', import.meta.url), 'utf8');
-function fixture() {
-  const element = () => ({attributes:{},dataset:{},listeners:{},setAttribute(key,value){this.attributes[key]=value;},addEventListener(key,callback){this.listeners[key]=callback;},focus(){this.focused=true;}});
-  const panels = Array.from({length:3},element);
-  const buttons = Array.from({length:3},element);
-  const previous=element(),next=element(),status=element(),controls={hidden:true};
-  const box={classList:{add(){}},querySelectorAll:selector=>selector==='[data-project-panel]'?panels:buttons,querySelector:selector=>({'.project-box-controls':controls,'[data-project-status]':status,'[data-project-previous]':previous,'[data-project-next]':next}[selector])};
-  vm.runInNewContext(source,{document:{querySelectorAll:()=>[box]}});
-  return {panels,buttons,previous,next,status,controls};
+function fixture({ reduced = false, coarse = false, paused = false } = {}) {
+  const listeners = {};
+  const media = [];
+  const box = { dataset: {}, classList: { add() {} }, addEventListener(name, fn) { listeners[name] = fn; } };
+  let intersection;
+  let disconnected = false;
+  class IntersectionObserver {
+    constructor(callback) { intersection = callback; }
+    observe() {}
+    disconnect() { disconnected = true; }
+  }
+  const documentListeners = {};
+  let settle;
+  const frames = [];
+  vm.runInNewContext(source, {
+    window: { matchMedia(query) { const item = { matches: query.includes('reduced') ? reduced : coarse, addEventListener() {} }; media.push(item); return item; }, IntersectionObserver },
+    IntersectionObserver,
+    clearTimeout() { settle = undefined; },
+    setTimeout(callback, delay) { assert.equal(delay, 420); settle = callback; return 1; },
+    requestAnimationFrame(callback) { frames.push(callback); },
+    document: { querySelectorAll: () => [box], querySelector: () => ({ dataset: { motionPaused: String(paused) } }), addEventListener(name, fn) { documentListeners[name] = fn; } },
+  });
+  return { box, listeners, documentListeners, intersection, frame: () => frames.shift()?.(), settle: () => settle?.(), get disconnected() { return disconnected; } };
 }
-test('project box exposes one project and changes selected content through buttons',()=>{
-  const {panels,buttons,next,previous,status,controls}=fixture();
-  assert.equal(controls.hidden,false);
-  assert.deepEqual(panels.map(panel=>panel.inert),[false,true,true]);
-  next.listeners.click();
-  assert.deepEqual(panels.map(panel=>panel.inert),[true,false,true]);
-  assert.equal(buttons[1].attributes['aria-pressed'],'true');
-  assert.equal(status.textContent,'2 of 3');
-  previous.listeners.click();previous.listeners.click();
-  assert.equal(status.textContent,'3 of 3');
-  buttons[0].listeners.click();
-  assert.equal(panels[0].attributes['aria-hidden'],'false');
+
+test('wood box opens on visibility and never intercepts project navigation', () => {
+  const f = fixture();
+  assert.equal(f.box.dataset.open, undefined);
+  f.intersection([{ isIntersecting: true }]);
+  assert.equal(f.box.dataset.open, 'true');
+  assert.equal(f.box.dataset.revealState, 'revealing');
+  f.settle();
+  assert.equal(f.box.dataset.revealState, 'settled');
+  f.intersection([{ isIntersecting: true }]);
+  assert.equal(f.box.dataset.revealState, 'settled');
+  assert.equal(f.disconnected, true);
+  assert.equal(f.listeners.click, undefined);
 });
-test('keyboard selection moves focus and supports boundaries without scrolling',()=>{
-  const {buttons,status}=fixture();
-  let prevented=false;
-  buttons[0].listeners.keydown({key:'End',preventDefault(){prevented=true;}});
-  assert.equal(prevented,true);assert.equal(buttons[2].focused,true);
-  assert.equal(status.textContent,'3 of 3');
-  buttons[2].listeners.keydown({key:'ArrowRight',preventDefault(){}});
-  assert.equal(status.textContent,'1 of 3');
-  buttons[0].listeners.keydown({key:'Tab'});
-  assert.equal(status.textContent,'1 of 3');
+
+test('keyboard and pointer access bypass the reveal sequence immediately', () => {
+  for (const event of ['focusin', 'pointerdown']) {
+    const f = fixture();
+    f.listeners[event]();
+    assert.equal(f.box.dataset.open, 'true');
+    assert.equal(f.box.dataset.revealState, 'settled');
+  }
 });
-test('renderer keeps all stories, truthful captions, and one image each without scripts',()=>{
- const projects=['one','two','three'].map(slug=>({slug,name:slug,role:'Co-creator & contributor',tech:['Web']}));
- const evidence=Object.fromEntries(projects.map(({slug})=>[slug,{file:`${slug}.webp`,width:100,height:60,alt:slug,caption:'Illustrative fixture, not certification.',heading:'Inspect the work.',detail:'Verified scope.'}]));
- const html=renderProjectBox(projects,evidence,'→');
- assert.equal((html.match(/<article /g)||[]).length,3);
- assert.equal((html.match(/<img /g)||[]).length,3);
- assert.equal((html.match(/Read the project story/g)||[]).length,3);
- assert.equal((html.match(/Illustrative fixture, not certification\./g)||[]).length,3);
- assert.equal((html.match(/Co-creator &amp; contributor/g)||[]).length,3);
- assert.match(html,/project-box-controls" hidden/);
- assert.doesNotMatch(html,/<article[^>]*\bhidden/);
+
+test('focus during reveal settles every card immediately and cancels the reveal timer', () => {
+  const f = fixture();
+  f.intersection([{ isIntersecting: true }]);
+  f.listeners.focusin();
+  assert.equal(f.box.dataset.revealState, 'settled');
+  assert.equal(f.box.dataset.revealImmediate, 'true');
+  f.frame();
+  assert.equal(f.box.dataset.revealImmediate, 'true');
+  f.frame();
+  assert.equal(f.box.dataset.revealImmediate, undefined);
+  f.settle();
+  assert.equal(f.box.dataset.revealState, 'settled');
+});
+
+test('reduced motion, touch and global pause start in a complete direct state', () => {
+  for (const options of [{ reduced: true }, { coarse: true }, { paused: true }]) {
+    const f = fixture(options);
+    assert.equal(f.box.dataset.open, 'true');
+  }
+  const f = fixture();
+  f.documentListeners['portfolio:motionchange']({ detail: { paused: true } });
+  assert.equal(f.box.dataset.open, 'true');
+  assert.equal(f.box.dataset.motionPaused, 'true');
+});
+
+test('renderer keeps all three truthful evidence cards available without JavaScript', () => {
+  const html = renderProjectBox(projects, evidence, '→');
+  assert.equal((html.match(/<article /g) || []).length, 3);
+  assert.equal((html.match(/<img /g) || []).length, 3);
+  assert.equal((html.match(/data-project-open=/g) || []).length, 3);
+  for (const project of projects) {
+    assert.ok(html.includes(`href="/projects/${project.slug}/" data-project-open="${project.slug}"`));
+    assert.ok(html.includes(evidence[project.slug].caption));
+  }
+  assert.match(html, /Co-creator &amp; major contributor/);
+  assert.doesNotMatch(html, /\binert\b|aria-hidden="true"[^>]*data-project-card|<article[^>]*\bhidden/);
 });
 

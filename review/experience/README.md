@@ -13,7 +13,7 @@ Workshop stages and interior scroll position survive leaving and re-entering dur
 ## Atmosphere and motion
 
 - River reflections: 6s alternating, ±4px, low-opacity strokes clipped to the river.
-- Chimney smoke: 8s, 16px rise, peak opacity .16, reset while invisible.
+- Chimney smoke: three soft puffs staggered across an 8s linear loop, rising 65px and drifting 12px right while expanding and fading. Pauses with scene motion; omitted on phones and under reduced motion.
 - Fine-pointer depth: backdrop and labels ±4×2px; foreground total ±8×4px. Independent wrappers preserve the original entrance transforms.
 - Pause scene motion remains usable during travel and settles the requested destination. Ambient motion runs only in an arrived, visible, unpaused valley, and stops in hidden tabs, offscreen, inside the workshop, or under reduced motion.
 - No new dependency, sound, cursor replacement, scroll interception, opening-door art, or automatic project-stage playback was added.

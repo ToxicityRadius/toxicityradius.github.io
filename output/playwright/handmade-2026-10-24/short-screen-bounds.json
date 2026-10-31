@@ -1,0 +1,29 @@
+[
+  {
+    "copyBottom": 425.1125183105469,
+    "followingTop": 760,
+    "height": 568,
+    "landmarksTop": 451.6499938964844,
+    "overflow": false,
+    "stageBottom": 760,
+    "width": 320
+  },
+  {
+    "copyBottom": 401.1125183105469,
+    "followingTop": 760,
+    "height": 667,
+    "landmarksTop": 451.6499938964844,
+    "overflow": false,
+    "stageBottom": 760,
+    "width": 375
+  },
+  {
+    "copyBottom": 351.15000915527344,
+    "followingTop": 600,
+    "height": 600,
+    "landmarksTop": 0,
+    "overflow": false,
+    "stageBottom": 600,
+    "width": 1280
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "tests": 174,
+  "files": [
+    {
+      "path": "scripts/connected-home.mjs",
+      "bytes": 10172,
+      "sha256": "79a22c7a73a430a45b2ac7b1b152578446759acf9bd7f3592fc335465c0b71c0"
+    },
+    {
+      "path": "introduction-notes.js",
+      "bytes": 4816,
+      "sha256": "847d822567f47ffc677227694a7e7c76ddca14e8596777e3c1cb24d595924536"
+    },
+    {
+      "path": "connected-home.css",
+      "bytes": 44950,
+      "sha256": "96008e423aaad245a6f54121d7c59cc631b98eb9cbab85ce8ba0f8fdbac876aa"
+    },
+    {
+      "path": "tests/introduction-notes.test.mjs",
+      "bytes": 4934,
+      "sha256": "db168900a6cb551e098427932dc9a32639c5d067da663340d8e2d7d80a2ad659"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "tests": 172,
+  "files": [
+    {
+      "path": "scripts/connected-home.mjs",
+      "bytes": 9948,
+      "sha256": "1c4135a05ccba2ab86cfbe3d2de7d0cce052b08fcfe102772d6768a2fbc0b7b4"
+    },
+    {
+      "path": "introduction-notes.js",
+      "bytes": 3571,
+      "sha256": "7ad2d49ed6a3ce49407a1ba3bf77c6f89db6ca1e89062857c4b4ff039d5b920f"
+    },
+    {
+      "path": "scroll-scenes.js",
+      "bytes": 4357,
+      "sha256": "111c0ba7d3983484dcba7bbbd849d0199f27616a01c7d4f60005a9b0dfbb2a4c"
+    },
+    {
+      "path": "connected-home.css",
+      "bytes": 43051,
+      "sha256": "9afa84cb477fbf4e9333d7a2eac744710aaf917f3eee4d9e2cfb41eeaf3b6036"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 15546,
+      "sha256": "9cce6014ebdfc83f881f1000e0b5636c61ce79962b6b348eedbddb2ea55efa73"
+    },
+    {
+      "path": "tests/introduction-notes.test.mjs",
+      "bytes": 3323,
+      "sha256": "9af11e724624670bd1a1d3f02c66e78bf52f85b06b4e81c8a1344d3c477b2b38"
+    }
+  ]
+}

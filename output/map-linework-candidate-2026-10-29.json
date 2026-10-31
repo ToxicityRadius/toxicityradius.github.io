@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "tests": 167,
+  "visual": "Pending: browser access disabled",
+  "files": [
+    {
+      "path": "journey-map.css",
+      "bytes": 13799,
+      "sha256": "6db3144d63ec0e9dfda97e409fac71fba1e50be1b9713ea1a5d8a0a5270aca65"
+    },
+    {
+      "path": "images/journey/story-map.svg",
+      "bytes": 1351,
+      "sha256": "fce778f06b2e835a6aec1c322ebb8a2a28f4edc7ba7477a2dc038ec6fba344a7"
+    },
+    {
+      "path": "images/journey/story-map-night.svg",
+      "bytes": 1351,
+      "sha256": "24bb38ded53327d9cd5e6cda6334437eda082272e653c0cdeaae42459308ef5e"
+    }
+  ]
+}

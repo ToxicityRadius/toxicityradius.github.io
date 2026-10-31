@@ -1,0 +1,82 @@
+[
+  {
+    "source": "backplate.png",
+    "file": "backplate.webp",
+    "width": 1672,
+    "height": 941,
+    "sourceBytes": 2964920,
+    "bytes": 2277934
+  },
+  {
+    "source": "foreground.png",
+    "file": "foreground.webp",
+    "width": 1672,
+    "height": 941,
+    "sourceBytes": 792811,
+    "bytes": 579972
+  },
+  {
+    "source": "backplate-night.png",
+    "file": "backplate-night.webp",
+    "width": 1671,
+    "height": 941,
+    "sourceBytes": 2835970,
+    "bytes": 2126130
+  },
+  {
+    "source": "foreground-night.png",
+    "file": "foreground-night.webp",
+    "width": 1672,
+    "height": 941,
+    "sourceBytes": 804316,
+    "bytes": 575596
+  },
+  {
+    "source": "clouds/soft-01.png",
+    "file": "clouds/soft-01.webp",
+    "width": 550,
+    "height": 510,
+    "sourceBytes": 408717,
+    "bytes": 179210
+  },
+  {
+    "source": "clouds/soft-02.png",
+    "file": "clouds/soft-02.webp",
+    "width": 510,
+    "height": 510,
+    "sourceBytes": 460997,
+    "bytes": 179612
+  },
+  {
+    "source": "clouds/soft-03.png",
+    "file": "clouds/soft-03.webp",
+    "width": 476,
+    "height": 510,
+    "sourceBytes": 399267,
+    "bytes": 163698
+  },
+  {
+    "source": "clouds/soft-04.png",
+    "file": "clouds/soft-04.webp",
+    "width": 535,
+    "height": 514,
+    "sourceBytes": 440284,
+    "bytes": 182044
+  },
+  {
+    "source": "clouds/soft-05.png",
+    "file": "clouds/soft-05.webp",
+    "width": 525,
+    "height": 514,
+    "sourceBytes": 438389,
+    "bytes": 185166
+  },
+  {
+    "source": "clouds/soft-06.png",
+    "file": "clouds/soft-06.webp",
+    "width": 476,
+    "height": 514,
+    "sourceBytes": 419374,
+    "bytes": 174498
+  }
+]

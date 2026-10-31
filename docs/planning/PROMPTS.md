@@ -1,19 +1,21 @@
-# Design and implementation prompts
+# Task prompts
 
-These prompts carry the project decisions into the named design workflows. They are guidance for future work, not evidence that any workflow ran or that the portfolio is implemented.
+Updated 27 October 2026. These prompts reference project decisions rather than repeating visual tokens. They do not authorize a redesign, new features, commits, pushes or publication.
 
-## Impeccable — art direction
+## Continue implementation
 
-Art-direct a cozy, imaginative pixel-art town portfolio for Dexter Soriano, an AI and web builder seeking both employment and freelance clients. Use crisp pixel edges, a limited warm palette, and a consistent pixel scale. The town is the homepage’s navigation: campus for the Student Advising Portal, workshop for FormProof, and library for ClaimCheck. Use generated raster artwork as source assets and plan responsive rendering that preserves crisp pixels. Do not use painted or gouache storybook texture. Keep professional credibility, legibility, and project evidence ahead of decoration. Use Outfit for readable HTML body text and an appropriate display face for headings; do not bake essential copy into artwork or use pixel body text. Include a day theme by default and a night toggle. Provide responsive, keyboard-usable landmarks and a reduced-motion path. FormProof is an accessibility repair CLI/evidence workflow, not a conformance certification. ClaimCheck’s public demo is illustrative; omit private capabilities unless verified. Preserve access to the existing project archive and clear email/social/CV actions.
+Read [the project working agreement](../../AGENTS.md), the current task table in [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md), and the owning sections needed for that task. Inspect the repository and preserve unrelated work. Implement the next authorized complete slice, resolve consequential conflicts in their owning document, and verify the specified scenarios. Update current status once and report actual evidence and remaining limits.
 
-## Taste — composition
+## Refine the interface
 
-Compose the town as a readable, scrollable pixel-art map with three distinct landmarks: campus, workshop, and library. Use crisp edges, a consistent pixel scale, and a limited warm palette; avoid painted/gouache texture, blurry scaling, and uneven pixel sizes. Use generated raster art for the scene, with semantic HTML text in Outfit and an appropriate display face. Make the next action obvious at desktop and mobile sizes; avoid tiny hotspots, hover-only labels, and a scene that hides the reading order. Balance the art with concise project labels and clear paths to case studies, archive, and contact. Day is the default; ensure a parallel night palette preserves hierarchy and contrast. Provide static, semantic content when animation is reduced or unavailable.
+Read [root DESIGN.md](../../DESIGN.md) and the task's product/flow acceptance first. Use one suitable primary design workflow, normally Impeccable for this portfolio's existing interface. Inspect actual wide, narrow and short rendered screens with realistic content and required themes. Refine the requested area while preserving approved artwork, content and behavior. Show a concrete preview if the task requires a consequential new visual decision. Do not import a skill's incompatible layout or motion prescriptions.
 
-## Emil — interaction refinement
+## Refine an interaction
 
-Refine motion and interaction for the pixel-art town portfolio: use restrained, purposeful transitions for landmark discovery, scroll, and day/night changes. Preserve crisp pixel edges and consistent pixel scale during responsive rendering and motion. Keep controls responsive, focus visible, and navigation operable by keyboard, touch, and pointer. Respect `prefers-reduced-motion`; essential content must never depend on animation. Do not add interaction that changes the meaning of project claims or suggests external email/link success. Keep the existing project archive reachable.
+Read the interaction contract in [APP_FLOW.md](APP_FLOW.md) and motion intent in [root DESIGN.md](../../DESIGN.md). Use a relevant motion specialist only for the requested interaction. Check pointer, touch, keyboard, interruption, reduced motion and static fallback as applicable. Record rendered observations; unit tests alone do not establish perceived motion quality.
 
-## Coding-agent handoff
+## Prepare release
 
-Read the six planning files in this directory and inspect the current repository before editing. Begin with T-1 in `IMPLEMENTATION_PLAN.md`: verify existing project/archive content, assets, hosting configuration, and public/private boundaries for ClaimCheck. Then implement the smallest complete scope consistent with the requirements. Preserve the vanilla HTML/CSS/JS and GSAP approach unless inspection shows a concrete need to change it. No backend, form, or analytics. Do not remove the current GitHub Pages site until Cloudflare Pages is deployed and verified. Report only checks actually performed and mark unrun checks Not run.
+Use [RELEASE_CHECKLIST.md](../RELEASE_CHECKLIST.md) and the current implementation task. Identify the actual candidate/build and hosting target, run the named required checks, retain recovery information, and present a preview with results and remaining issues. Ask Dexter to approve the concrete production action only after preparation is complete. An unavailable required check remains a blocker with a runnable fallback; no release is authorized by this prompt.
+
+Earlier prompts are preserved in [the historical snapshot](../history/prompts-before-2026-10-27.md).

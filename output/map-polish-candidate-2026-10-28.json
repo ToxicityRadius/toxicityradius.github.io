@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-28",
+  "scope": "Curve-following camera, depth detail, arrival halos, directional beacon and card choreography",
+  "tests": 160,
+  "files": [
+    {
+      "path": "journey-state.js",
+      "bytes": 2413,
+      "sha256": "e800722e473df80f8390982b1770ecd08ae0f3fa02003ff480af3eea90e7983b"
+    },
+    {
+      "path": "journey-geography.js",
+      "bytes": 5916,
+      "sha256": "1986cb8f935f385b8a99ba81cfed5554a15cf1e011b9aa85a93181d05ffefa5b"
+    },
+    {
+      "path": "journey-map.js",
+      "bytes": 7732,
+      "sha256": "d84559efac967c507e29e8cd7124eaa75804d44752c138f5a71793ca41c10440"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 10723,
+      "sha256": "6372433043c9a29a8164c2b762cb3e15e819e873192a7acd19dabdb13be0246a"
+    },
+    {
+      "path": "images/journey/story-map.svg",
+      "bytes": 5735,
+      "sha256": "6033477eed01b5651a55c9ce658f0d8720cee99ea2cedb411a1fd55bcf689e4c"
+    },
+    {
+      "path": "images/journey/story-map-night.svg",
+      "bytes": 5764,
+      "sha256": "62ce1813933615beab9eb3cbe78a65e1c466e5f8b6dcef23eac7f969a730be9c"
+    },
+    {
+      "path": "tests/journey-map.test.mjs",
+      "bytes": 14656,
+      "sha256": "45343a871ebdfc22f34c0fedf65539bf18a117e81ded65667c341a4c50d944da"
+    }
+  ]
+}

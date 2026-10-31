@@ -1,0 +1,335 @@
+{
+  "date": "2026-10-27",
+  "results": [
+    {
+      "name": "P. Casal",
+      "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/14/13698/7520.pbf",
+      "status": 200,
+      "buildingCount": 97,
+      "withHeight": 96,
+      "named": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98428845405579,
+              14.58818315031371
+            ]
+          },
+          "properties": {
+            "name_int": "Technological University of the Philippines",
+            "name_de": "Technological University of the Philippines",
+            "name": "Technological University of the Philippines",
+            "subclass": "bus_stop",
+            "rank": 5,
+            "class": "bus",
+            "name:latin": "Technological University of the Philippines",
+            "name_en": "Technological University of the Philippines"
+          },
+          "id": 101819052731
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98446011543274,
+              14.587357704194474
+            ]
+          },
+          "properties": {
+            "name_int": "Technological University of the Philippines",
+            "name:ja": "フィリピン工科大学",
+            "name_de": "Technological University of the Philippines",
+            "name": "Technological University of the Philippines",
+            "subclass": "university",
+            "rank": 10,
+            "name:en": "Technological University of the Philippines",
+            "class": "college",
+            "name:latin": "Technological University of the Philippines",
+            "name:zh": "菲律賓科技大學",
+            "name_en": "Technological University of the Philippines"
+          },
+          "id": 283955652
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98779678344727,
+              14.595342078323625
+            ]
+          },
+          "properties": {
+            "name_int": "Technological Institute of the Philippines - P. Casal Campus",
+            "name_de": "Technological Institute of the Philippines - P. Casal Campus",
+            "name": "Technological Institute of the Philippines - P. Casal Campus",
+            "subclass": "college",
+            "rank": 9,
+            "class": "college",
+            "name:latin": "Technological Institute of the Philippines - P. Casal Campus",
+            "name_en": "Technological Institute of the Philippines - P. Casal Campus"
+          },
+          "id": 1742491092
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.97965359687805,
+              14.59470873802725
+            ]
+          },
+          "properties": {
+            "name_int": "Globe Statue",
+            "name_de": "Globe Statue",
+            "name": "Globe Statue",
+            "subclass": "artwork",
+            "rank": 149,
+            "class": "art_gallery",
+            "name:es": "Estatua Globo",
+            "name:latin": "Globe Statue",
+            "name_en": "Globe Statue"
+          },
+          "id": 107690408951
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98423480987549,
+              14.600512558774426
+            ]
+          },
+          "properties": {
+            "name_int": "Globe Lumpia",
+            "name_de": "Globe Lumpia",
+            "name": "Globe Lumpia",
+            "subclass": "restaurant",
+            "rank": 196,
+            "class": "restaurant",
+            "name:latin": "Globe Lumpia",
+            "name_en": "Globe Lumpia"
+          },
+          "id": 11246554801
+        }
+      ]
+    },
+    {
+      "name": "Arlegui",
+      "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/14/13698/7520.pbf",
+      "status": 200,
+      "buildingCount": 97,
+      "withHeight": 96,
+      "named": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98428845405579,
+              14.58818315031371
+            ]
+          },
+          "properties": {
+            "name_int": "Technological University of the Philippines",
+            "name_de": "Technological University of the Philippines",
+            "name": "Technological University of the Philippines",
+            "subclass": "bus_stop",
+            "rank": 5,
+            "class": "bus",
+            "name:latin": "Technological University of the Philippines",
+            "name_en": "Technological University of the Philippines"
+          },
+          "id": 101819052731
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98446011543274,
+              14.587357704194474
+            ]
+          },
+          "properties": {
+            "name_int": "Technological University of the Philippines",
+            "name:ja": "フィリピン工科大学",
+            "name_de": "Technological University of the Philippines",
+            "name": "Technological University of the Philippines",
+            "subclass": "university",
+            "rank": 10,
+            "name:en": "Technological University of the Philippines",
+            "class": "college",
+            "name:latin": "Technological University of the Philippines",
+            "name:zh": "菲律賓科技大學",
+            "name_en": "Technological University of the Philippines"
+          },
+          "id": 283955652
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98779678344727,
+              14.595342078323625
+            ]
+          },
+          "properties": {
+            "name_int": "Technological Institute of the Philippines - P. Casal Campus",
+            "name_de": "Technological Institute of the Philippines - P. Casal Campus",
+            "name": "Technological Institute of the Philippines - P. Casal Campus",
+            "subclass": "college",
+            "rank": 9,
+            "class": "college",
+            "name:latin": "Technological Institute of the Philippines - P. Casal Campus",
+            "name_en": "Technological Institute of the Philippines - P. Casal Campus"
+          },
+          "id": 1742491092
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.97965359687805,
+              14.59470873802725
+            ]
+          },
+          "properties": {
+            "name_int": "Globe Statue",
+            "name_de": "Globe Statue",
+            "name": "Globe Statue",
+            "subclass": "artwork",
+            "rank": 149,
+            "class": "art_gallery",
+            "name:es": "Estatua Globo",
+            "name:latin": "Globe Statue",
+            "name_en": "Globe Statue"
+          },
+          "id": 107690408951
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              120.98423480987549,
+              14.600512558774426
+            ]
+          },
+          "properties": {
+            "name_int": "Globe Lumpia",
+            "name_de": "Globe Lumpia",
+            "name": "Globe Lumpia",
+            "subclass": "restaurant",
+            "rank": 196,
+            "class": "restaurant",
+            "name:latin": "Globe Lumpia",
+            "name_en": "Globe Lumpia"
+          },
+          "id": 11246554801
+        }
+      ]
+    },
+    {
+      "name": "Globe Tower area",
+      "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/14/13701/7522.pbf",
+      "status": 200,
+      "buildingCount": 190,
+      "withHeight": 190,
+      "named": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              121.05010449886322,
+              14.552888674565352
+            ]
+          },
+          "properties": {
+            "name_int": "Globe Tower",
+            "name_de": "Globe Tower",
+            "name": "Globe Tower",
+            "subclass": "bus_stop",
+            "rank": 3,
+            "class": "bus",
+            "name:latin": "Globe Tower",
+            "name_en": "Globe Tower"
+          },
+          "id": 45704803061
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              121.06916427612305,
+              14.552680982203043
+            ]
+          },
+          "properties": {
+            "name_int": "Pateros Technological College",
+            "name_de": "Pateros Technological College",
+            "name": "Pateros Technological College",
+            "subclass": "college",
+            "rank": 4,
+            "class": "college",
+            "name:latin": "Pateros Technological College",
+            "name_en": "Pateros Technological College"
+          },
+          "id": 1171871042
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              121.04874193668365,
+              14.55163732512392
+            ]
+          },
+          "properties": {
+            "name_int": "Globe",
+            "name_de": "Globe",
+            "name": "Globe",
+            "subclass": "telecommunication",
+            "rank": 167,
+            "name:en": "Globe",
+            "class": "office",
+            "name:latin": "Globe",
+            "name_en": "Globe"
+          },
+          "id": 46506577891
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              121.05435848236084,
+              14.556460952603643
+            ]
+          },
+          "properties": {
+            "name_int": "Globe",
+            "name_de": "Globe",
+            "name": "Globe",
+            "subclass": "telecommunication",
+            "rank": 49,
+            "class": "office",
+            "name:latin": "Globe",
+            "name_en": "Globe"
+          },
+          "id": 58393282861
+        }
+      ]
+    }
+  ]
+}

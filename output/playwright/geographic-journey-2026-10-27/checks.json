@@ -1,0 +1,652 @@
+{
+  "date": "2026-10-27",
+  "browser": "In-app Chromium",
+  "observations": [
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 4500,
+      "mode": "scroll",
+      "pageWidth": 1425,
+      "ready": true,
+      "stage": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1424.800048828125,
+        "x": 0,
+        "y": 0
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2023–2024",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 4500,
+      "mode": "scroll",
+      "pageWidth": 1425,
+      "ready": true,
+      "stage": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1424.800048828125,
+        "x": 0,
+        "y": 0
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-1",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "visible": [
+        "journey-chapter-1"
+      ]
+    },
+    {
+      "active": "2022–2023",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 4500,
+      "mode": "scroll",
+      "pageWidth": 1425,
+      "ready": true,
+      "stage": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1424.800048828125,
+        "x": 0,
+        "y": 0
+      },
+      "theme": "day",
+      "url": "http://127.0.0.1:4173/#journey-chapter-0",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "visible": [
+        "journey-chapter-0"
+      ]
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 798.8999977111816,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -45.10000228881836,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -45.10000228881836
+      },
+      "theme": "day",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 843.6999999880791,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -0.30000001192092896,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -0.30000001192092896
+      },
+      "theme": "day",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 576.5,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -267.5,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -267.5
+      },
+      "theme": "day",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 843.6999999880791,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -0.30000001192092896,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -0.30000001192092896
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 843.6999999880791,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -0.30000001192092896,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -0.30000001192092896
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2024–2025",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 524.5,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -319.5,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -319.5
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-2",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-2"
+      ]
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 844,
+      "mode": "chapters",
+      "pageWidth": 375,
+      "ready": true,
+      "stage": {
+        "bottom": 524.5,
+        "height": 844,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": -319.5,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": -319.5
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "nativePhoneResult": {
+        "active": "2025–2026",
+        "attribution": [
+          {
+            "href": "https://openfreemap.org/",
+            "label": "OpenFreeMap"
+          },
+          {
+            "href": "https://www.openmaptiles.org/",
+            "label": "© OpenMapTiles"
+          },
+          {
+            "href": "https://www.openstreetmap.org/copyright",
+            "label": "OpenStreetMap"
+          }
+        ],
+        "height": 844,
+        "mode": "chapters",
+        "pageWidth": 375,
+        "ready": true,
+        "stage": {
+          "bottom": 843.6999999880791,
+          "height": 844,
+          "left": 0,
+          "right": 375.2000122070313,
+          "top": -0.30000001192092896,
+          "width": 375.2000122070313,
+          "x": 0,
+          "y": -0.30000001192092896
+        },
+        "theme": "night",
+        "url": "http://127.0.0.1:4173/#journey-chapter-3",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "visible": [
+          "journey-chapter-3"
+        ]
+      },
+      "previousTop": -0.30000001192092896
+    },
+    {
+      "active": "2025–2026",
+      "attribution": [
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 850,
+      "mode": "chapters",
+      "pageWidth": 305,
+      "ready": true,
+      "stage": {
+        "bottom": 827.3999996185303,
+        "height": 850,
+        "left": 0,
+        "right": 304.8000183105469,
+        "top": -22.600000381469727,
+        "width": 304.8000183105469,
+        "x": 0,
+        "y": -22.600000381469727
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey-chapter-3",
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "visible": [
+        "journey-chapter-3"
+      ]
+    },
+    {
+      "active": "2022–2023",
+      "attribution": [
+        {
+          "href": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/",
+          "label": "NASA Earth Observatory"
+        },
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 4500,
+      "mode": "scroll",
+      "pageWidth": 1425,
+      "ready": true,
+      "stage": {
+        "bottom": 934.7999992370604,
+        "height": 900,
+        "left": 0,
+        "right": 1424.800048828125,
+        "top": 34.79999923706055,
+        "width": 1424.800048828125,
+        "x": 0,
+        "y": 34.79999923706055
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "visible": [
+        "journey-chapter-0"
+      ]
+    },
+    {
+      "active": "2022–2023",
+      "attribution": [
+        {
+          "href": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/",
+          "label": "NASA Earth Observatory"
+        },
+        {
+          "href": "https://openfreemap.org/",
+          "label": "OpenFreeMap"
+        },
+        {
+          "href": "https://www.openmaptiles.org/",
+          "label": "© OpenMapTiles"
+        },
+        {
+          "href": "https://www.openstreetmap.org/copyright",
+          "label": "OpenStreetMap"
+        }
+      ],
+      "height": 4500,
+      "mode": "scroll",
+      "pageWidth": 1425,
+      "ready": true,
+      "stage": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1424.800048828125,
+        "x": 0,
+        "y": 0
+      },
+      "theme": "night",
+      "url": "http://127.0.0.1:4173/#journey",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "visible": [
+        "journey-chapter-0"
+      ]
+    }
+  ],
+  "finalPhone": {
+    "active": "2025–2026",
+    "attribution": [
+      {
+        "href": "https://openfreemap.org/",
+        "label": "OpenFreeMap"
+      },
+      {
+        "href": "https://www.openmaptiles.org/",
+        "label": "© OpenMapTiles"
+      },
+      {
+        "href": "https://www.openstreetmap.org/copyright",
+        "label": "OpenStreetMap"
+      }
+    ],
+    "height": 844,
+    "mode": "chapters",
+    "pageWidth": 375,
+    "ready": true,
+    "stage": {
+      "bottom": 843.6999999880791,
+      "height": 844,
+      "left": 0,
+      "right": 375.2000122070313,
+      "top": -0.30000001192092896,
+      "width": 375.2000122070313,
+      "x": 0,
+      "y": -0.30000001192092896
+    },
+    "theme": "night",
+    "url": "http://127.0.0.1:4173/#journey-chapter-3",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "visible": [
+      "journey-chapter-3"
+    ]
+  },
+  "pageMotion": {
+    "notes": [
+      "0px",
+      "0px"
+    ],
+    "pageWidth": 1425,
+    "photoPlaceholders": 6,
+    "viewport": 1440,
+    "wordOpacity": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "words": 25
+  },
+  "keyboard": {
+    "chapterSelection": true,
+    "project": "formproof",
+    "enterOpened": true,
+    "escapeClosed": true,
+    "focusReturnedToProject": true
+  },
+  "pointer": {
+    "nativePhoneStageStable": true,
+    "locatorAutoScrollDiagnosed": true
+  },
+  "testCount": 148,
+  "limits": [
+    "No physical iPhone Safari/touch check",
+    "Swipe/reduced-motion/load-failure behavior covered by logic tests; no live OS preference or forced network test",
+    "No performance or full accessibility certification",
+    "Provider building heights may be defaults/incomplete"
+  ]
+}

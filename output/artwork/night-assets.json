@@ -1,0 +1,22 @@
+[
+  {
+    "source": "backplate-night.png",
+    "file": "backplate-night.webp",
+    "width": 1671,
+    "height": 941,
+    "sourceBytes": 2835970,
+    "bytes": 2126130,
+    "source_sha256": "e4cd09a6c58d0a0696ce95656640367bf0fe73d8e47ded245dd6bce2d6ce0bca",
+    "encoded_sha256": "1fabe76e4bc3797a8c9882ae1a377b82123f8df5e055444716330c0e5a42fa11"
+  },
+  {
+    "source": "foreground-night.png",
+    "file": "foreground-night.webp",
+    "width": 1672,
+    "height": 941,
+    "sourceBytes": 804316,
+    "bytes": 575596,
+    "source_sha256": "063b89ac87d64f33136025a07366f3e41acab32ba70f296d987b2678c81bfe57",
+    "encoded_sha256": "974c924b6f293bc5247b5f29ddefd32fb058bd5f02c987848fb93d81ae1dafed"
+  }
+]

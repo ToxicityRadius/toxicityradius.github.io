@@ -1,0 +1,17 @@
+[
+  {
+    "dialog": true,
+    "hash": "#project-student-advising-portal",
+    "title": "Student Advising Portal"
+  },
+  {
+    "dialog": true,
+    "hash": "#project-formproof",
+    "title": "FormProof"
+  },
+  {
+    "dialog": true,
+    "hash": "#project-claimcheck",
+    "title": "ClaimCheck"
+  }
+]

@@ -28,38 +28,48 @@ test('visibility, scene and preference changes pause work and cleanup removes ev
   const node={dataset:{},style:{},classList:{add(){}},setAttribute(){},querySelector:()=>null,
    addEventListener(type,fn){listeners.set(`${this.id}-${type}`,fn);},
    removeEventListener(type){listeners.delete(`${this.id}-${type}`);},
-   insertBefore(){},remove(){this.removed=true;}};
+   insertBefore(){},before(){},append(){},remove(){this.removed=true;}};
   node.id=elements.length;elements.push(node);return node;
  }
- const shell=element(),stage=element(),world=element(),depth=element(),destinations=element(),doc=element();
+ const shell=element(),stage=element(),world=element(),depth=element(),destinations=element(),doc=element(),foreground=element(),overlay=element();
+ const cameraTransform='translate(-2%,-3%) scale(1.1)';
+ destinations.style.transform=world.style.transform=cameraTransform;depth.style.transform='none';
  const reduced={matches:false,addEventListener(type,fn){this.change=fn;},removeEventListener(){this.change=null;}};
  const fine={...reduced,matches:true};
- doc.hidden=false;doc.createElementNS=()=>element();shell.ownerDocument=doc;
+ doc.hidden=false;doc.createElementNS=()=>overlay;doc.createElement=()=>element();shell.ownerDocument=doc;
+ world.querySelector=()=>foreground;
  shell.dataset.scene='valley';stage.dataset.entrance='arrived';
  stage.getBoundingClientRect=()=>({left:0,top:0,width:100,height:100});
  shell.querySelector=()=>stage;
  stage.querySelector=selector=>selector==='.world'?world:selector==='.destinations'?destinations:depth;
  class Observer{constructor(callback){this.callback=callback;observers.push(this);}observe(){}disconnect(){this.disconnected=true;}}
  const win={matchMedia:query=>query.includes('reduced')?reduced:fine,MutationObserver:Observer,IntersectionObserver:Observer};
- const cleanup=initAtmosphere({querySelector:()=>shell},win),overlay=elements.at(-1);
+ const cleanup=initAtmosphere({querySelector:()=>shell},win),foregroundDepth=elements.at(-1);
  assert.equal(overlay.dataset.running,'false');
  observers[1].callback([{isIntersecting:true}]);assert.equal(overlay.dataset.running,'true');
  listeners.get(`${stage.id}-pointermove`)({clientX:100,clientY:100,pointerType:'mouse'});
- assert.equal(depth.style.transform,'translate(4px,2px)');
- assert.equal(destinations.style.transform,depth.style.transform);
+ assert.equal(depth.style.transform,'none');
+ assert.equal(destinations.style.transform,cameraTransform);
+ assert.equal(world.style.transform,cameraTransform);
+ assert.equal(foregroundDepth.style.transform,'translate(8px,4px)');
+ listeners.get(`${stage.id}-pointerleave`)();
+ assert.equal(destinations.style.transform,cameraTransform);
+ assert.equal(foregroundDepth.style.transform,'translate(0px,0px)');
  shell.dataset.scene='approaching';observers[0].callback();
- assert.equal(overlay.dataset.running,'false');assert.equal(depth.style.transform,'translate(0px,0px)');
- assert.equal(destinations.style.transform,'translate(0px,0px)');
+ assert.equal(overlay.dataset.running,'false');assert.equal(depth.style.transform,'none');
+ assert.equal(destinations.style.transform,cameraTransform);
  shell.dataset.scene='valley';observers[0].callback();assert.equal(overlay.dataset.running,'true');
  listeners.get(`${stage.id}-pointermove`)({clientX:0,clientY:0,pointerType:'mouse'});
- assert.equal(destinations.style.transform,'translate(-4px,-2px)');
+ assert.equal(destinations.style.transform,cameraTransform);
+ assert.equal(foregroundDepth.style.transform,'translate(-8px,-4px)');
  shell.dataset.motionPaused='true';observers[0].callback();
- assert.equal(destinations.style.transform,'translate(0px,0px)');
+ assert.equal(destinations.style.transform,cameraTransform);
  shell.dataset.motionPaused='false';observers[0].callback();
  reduced.matches=true;reduced.change();assert.equal(overlay.dataset.running,'false');
  reduced.matches=false;reduced.change();doc.hidden=true;
  listeners.get(`${doc.id}-visibilitychange`)();assert.equal(overlay.dataset.running,'false');
  cleanup();assert.equal(listeners.size,0);assert.equal(overlay.removed,true);
+ assert.equal(destinations.style.transform,cameraTransform);
  assert.equal(observers.every(observer=>observer.disconnected),true);assert.equal(reduced.change,null);
 });
 

@@ -1,0 +1,300 @@
+[
+  {
+    "mode": null,
+    "route": "/",
+    "width": 375,
+    "overflow": false,
+    "stage": "arrived",
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 38
+      }
+    ],
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/projects/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "nodes": 1
+      }
+    ],
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/projects/student-advising-portal/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/projects/formproof/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/projects/claimcheck/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/404.html",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/",
+    "width": 375,
+    "overflow": false,
+    "stage": "arrived",
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 38
+      }
+    ],
+    "theme": "night"
+  },
+  {
+    "mode": null,
+    "route": "/projects/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "nodes": 1
+      }
+    ],
+    "theme": "night"
+  },
+  {
+    "mode": null,
+    "route": "/projects/student-advising-portal/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "night"
+  },
+  {
+    "mode": null,
+    "route": "/projects/formproof/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "night"
+  },
+  {
+    "mode": null,
+    "route": "/projects/claimcheck/",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "night"
+  },
+  {
+    "mode": null,
+    "route": "/404.html",
+    "width": 375,
+    "overflow": false,
+    "projects": 0,
+    "chapters": 0,
+    "shortcuts": [],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "theme": "night"
+  },
+  {
+    "mode": null,
+    "route": "/",
+    "width": 1425,
+    "overflow": false,
+    "stage": "arrived",
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 6
+      }
+    ],
+    "preview": "student-advising-portal",
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/",
+    "width": 1425,
+    "overflow": false,
+    "stage": "arrived",
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 6
+      }
+    ],
+    "preview": "formproof",
+    "theme": "day"
+  },
+  {
+    "mode": null,
+    "route": "/",
+    "width": 1425,
+    "overflow": false,
+    "stage": "arrived",
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 7
+      }
+    ],
+    "preview": "claimcheck",
+    "theme": "day"
+  }
+]

@@ -1,0 +1,260 @@
+{
+  "checked_at_utc": "2026-10-27T00:10:07.249456+00:00",
+  "base_head": "a8779caa288a2ed8129bd80817e5bb322cbc2c2b",
+  "working_tree": "uncommitted changes present",
+  "build_tree_sha256": "31e8bad1be38322d9bdb96752f5a1bfa8f4d7c59f3fa0f9d78b88700f41c6ba7",
+  "file_count": 50,
+  "total_bytes": 4951050,
+  "files": [
+    {
+      "path": "404.html",
+      "bytes": 2820,
+      "sha256": "27cd9eebcbeeebc5188949a1564264a0a55106a86f8817367c08e9d76f8b462d"
+    },
+    {
+      "path": "_headers",
+      "bytes": 112,
+      "sha256": "e32553f287c1748c9cd0f72c7f651a54c6837b2b0942989f2b92a06e249b3355"
+    },
+    {
+      "path": "connected-home.css",
+      "bytes": 20918,
+      "sha256": "a71502bd9b0e559f0ce53b8569ce38bfd73dc24e917bad3333e3b515b8d3eeab"
+    },
+    {
+      "path": "connected-home.js",
+      "bytes": 9730,
+      "sha256": "63b3afe4c2cf7631def4a9e16682d0d87c3e17160d620d90d0d40cffd13434d9"
+    },
+    {
+      "path": "engineering-spaces.css",
+      "bytes": 7039,
+      "sha256": "c1f11dcb3a1a44ae67ccda151e9ffa451a8c7b2eefe3644baa7a96ecd7b8835b"
+    },
+    {
+      "path": "engineering-spaces.js",
+      "bytes": 1501,
+      "sha256": "e6d81cb96876ac3b25963b9f3bd90b654e4b6a5ecd4948467873222c549201c1"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 421,
+      "sha256": "bebf240fcea972075ca1a94070d981a9d002c4801dd7c4d1efa2b0787599f969"
+    },
+    {
+      "path": "fonts/bricolage-grotesque.woff2",
+      "bytes": 204636,
+      "sha256": "b51a8ebd169637e47cb7db430431ab3e122d2f09b03ee2a03ea06f4cb46f1a8e"
+    },
+    {
+      "path": "fonts/BricolageGrotesque-OFL.txt",
+      "bytes": 4403,
+      "sha256": "4b5a7d8f37f5602621c8a8d7358a6a2e71317e6c231c661e15aef0275d3e07ba"
+    },
+    {
+      "path": "fonts/Outfit-OFL.txt",
+      "bytes": 4482,
+      "sha256": "916fdcb34129e58b62d12a9d27ac746bb8742bc42409521c1438521cfcea7eb5"
+    },
+    {
+      "path": "fonts/outfit.ttf",
+      "bytes": 47844,
+      "sha256": "6a8c9be856a6b9e09c66615634904616152c9de5e44db343a3ced240479c586a"
+    },
+    {
+      "path": "headline-text.js",
+      "bytes": 3539,
+      "sha256": "2491a73f0843d526ff9ef54cd7081ec8f2733023754200674d587307ce1eb286"
+    },
+    {
+      "path": "images/about-portrait.jpg",
+      "bytes": 179015,
+      "sha256": "f50ff6d19fcd04a3cf96ee4ff09cfb6444d09d73df592b389a9276cd9e61334f"
+    },
+    {
+      "path": "images/advising-demo.webp",
+      "bytes": 63374,
+      "sha256": "8a418df8aacfa90765debd6e20355a245ce402ec872ae77ff0e093522ac2242a"
+    },
+    {
+      "path": "images/claimcheck-sample.jpg",
+      "bytes": 74100,
+      "sha256": "1be7a77520f8bd41efba4523ac2253f98068dba584b8da7b0d294c22e65dd9b6"
+    },
+    {
+      "path": "images/formproof-report.webp",
+      "bytes": 20770,
+      "sha256": "a00cf0e05dcf15e11c9656fc369847b3514ef91802b59bd5062f69cfbc3a1d1e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 35698,
+      "sha256": "b2c0e162a06245cf9673c24fc72a5b1b12b91c24100cec015000fdb49f35f843"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 4986,
+      "sha256": "bb70bbeeee2f35214ab81882e5256fc158c6e6540ecf9e2c2ebad757b276a5b2"
+    },
+    {
+      "path": "journey-map.js",
+      "bytes": 4006,
+      "sha256": "5e8d84d8844b7bee3146f685f2b7e62aed2fb45814cc16fbd8eac31c005d2c97"
+    },
+    {
+      "path": "photo-wall.css",
+      "bytes": 6008,
+      "sha256": "e51ace42554315abb32e06e42bd02a215e4a91aee8fe9625c76bf169c7efb9c5"
+    },
+    {
+      "path": "photo-wall.js",
+      "bytes": 2722,
+      "sha256": "3fa9a6ebf61f62f16efdd0dc200c042be64b408e3bd3b083b455230b64403296"
+    },
+    {
+      "path": "project-box.css",
+      "bytes": 6424,
+      "sha256": "48bfa213d264c648af025a34e296376c4a2ee4c5f3f3c47edb9e83f2e7764329"
+    },
+    {
+      "path": "project-box.js",
+      "bytes": 1960,
+      "sha256": "fe02d5c43c454f30cca69b06252a2b2cd81299d9e9e0b073257c5ee3688b677b"
+    },
+    {
+      "path": "projects/claimcheck/index.html",
+      "bytes": 8175,
+      "sha256": "5470cd1b762bb409a347d621a3ef0333d70b9f6f93e3a746855014c0461bd3f5"
+    },
+    {
+      "path": "projects/formproof/index.html",
+      "bytes": 8086,
+      "sha256": "6680362cbe79604d1d3e490a328997ab1c44dc9c4687fc827a9a9941282a65a8"
+    },
+    {
+      "path": "projects/index.html",
+      "bytes": 13586,
+      "sha256": "9c7de5826e3b9218abb08235c15df3d0aeca8b4c9defe695a8fef2f5a9c77b86"
+    },
+    {
+      "path": "projects/student-advising-portal/index.html",
+      "bytes": 8241,
+      "sha256": "0dbfa22d1f9c533bfbd7c11f5fb74c3f965df5455839134d6f505013a88923c7"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 87,
+      "sha256": "bfb68adf11dc9afb974870f9e688ab37f8a1db3c75d686d07e004ab5732cfbb2"
+    },
+    {
+      "path": "script.js",
+      "bytes": 4469,
+      "sha256": "5c44c72bedc3eb1e9e740102b13c0717ba6ff32c611072f04636d634af6e468d"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 513,
+      "sha256": "a037238e4a1cf98b01b62adb63dc4b8793fa2770d49513c058a8d21255f34cc4"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 24242,
+      "sha256": "45a698168c9b9a0d8d924c1986541827209601c018e774ba9521baf366a0d879"
+    },
+    {
+      "path": "theme.js",
+      "bytes": 182,
+      "sha256": "2263bdcc9a3b99060837299dc89db6fe5280bfbec7fb6f8812fc03fb4850d674"
+    },
+    {
+      "path": "vendor/anime-LICENSE.md",
+      "bytes": 1075,
+      "sha256": "3f3e835a9952cfc2a6ca836fb95b3257c981f24fa3ef51249055acb09931897b"
+    },
+    {
+      "path": "vendor/anime.esm.min.js",
+      "bytes": 118678,
+      "sha256": "a19015a1a92d52025a2fb6703b6d67eadd1cc2aeaf880770e96e04cf6aa07be1"
+    },
+    {
+      "path": "vendor/gsap.min.js",
+      "bytes": 71531,
+      "sha256": "4b3066e3554dd22603c7827fcd1ef3bbe5ffb0e69011001ade8e1eba66207942"
+    },
+    {
+      "path": "vendor/ScrollTrigger.min.js",
+      "bytes": 42678,
+      "sha256": "71192443449aee5c5adc5bba2d7620567609743c10b8dab6e0bfb6d567a41f01"
+    },
+    {
+      "path": "world/animatic/backplate.webp",
+      "bytes": 2277934,
+      "sha256": "7771b71a3f9472c6a70f69e38f39bdaa9233fb13a05fe16aff51f0064735adef"
+    },
+    {
+      "path": "world/animatic/cloud-renderer.js",
+      "bytes": 1854,
+      "sha256": "0250555d550d6515d4a4946872531820671a5fcfae452faed609d73e15dd5fb8"
+    },
+    {
+      "path": "world/animatic/clouds/soft-01.webp",
+      "bytes": 179210,
+      "sha256": "980457a06a46735bf244798c9a76deb48b2ddb566dffae5292c83eeb0cd94851"
+    },
+    {
+      "path": "world/animatic/clouds/soft-02.webp",
+      "bytes": 179612,
+      "sha256": "e43b3a445f945b1e0c7dd1506820184e1390f7a1d9437b57f9ce0834a7907512"
+    },
+    {
+      "path": "world/animatic/clouds/soft-03.webp",
+      "bytes": 163698,
+      "sha256": "dddb5b6183c943219772c52365d843732fc24d53da2558d32a31e5c931dcff55"
+    },
+    {
+      "path": "world/animatic/clouds/soft-04.webp",
+      "bytes": 182044,
+      "sha256": "2140d3f9e060bb59f3ecd7248bb61f42fd400b74cb62d5c686936baa5882c484"
+    },
+    {
+      "path": "world/animatic/clouds/soft-05.webp",
+      "bytes": 185166,
+      "sha256": "db4964464587d640e1443a302a27959d92803b4b7e2bee424fd1bc2910ab39a9"
+    },
+    {
+      "path": "world/animatic/clouds/soft-06.webp",
+      "bytes": 174498,
+      "sha256": "9e042845ce4a5389be85a64479dfd6cb17f059ef5fc67ea23b038c3b8a85c09d"
+    },
+    {
+      "path": "world/animatic/controller.js",
+      "bytes": 5479,
+      "sha256": "1153ae5aeac60ad363ef3d5dac8f89e935286606b3724ec5a77dfcb62deb39f7"
+    },
+    {
+      "path": "world/animatic/foreground.webp",
+      "bytes": 579972,
+      "sha256": "32a94e64668287116b1175095c2468559825844c933f9c4812dfa4ddea01a529"
+    },
+    {
+      "path": "world/animatic/motion.js",
+      "bytes": 1027,
+      "sha256": "57744b68245daaa629bbb81a341ff11b45e84c049de32c5d0c20151d8b39e83b"
+    },
+    {
+      "path": "world/animatic/style.css",
+      "bytes": 5521,
+      "sha256": "2ab4672320a6413430cf1c6c775048c3009f70382dbc4c8fec6bbd4dbddd92be"
+    },
+    {
+      "path": "world/experience/atmosphere.css",
+      "bytes": 1736,
+      "sha256": "e362e2a056c38f89d7cda7480c59470acfd62bccb473c5534b012fce20856ef1"
+    },
+    {
+      "path": "world/experience/atmosphere.js",
+      "bytes": 5248,
+      "sha256": "73d6fc831adb60dcdecb8e85edec15d9167791c7a07d5f5f9cf5e03331e21356"
+    }
+  ]
+}

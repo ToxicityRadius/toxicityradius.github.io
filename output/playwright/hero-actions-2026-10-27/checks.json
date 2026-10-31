@@ -1,0 +1,54 @@
+[
+  {
+    "action": "View work",
+    "hash": "#work"
+  },
+  {
+    "action": "Contact",
+    "hash": "#contact"
+  },
+  {
+    "buttons": [
+      {
+        "filter": "blur(8px) saturate(1.5)",
+        "focus": "#fff",
+        "text": "View work "
+      },
+      {
+        "filter": "blur(8px) saturate(1.5)",
+        "focus": "#fff",
+        "text": "Contact "
+      }
+    ],
+    "overflow": false,
+    "state": "phone-night",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "buttons": [
+      {
+        "height": 44,
+        "left": 21.325000762939453,
+        "right": 140.7500038146973,
+        "text": "View work ",
+        "width": 119.4250030517578
+      },
+      {
+        "height": 44,
+        "left": 148.75,
+        "right": 254.7125015258789,
+        "text": "Contact ",
+        "width": 105.9625015258789
+      }
+    ],
+    "overflow": false,
+    "state": "small-phone-day",
+    "viewport": [
+      320,
+      568
+    ]
+  }
+]

@@ -1,4 +1,14 @@
-# Product requirements
+# Current product requirements — 23 October 2026
+
+Employers and freelance clients are equally important. Visitors should immediately identify Dexter Soriano as a Computer Engineering student building web applications and developer tools, inspect real project evidence, and reach email/social/CV links. Preserve the approved painted-valley portfolio and its section order, exactly three featured projects, archive categories and six noninteractive photo placeholders. [Root DESIGN.md](../../DESIGN.md) is the visual authority.
+
+The local reliability pass closes pending-load interruption, short-height geometry, camera interruption and reduced-motion defects; clarifies project identity; preserves filter state in the URL; optimizes existing assets; and reconciles guidance. Completion evidence and unrun acceptance checks belong in ../VERIFICATION.md. Deployment/migration and actual photos remain separate tasks.
+
+Journey update — 28 October 2026: Dexter clarified that the map and route must be completely custom like James's, without real locations. Use a fictional street-map look and winding narrative route, preserving the five factual biography chapters. Optimization is explicit scope: tiny local SVG assets, no WebGL/map engine/workers/tiles/blur. Root DESIGN.md owns the visual decisions.
+
+The remainder is a **superseded historical checkpoint**. Statements about pixel art, undecided evidence or an uncreated hosting address describe earlier planning, not current implementation or verified production state.
+
+# Historical product requirements — superseded
 
 Project: Dexter Soriano portfolio  
 Owner: Dexter Soriano  

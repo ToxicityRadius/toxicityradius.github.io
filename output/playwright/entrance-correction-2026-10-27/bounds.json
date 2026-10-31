@@ -1,0 +1,127 @@
+[
+  {
+    "labels": [
+      {
+        "inStage": true,
+        "name": "campus",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "workshop",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "library",
+        "overlapsText": false
+      }
+    ],
+    "overflow": false,
+    "panel": "rgba(0, 0, 0, 0)",
+    "viewport": [
+      1920,
+      990
+    ]
+  },
+  {
+    "labels": [
+      {
+        "inStage": true,
+        "name": "campus",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "workshop",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "library",
+        "overlapsText": false
+      }
+    ],
+    "overflow": false,
+    "panel": "rgba(0, 0, 0, 0)",
+    "viewport": [
+      1280,
+      600
+    ]
+  },
+  {
+    "labels": [
+      {
+        "inStage": true,
+        "name": "campus",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "workshop",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "library",
+        "overlapsText": false
+      }
+    ],
+    "overflow": false,
+    "panel": "rgba(0, 0, 0, 0)",
+    "viewport": [
+      768,
+      900
+    ]
+  },
+  {
+    "labels": [
+      {
+        "inStage": true,
+        "name": "campus",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "workshop",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "library",
+        "overlapsText": false
+      }
+    ],
+    "overflow": false,
+    "panel": "rgba(0, 0, 0, 0)",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "labels": [
+      {
+        "inStage": true,
+        "name": "campus",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "workshop",
+        "overlapsText": false
+      },
+      {
+        "inStage": true,
+        "name": "library",
+        "overlapsText": false
+      }
+    ],
+    "overflow": false,
+    "panel": "rgba(0, 0, 0, 0)",
+    "viewport": [
+      320,
+      568
+    ]
+  }
+]

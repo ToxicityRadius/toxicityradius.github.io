@@ -1,0 +1,11 @@
+# Night valley generation
+
+Built-in image generation; 27 October 2026. Reference: `review/animatic/backplate.webp`. Candidate: `valley-night-v1.png`. No website integration performed.
+
++Use case: lighting-weather edit.
+Asset type: production-quality nighttime background artwork candidate for Dexter's illustrated portfolio.
+Input image: the original 1672 x 941 daytime valley artwork is the edit target, not a website screenshot.
+Primary request: transform this EXACT scene into a beautiful believable moonlit night. Preserve the original wide 16:9 framing, camera, perspective, composition, all object silhouettes and exact positions. The campus is on the left, wooden workshop at center, arched glass library on the right, stone bridge in the lower center, river flowing from distant center to lower right, and winding foreground paths. These buildings must remain at the same coordinates for existing clickable web labels. Preserve the same painterly illustration style, brushwork and detail, never pixel art.
+Lighting: deep midnight-blue and indigo sky with sparse delicate stars, faint atmospheric clouds, and a modest moon in the upper-left sky. Cool silvery moonlight on roof edges, stone bridge, mountain ridges and river ripples. Warm amber lights glowing naturally through EXISTING campus windows, workshop windows and doorway, and the library glass facade, with restrained warm pools close to the existing buildings. Moonlight reflected in the river. Cool desaturated blue-green trees and grasses, readable rocks and paths, soft dark foreground, layered distant mountains.
+Mood: calm, inviting, richly detailed and cinematic, with substantial visible landscape detail. A carefully lit real night scene, not simply a dark blue filter over daytime art. No daytime yellow sunlight; avoid pitch-black crushed shadows, neon colors, giant bloom or dramatic fantasy additions.
+Invariants: keep the 3 buildings' architecture and scale, every riverbank/bridge/path alignment and the original image edges, do not move or redesign objects. No new buildings, people, vehicles or signs. No text, letters, logos, buttons, UI, borders or watermarks. Leave the upper central/right sky visually quiet for live website typography, without painting any typography. Output one clean opaque landscape artwork, same aspect ratio as the reference.

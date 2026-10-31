@@ -1,0 +1,120 @@
+[
+  {
+    "camera": "matrix(1, 0, 0, 1, 0, 44.64)",
+    "copy": "1",
+    "copyBounds": {
+      "bottom": 339.5124969482422,
+      "height": 231.5124969482422,
+      "left": 72,
+      "right": 904,
+      "top": 108,
+      "width": 832,
+      "x": 72,
+      "y": 108
+    },
+    "height": 2340,
+    "state": "entrance",
+    "viewport": [
+      1440,
+      900
+    ],
+    "y": 0
+  },
+  {
+    "camera": "matrix(1, 0, 0, 1, 0, 44.64)",
+    "copy": "0",
+    "copyTransform": "matrix(1, 0, 0, 1, 0, -315)",
+    "state": "early-scroll",
+    "y": 456
+  },
+  {
+    "camera": "matrix(1, 0, 0, 1, 0, 44.64)",
+    "copy": "0",
+    "copyTransform": "matrix(1, 0, 0, 1, 0, -315)",
+    "state": "mid-scroll",
+    "y": 776.7999877929688
+  },
+  {
+    "camera": "matrix(1.32, 0, 0, 1.32, -460.8, 0)",
+    "copy": "0",
+    "sheet": "sheet left on",
+    "state": "landmark-focused",
+    "y": 0
+  },
+  {
+    "card": "",
+    "map": "matrix(0.1622, 0, 0, 0.1622, 365.3, 195.8)",
+    "state": "journey-scroll",
+    "y": 2241.60009765625
+  },
+  {
+    "caseClass": "cs ed open ready",
+    "focus": "csClose",
+    "scrollLock": "hidden",
+    "state": "case-study-open",
+    "url": "https://www.jameschugh.com/work/eazydiner"
+  },
+  {
+    "canvas": [
+      {
+        "display": "none"
+      }
+    ],
+    "coarse": false,
+    "hero": {
+      "bottom": 310.4750061035156,
+      "height": 214.4750061035156,
+      "left": 16,
+      "right": 359.20001220703125,
+      "top": 96,
+      "width": 343.20001220703125,
+      "x": 16,
+      "y": 96
+    },
+    "overflow": false,
+    "state": "phone-entrance",
+    "valleyHeight": 844,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "camera": "none",
+    "sheet": {
+      "bottom": 686.0000152587891,
+      "height": 472.6375122070313,
+      "left": 16,
+      "right": 359.20001220703125,
+      "top": 213.3625030517578,
+      "width": 343.20001220703125,
+      "x": 16,
+      "y": 213.3625030517578
+    },
+    "state": "phone-landmark"
+  },
+  {
+    "card": "",
+    "map": "matrix(0.1265, 0, 0, 0.1265, -77.4, 190.2)",
+    "state": "phone-journey",
+    "trackHeight": 844
+  },
+  {
+    "card": "NSUT2021 · New Delhi01 / 09\n      The day JEE changed everything.I cleared JEE and got into NSUT for Mechanical Engineering. I had even cleared Waterloo Mathematics, but somehow, D",
+    "cardBounds": {
+      "bottom": 671.8750152587891,
+      "height": 245.65000915527344,
+      "left": 4.400000095367432,
+      "right": 370.7999939918518,
+      "top": 426.2250061035156,
+      "width": 366.3999938964844,
+      "x": 4.400000095367432,
+      "y": 426.2250061035156
+    },
+    "state": "phone-journey-settled",
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

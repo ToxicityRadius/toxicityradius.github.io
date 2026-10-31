@@ -1,0 +1,399 @@
+{
+  "date": "2026-10-27",
+  "checks": [
+    {
+      "cv": {
+        "href": "mailto:mdasoriano01@tip.edu.ph?subject=CV%20request",
+        "label": "Curriculum Vitae — request by email"
+      },
+      "labels": [
+        {
+          "height": 67.594970703125,
+          "name": "campus",
+          "width": 213.55125427246097,
+          "x": 136.6162872314453,
+          "y": 363.0550231933594
+        },
+        {
+          "height": 67.594970703125,
+          "name": "workshop",
+          "width": 127.27007293701172,
+          "x": 726.8281860351562,
+          "y": 580.8550415039062
+        },
+        {
+          "height": 67.594970703125,
+          "name": "library",
+          "width": 134.47500610351562,
+          "x": 1259.7781982421875,
+          "y": 402.655029296875
+        }
+      ],
+      "nav": [
+        {
+          "height": 46,
+          "text": "Home",
+          "width": 78.625
+        },
+        {
+          "height": 46,
+          "text": "Journey",
+          "width": 90.4124984741211
+        },
+        {
+          "height": 46,
+          "text": "Work",
+          "width": 74.8499984741211
+        },
+        {
+          "height": 46,
+          "text": "About",
+          "width": 79.4749984741211
+        },
+        {
+          "height": 46,
+          "text": "Contact",
+          "width": 90.3625030517578
+        },
+        {
+          "height": 46,
+          "text": "Curriculum Vitae",
+          "width": 140.47500610351562
+        }
+      ],
+      "pageWidth": 1425,
+      "theme": "day",
+      "viewport": 1440
+    },
+    {
+      "cv": {
+        "href": "mailto:mdasoriano01@tip.edu.ph?subject=CV%20request",
+        "label": "Curriculum Vitae — request by email"
+      },
+      "labels": [
+        {
+          "height": 61.45000076293945,
+          "name": "campus",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 539.6500244140625
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "workshop",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 609.1000366210938
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "library",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 678.5499877929688
+        }
+      ],
+      "nav": [
+        {
+          "height": 44,
+          "text": "Home",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "Journey",
+          "width": 59.07500076293945
+        },
+        {
+          "height": 44,
+          "text": "Work",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "About",
+          "width": 59.07500076293945
+        },
+        {
+          "height": 44,
+          "text": "Contact",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "CV",
+          "width": 59.0625
+        }
+      ],
+      "pageWidth": 375,
+      "theme": "day",
+      "viewport": 390
+    },
+    {
+      "cv": {
+        "href": "mailto:mdasoriano01@tip.edu.ph?subject=CV%20request",
+        "label": "Curriculum Vitae — request by email"
+      },
+      "labels": [
+        {
+          "height": 61.45000076293945,
+          "name": "campus",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 539.6500244140625
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "workshop",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 609.1000366210938
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "library",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 678.5499877929688
+        }
+      ],
+      "nav": [
+        {
+          "height": 44,
+          "text": "Home",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "Journey",
+          "width": 59.07500076293945
+        },
+        {
+          "height": 44,
+          "text": "Work",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "About",
+          "width": 59.07500076293945
+        },
+        {
+          "height": 44,
+          "text": "Contact",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "CV",
+          "width": 59.0625
+        }
+      ],
+      "pageWidth": 390,
+      "theme": "night",
+      "viewport": 390
+    },
+    {
+      "cv": {
+        "href": "mailto:mdasoriano01@tip.edu.ph?subject=CV%20request",
+        "label": "Curriculum Vitae — request by email"
+      },
+      "labels": [
+        {
+          "height": 61.45000076293945,
+          "name": "campus",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 539.6500244140625
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "workshop",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 609.1000366210938
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "library",
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 678.5499877929688
+        }
+      ],
+      "nav": [
+        {
+          "height": 44,
+          "text": "Home",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "Journey",
+          "width": 59.07500076293945
+        },
+        {
+          "height": 44,
+          "text": "Work",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "About",
+          "width": 59.07500076293945
+        },
+        {
+          "height": 44,
+          "text": "Contact",
+          "width": 59.0625
+        },
+        {
+          "height": 44,
+          "text": "CV",
+          "width": 59.0625
+        }
+      ],
+      "pageWidth": 375,
+      "theme": "night",
+      "viewport": 390
+    },
+    {
+      "cv": {
+        "href": "mailto:mdasoriano01@tip.edu.ph?subject=CV%20request",
+        "label": "Curriculum Vitae — request by email"
+      },
+      "labels": [
+        {
+          "height": 61.45000076293945,
+          "name": "campus",
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 455.6499938964844
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "workshop",
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 525.1000366210938
+        },
+        {
+          "height": 61.45000076293945,
+          "name": "library",
+          "width": 264.8000183105469,
+          "x": 20,
+          "y": 594.5499877929688
+        }
+      ],
+      "nav": [
+        {
+          "height": 44,
+          "text": "Home",
+          "width": 47.32500076293945
+        },
+        {
+          "height": 44,
+          "text": "Journey",
+          "width": 47.337501525878906
+        },
+        {
+          "height": 44,
+          "text": "Work",
+          "width": 47.32500076293945
+        },
+        {
+          "height": 44,
+          "text": "About",
+          "width": 47.337501525878906
+        },
+        {
+          "height": 44,
+          "text": "Contact",
+          "width": 47.337501525878906
+        },
+        {
+          "height": 44,
+          "text": "CV",
+          "width": 47.337501525878906
+        }
+      ],
+      "pageWidth": 305,
+      "theme": "night",
+      "viewport": 320
+    },
+    {
+      "cv": {
+        "href": "mailto:mdasoriano01@tip.edu.ph?subject=CV%20request",
+        "label": "Curriculum Vitae — request by email"
+      },
+      "labels": [
+        {
+          "height": 67.594970703125,
+          "name": "campus",
+          "width": 213.55130004882812,
+          "x": 137.4844512939453,
+          "y": 363.6045837402344
+        },
+        {
+          "height": 67.59502410888672,
+          "name": "workshop",
+          "width": 127.2698745727539,
+          "x": 727.3455810546875,
+          "y": 581.4046020507812
+        },
+        {
+          "height": 67.594970703125,
+          "name": "library",
+          "width": 134.47500610351562,
+          "x": 1260.3248291015625,
+          "y": 403.20458984375
+        }
+      ],
+      "nav": [
+        {
+          "height": 46,
+          "text": "Home",
+          "width": 78.625
+        },
+        {
+          "height": 46,
+          "text": "Journey",
+          "width": 90.4124984741211
+        },
+        {
+          "height": 46,
+          "text": "Work",
+          "width": 74.8499984741211
+        },
+        {
+          "height": 46,
+          "text": "About",
+          "width": 79.4749984741211
+        },
+        {
+          "height": 46,
+          "text": "Contact",
+          "width": 90.3625030517578
+        },
+        {
+          "height": 46,
+          "text": "Curriculum Vitae",
+          "width": 140.47500610351562
+        }
+      ],
+      "pageWidth": 1425,
+      "theme": "night",
+      "viewport": 1440
+    }
+  ],
+  "keyboard": {
+    "campusEnterOpened": true,
+    "escapeClosed": true,
+    "focusReturnedTo": "campus"
+  },
+  "cvEmailOnly": true,
+  "limits": [
+    "Actual iPhone Safari untested",
+    "CV email sending not exercised"
+  ]
+}

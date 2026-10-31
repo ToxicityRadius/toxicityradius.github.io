@@ -1,0 +1,62 @@
+[
+  {
+    "label": "navy/cream",
+    "fg": "#15263e",
+    "bg": "#fff8ed",
+    "ratio": "14.44"
+  },
+  {
+    "label": "muted/cream",
+    "fg": "#526177",
+    "bg": "#fff8ed",
+    "ratio": "5.97"
+  },
+  {
+    "label": "navy/mustard",
+    "fg": "#15263e",
+    "bg": "#ffe17a",
+    "ratio": "11.83"
+  },
+  {
+    "label": "navy/blue",
+    "fg": "#15263e",
+    "bg": "#cde5fa",
+    "ratio": "11.74"
+  },
+  {
+    "label": "navy/peach",
+    "fg": "#15263e",
+    "bg": "#ffc6b6",
+    "ratio": "10.16"
+  },
+  {
+    "label": "drawer darkest",
+    "fg": "#15263e",
+    "bg": "#c9a073",
+    "ratio": "6.35"
+  },
+  {
+    "label": "journey number",
+    "fg": "#493e2c",
+    "bg": "#fbf2da",
+    "ratio": "9.37"
+  },
+  {
+    "label": "journey active number",
+    "fg": "#fff4d7",
+    "bg": "#664b30",
+    "ratio": "7.33"
+  },
+  {
+    "label": "photo wall day muted",
+    "fg": "#526177",
+    "bg": "#e7e3d8",
+    "ratio": "4.91"
+  },
+  {
+    "label": "photo wall night muted",
+    "fg": "#c3cedd",
+    "bg": "#24354b",
+    "ratio": "7.83"
+  }
+]

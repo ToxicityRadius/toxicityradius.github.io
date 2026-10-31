@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-29",
+  "tests": 168,
+  "visual": "Blocked: local browser use disabled in Work settings",
+  "files": [
+    {
+      "path": "journey-geography.js",
+      "bytes": 7979,
+      "sha256": "7dfcfef63d9830b8393563db20ffd3663f1360e58e4e85459de1945777ddc16b"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 14764,
+      "sha256": "0e8504b08f2369568561c40cc2f3d415ebdc5f18383db2e7bcb7911e5b8e689b"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 15506,
+      "sha256": "0cddbb38b1ebdeaf7b176dc9682c52ce3d3dcb2f4c364e9e21ac163b38bea8d3"
+    },
+    {
+      "path": "tests/journey-map.test.mjs",
+      "bytes": 21205,
+      "sha256": "a444257d7ad4e55cd0bda1941a550b35537dbc52b4907fa4e783779d0c55a2fe"
+    },
+    {
+      "path": "images/journey/town-preview.svg",
+      "bytes": 26554,
+      "sha256": "6b0bae915fc357a24737a22c089f1f9c2d478701d83907f49b617c267d39f815"
+    },
+    {
+      "path": "images/journey/town-preview-night.svg",
+      "bytes": 26583,
+      "sha256": "1cfae194621d4e7d12c428ec1b2eeb43cb3031c31f0f9f4ad23fe884ee0c3f00"
+    },
+    {
+      "path": "images/journey/story-map.svg",
+      "bytes": 8768,
+      "sha256": "d7c2befa67b9e21ffc18928012a0a2e075db8811ebfc57f4576d6b48b39edc0d"
+    },
+    {
+      "path": "images/journey/story-map-night.svg",
+      "bytes": 8797,
+      "sha256": "5453c4a2cdb722117f180c64056f9efd052013f5d8238fdf02e0d43c57f67e5c"
+    }
+  ]
+}

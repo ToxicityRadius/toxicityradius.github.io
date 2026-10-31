@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-27T02:26:22.7187740Z",
+  "base_head": "a8779caa288a2ed8129bd80817e5bb322cbc2c2b",
+  "files": [
+    {
+      "path": "connected-home.css",
+      "sha256": "738891619a16ae8ff0d96d2ceb05a3e3f44ce4ad3165e86d98b135ab19a6143f"
+    },
+    {
+      "path": "review/animatic/controller.js",
+      "sha256": "13a9853c47bc1b0c31bc8c4f5da75367f3ea4d7dcf9765b9d90aa7b7b7d9266e"
+    }
+  ],
+  "built_css_sha256": "738891619a16ae8ff0d96d2ceb05a3e3f44ce4ad3165e86d98b135ab19a6143f"
+}

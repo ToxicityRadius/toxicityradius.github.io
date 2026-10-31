@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-28",
+  "scope": "S-shaped fictional route, bridge, final overview and demand-driven page smooth wheel scrolling",
+  "entries": [
+    {
+      "path": "journey-geography.js",
+      "bytes": 3530,
+      "sha256": "d992ddceb9d722de7d7d84fa5bd15d5b4cd962f8e19600b8ecc3e93e441ad47e"
+    },
+    {
+      "path": "journey-map.js",
+      "bytes": 7071,
+      "sha256": "ea452219f31a47173ebc184aedb535699037db3a2a7a4838576b8cdd6b1550a3"
+    },
+    {
+      "path": "journey-state.js",
+      "bytes": 1631,
+      "sha256": "32d0a98e361c9f7970794c2133e4fb6e8613753fdb98ed6ca6d20abb10c7af7f"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 10021,
+      "sha256": "e3cc3401b040d914dde315a059eecf38e22e68e05d043c65ab078c187c4432e9"
+    },
+    {
+      "path": "smooth-scroll.js",
+      "bytes": 2953,
+      "sha256": "f115fc7b53f5c4356833fe1887122bc8ccc70fc501c469ed7cb7e75077801042"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 15433,
+      "sha256": "2d28e9771510fe31463526eb390a3f6608294d91afe9181489d1bf8d55d123aa"
+    },
+    {
+      "path": "images/journey/story-map.svg",
+      "bytes": 3905,
+      "sha256": "bc08f7d1e5358547723f9f540754b3e078b4319615a31241eb712c80e103f3e3"
+    },
+    {
+      "path": "images/journey/story-map-night.svg",
+      "bytes": 3935,
+      "sha256": "3982630ef4db931d558394c67cb396f1cf1329ea8f01fd818477a08451d5f26f"
+    },
+    {
+      "path": "package.json",
+      "bytes": 430,
+      "sha256": "c451cd8023ccf9b6d7e83adffb2839124c70688b55500d4aadc817d0e8083307"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 2127,
+      "sha256": "e68d3441b3959a9ed1d49cb6dd51d6f34e09f40b658889fff3f637ea3ec48b75"
+    },
+    {
+      "path": "tests/journey-map.test.mjs",
+      "bytes": 10457,
+      "sha256": "9416020012998769d95aa65ff57f2977e6fa8f817de9ba9f0ca9ccba3e7b0122"
+    },
+    {
+      "path": "tests/smooth-scroll.test.mjs",
+      "bytes": 4187,
+      "sha256": "c9c0e47f32d1a995b4feb16c1deaaf6347caf219f7886a68311438df243f16db"
+    }
+  ],
+  "mapEngineShipped": false,
+  "tests": 156,
+  "lenisVersion": "1.3.27",
+  "actualPhoneFPS": "Not measured"
+}

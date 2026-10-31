@@ -1,0 +1,53 @@
+[
+  {
+    "mode": "nojs",
+    "route": "/",
+    "width": 375,
+    "overflow": false,
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [],
+    "scriptRan": false
+  },
+  {
+    "mode": "failed",
+    "route": "/",
+    "width": 375,
+    "overflow": false,
+    "stage": "arrived",
+    "projects": 3,
+    "chapters": 5,
+    "shortcuts": [
+      {
+        "href": "#work",
+        "visible": true
+      },
+      {
+        "href": "#contact",
+        "visible": true
+      }
+    ],
+    "brokenImages": [
+      "/deliberately-missing-valley.png",
+      "/deliberately-missing-valley.png"
+    ],
+    "axeVersion": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 38
+      }
+    ]
+  }
+]

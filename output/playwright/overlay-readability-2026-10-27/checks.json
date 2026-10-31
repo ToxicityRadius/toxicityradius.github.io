@@ -1,0 +1,261 @@
+{
+  "date": "2026-10-27",
+  "browser": "In-app Chromium",
+  "desktopViewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "stability": [
+    {
+      "state": "night-first-pointer",
+      "before": {
+        "foreground": "translate(0px, 0px)",
+        "labels": [
+          {
+            "height": 67.5949935913086,
+            "name": "campus",
+            "width": 213.55125427246097,
+            "x": 136.6162872314453,
+            "y": 221.4300079345703
+          },
+          {
+            "height": 67.59502410888672,
+            "name": "workshop",
+            "width": 127.27007293701172,
+            "x": 726.8281860351562,
+            "y": 494.958740234375
+          },
+          {
+            "height": 67.5949935913086,
+            "name": "library",
+            "width": 134.47500610351562,
+            "x": 1259.7781982421875,
+            "y": 274.0237731933594
+          }
+        ],
+        "phase": "arrived",
+        "theme": "night",
+        "transform": "translate(-2%, -3%) scale(1.1)"
+      },
+      "after": {
+        "foreground": "translate(4.35261px, 2.22222px)",
+        "labels": [
+          {
+            "height": 67.5949935913086,
+            "name": "campus",
+            "width": 213.55125427246097,
+            "x": 136.6162872314453,
+            "y": 221.4300079345703
+          },
+          {
+            "height": 67.59502410888672,
+            "name": "workshop",
+            "width": 127.27007293701172,
+            "x": 726.8281860351562,
+            "y": 494.958740234375
+          },
+          {
+            "height": 67.5949935913086,
+            "name": "library",
+            "width": 134.47500610351562,
+            "x": 1259.7781982421875,
+            "y": 274.0237731933594
+          }
+        ],
+        "phase": "arrived",
+        "theme": "night",
+        "transform": "translate(-2%, -3%) scale(1.1)"
+      }
+    },
+    {
+      "state": "day-first-pointer",
+      "before": {
+        "foreground": "translate(0px, 0px)",
+        "labels": [
+          {
+            "height": 67.5949935913086,
+            "name": "campus",
+            "width": 213.55125427246097,
+            "x": 136.6162872314453,
+            "y": 221.4300079345703
+          },
+          {
+            "height": 67.59502410888672,
+            "name": "workshop",
+            "width": 127.27007293701172,
+            "x": 726.8281860351562,
+            "y": 494.958740234375
+          },
+          {
+            "height": 67.5949935913086,
+            "name": "library",
+            "width": 134.47500610351562,
+            "x": 1259.7781982421875,
+            "y": 274.0237731933594
+          }
+        ],
+        "phase": "arrived",
+        "theme": "day",
+        "transform": "translate(-2%, -3%) scale(1.1)"
+      },
+      "after": {
+        "foreground": "translate(-4.06962px, 2.31111px)",
+        "labels": [
+          {
+            "height": 67.5949935913086,
+            "name": "campus",
+            "width": 213.55125427246097,
+            "x": 136.6162872314453,
+            "y": 221.4300079345703
+          },
+          {
+            "height": 67.59502410888672,
+            "name": "workshop",
+            "width": 127.27007293701172,
+            "x": 726.8281860351562,
+            "y": 494.958740234375
+          },
+          {
+            "height": 67.5949935913086,
+            "name": "library",
+            "width": 134.47500610351562,
+            "x": 1259.7781982421875,
+            "y": 274.0237731933594
+          }
+        ],
+        "phase": "arrived",
+        "theme": "day",
+        "transform": "translate(-2%, -3%) scale(1.1)"
+      }
+    },
+    {
+      "state": "night-reload-first-pointer",
+      "before": {
+        "foreground": "translate(0px, 0px)",
+        "labels": [
+          {
+            "height": 67.5949935913086,
+            "name": "campus",
+            "width": 213.55125427246097,
+            "x": 136.6162872314453,
+            "y": 221.4300079345703
+          },
+          {
+            "height": 67.59502410888672,
+            "name": "workshop",
+            "width": 127.27007293701172,
+            "x": 726.8281860351562,
+            "y": 494.958740234375
+          },
+          {
+            "height": 67.5949935913086,
+            "name": "library",
+            "width": 134.47500610351562,
+            "x": 1259.7781982421875,
+            "y": 274.0237731933594
+          }
+        ],
+        "phase": "arrived",
+        "theme": "night",
+        "transform": "translate(-2%, -3%) scale(1.1)"
+      },
+      "after": {
+        "foreground": "translate(4.35261px, 2.22222px)",
+        "labels": [
+          {
+            "height": 67.5949935913086,
+            "name": "campus",
+            "width": 213.55125427246097,
+            "x": 136.6162872314453,
+            "y": 221.4300079345703
+          },
+          {
+            "height": 67.59502410888672,
+            "name": "workshop",
+            "width": 127.27007293701172,
+            "x": 726.8281860351562,
+            "y": 494.958740234375
+          },
+          {
+            "height": 67.5949935913086,
+            "name": "library",
+            "width": 134.47500610351562,
+            "x": 1259.7781982421875,
+            "y": 274.0237731933594
+          }
+        ],
+        "phase": "arrived",
+        "theme": "night",
+        "transform": "translate(-2%, -3%) scale(1.1)"
+      }
+    }
+  ],
+  "phone": {
+    "documentWidth": 375,
+    "markers": [
+      {
+        "ink": "rgb(21, 38, 62)",
+        "text": "Ready to build.",
+        "width": 230.90000915527344,
+        "x": 26.262500762939453
+      },
+      {
+        "ink": "rgb(21, 38, 62)",
+        "text": "Useful things.",
+        "width": 189.33750915527344,
+        "x": 22
+      },
+      {
+        "ink": "rgb(255, 248, 237)",
+        "text": "builder.",
+        "width": 101.9875030517578,
+        "x": 174.21250915527344
+      },
+      {
+        "ink": "rgb(21, 38, 62)",
+        "text": "looked inside.",
+        "width": 189.8500061035156,
+        "x": 22
+      },
+      {
+        "ink": "rgb(21, 38, 62)",
+        "text": "purpose.",
+        "width": 122.875,
+        "x": 44.92499923706055
+      },
+      {
+        "ink": "rgb(21, 38, 62)",
+        "text": "builder.",
+        "width": 101.9875030517578,
+        "x": 73.9375
+      },
+      {
+        "ink": "rgb(255, 248, 237)",
+        "text": "build.",
+        "width": 75.32500457763672,
+        "x": 207.375
+      },
+      {
+        "ink": "rgb(21, 38, 62)",
+        "text": "good problem",
+        "width": 193.3500061035156,
+        "x": 120.4000015258789
+      }
+    ],
+    "viewport": 390
+  },
+  "nightHeadingsReviewed": [
+    "hero",
+    "introduction",
+    "journey",
+    "work",
+    "toolbox",
+    "about",
+    "services",
+    "contact"
+  ],
+  "limits": [
+    "Actual iPhone Safari untested",
+    "Not a full accessibility or performance audit"
+  ]
+}

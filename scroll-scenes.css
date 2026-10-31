@@ -1,0 +1,4 @@
+.scroll-word{color:var(--ink);transition:none}
+.connected-home .scroll-mark::after{clip-path:inset(0 calc((1 - var(--mark-progress,1)) * 100%) 0 0)}
+@media(prefers-reduced-motion:reduce){.scroll-word{opacity:1!important}.connected-home .scroll-mark::after{clip-path:none}}
+@media(prefers-reduced-motion:reduce){.introduction-notes p,.project-box-stage,.engineering-drawer,.photo-wall figure,.engineering-desk>figure,.engineering-desk-notebook,.engineering-pinned-notes,.contact-desk>*{translate:none!important;opacity:1!important}}

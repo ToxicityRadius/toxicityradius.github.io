@@ -8,8 +8,8 @@ export function frameAt(progress){
  return {
   scale:1+travel*.1,x:-travel*2,y:-travel*3,
   foregroundScale:1+travel*.5,foregroundX:-travel*13,foregroundY:travel*22,
-  intro:smooth((time-1)/.3)*(1-smooth((time-2.7)/.4)),
-  destinations:smooth((time-3.9)/.4),
+  intro:smooth((time-1)/.3),
+  destinations:smooth((time-2.4)/.3),
   cloudSplit:cloudReveal*110,cloudScale:1.75-.75*cloudReveal,
   phase:time<.8?'Overlook':time<3.9?'Approach':'Arrival',
  };

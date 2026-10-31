@@ -1,4 +1,12 @@
-# Data and access
+# Current data boundary — 23 October 2026
+
+This remains a static portfolio with no backend, account, submitted form or analytics. Public archive selection is encoded only in the URL; theme preference uses local storage. Photo records are local, user-confirmed content, and only six complete unique records enable the existing lightbox. The active visual authority is [root DESIGN.md](../../DESIGN.md). Historical artwork/scope wording below is superseded; the static data/access boundary remains applicable.
+
+## Geographic data requests — 27 October 2026
+
+The journey now serves original fictional SVG maps and route geometry, with no real map locations or external provider data. Visitors make no requests to map providers. There is no geolocation, account, API key, analytics or personal submission. The five existing chapter texts remain factual biography; map coordinates describe only positions in an invented 1800×1400 canvas. The short-lived real-geography attempt and historical NASA/live-tile references are superseded.
+
+# Historical data inventory
 
 Project: Dexter Soriano portfolio  
 Owner: Dexter Soriano  

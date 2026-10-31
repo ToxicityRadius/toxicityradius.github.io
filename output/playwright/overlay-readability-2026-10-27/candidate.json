@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-27",
+  "head": "a8779caa288a2ed8129bd80817e5bb322cbc2c2b",
+  "sources": [
+    {
+      "path": "connected-home.css",
+      "sha256": "01709291E0DE88053B338C179136661E732D65A2E81CC0EC8A79EFFAD5176852"
+    },
+    {
+      "path": "review/experience/atmosphere.js",
+      "sha256": "D85B1BF838DCFD1136D5D411F6F7DC4C9FFF72E287F4CBE9B90D36CABD337DF8"
+    },
+    {
+      "path": "review/experience/atmosphere.css",
+      "sha256": "BE50BF055AD2D49B21FDE9F484E44A1D245AA64D59397C63CBD7D96A76FD3AD6"
+    },
+    {
+      "path": "tests/atmosphere.test.mjs",
+      "sha256": "4F547041178B242599B755230C54954E0FB459D92BCB99B959D2D2D08027FF36"
+    }
+  ],
+  "build": [
+    {
+      "path": "_headers",
+      "sha256": "E32553F287C1748C9CD0F72C7F651A54C6837B2B0942989F2B92A06E249B3355"
+    },
+    {
+      "path": "404.html",
+      "sha256": "27CD9EEBCBEEEBC5188949A1564264A0A55106A86F8817367C08E9D76F8B462D"
+    },
+    {
+      "path": "connected-home.css",
+      "sha256": "01709291E0DE88053B338C179136661E732D65A2E81CC0EC8A79EFFAD5176852"
+    },
+    {
+      "path": "connected-home.js",
+      "sha256": "63B3AFE4C2CF7631DEF4A9E16682D0D87C3E17160D620D90D0D40CFFD13434D9"
+    },
+    {
+      "path": "engineering-spaces.css",
+      "sha256": "C1F11DCB3A1A44AE67CCDA151E9FFA451A8C7B2EEFE3644BAA7A96ECD7B8835B"
+    },
+    {
+      "path": "engineering-spaces.js",
+      "sha256": "E6D81CB96876AC3B25963B9F3BD90B654E4B6A5ECD4948467873222C549201C1"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "BEBF240FCEA972075CA1A94070D981A9D002C4801DD7C4D1EFA2B0787599F969"
+    },
+    {
+      "path": "headline-text.js",
+      "sha256": "2491A73F0843D526FF9EF54CD7081EC8F2733023754200674D587307CE1EB286"
+    },
+    {
+      "path": "index.html",
+      "sha256": "FF350F45FDA44778E84A695B7609BA8E4BE8D28EAF07665322C299D66A587E53"
+    },
+    {
+      "path": "journey-map.css",
+      "sha256": "BB70BBEEEE2F35214AB81882E5256FC158C6E6540ECF9E2C2EBAD757B276A5B2"
+    },
+    {
+      "path": "journey-map.js",
+      "sha256": "5E8D84D8844B7BEE3146F685F2B7E62AED2FB45814CC16FBD8EAC31C005D2C97"
+    },
+    {
+      "path": "photo-wall.css",
+      "sha256": "E51ACE42554315ABB32E06E42BD02A215E4A91AEE8FE9625C76BF169C7EFB9C5"
+    },
+    {
+      "path": "photo-wall.js",
+      "sha256": "3FA9A6EBF61F62F16EFDD0DC200C042BE64B408E3BD3B083B455230B64403296"
+    },
+    {
+      "path": "project-box.css",
+      "sha256": "48BFA213D264C648AF025A34E296376C4A2EE4C5F3F3C47EDB9E83F2E7764329"
+    },
+    {
+      "path": "project-box.js",
+      "sha256": "FE02D5C43C454F30CCA69B06252A2B2CD81299D9E9E0B073257C5EE3688B677B"
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "BFB68ADF11DC9AFB974870F9E688AB37F8A1DB3C75D686D07E004AB5732CFBB2"
+    },
+    {
+      "path": "script.js",
+      "sha256": "5C44C72BEDC3EB1E9E740102B13C0717BA6FF32C611072F04636D634AF6E468D"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "A037238E4A1CF98B01B62ADB63DC4B8793FA2770D49513C058A8D21255F34CC4"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "45A698168C9B9A0D8D924C1986541827209601C018E774BA9521BAF366A0D879"
+    },
+    {
+      "path": "theme-artwork.js",
+      "sha256": "6A1A547E927F9279ED124478A709CD2276AC0DA243A544C0AC4CB1CF4943EED6"
+    },
+    {
+      "path": "theme.js",
+      "sha256": "2263BDCC9A3B99060837299DC89DB6FE5280BFBEC7FB6F8812FC03FB4850D674"
+    },
+    {
+      "path": "fonts\\bricolage-grotesque.woff2",
+      "sha256": "B51A8EBD169637E47CB7DB430431AB3E122D2F09B03EE2A03EA06F4CB46F1A8E"
+    },
+    {
+      "path": "fonts\\BricolageGrotesque-OFL.txt",
+      "sha256": "4B5A7D8F37F5602621C8A8D7358A6A2E71317E6C231C661E15AEF0275D3E07BA"
+    },
+    {
+      "path": "fonts\\Outfit-OFL.txt",
+      "sha256": "916FDCB34129E58B62D12A9D27AC746BB8742BC42409521C1438521CFCEA7EB5"
+    },
+    {
+      "path": "fonts\\outfit.ttf",
+      "sha256": "6A8C9BE856A6B9E09C66615634904616152C9DE5E44DB343A3CED240479C586A"
+    },
+    {
+      "path": "images\\about-portrait.jpg",
+      "sha256": "F50FF6D19FCD04A3CF96EE4FF09CFB6444D09D73DF592B389A9276CD9E61334F"
+    },
+    {
+      "path": "images\\advising-demo.webp",
+      "sha256": "8A418DF8AACFA90765DEBD6E20355A245CE402EC872AE77FF0E093522AC2242A"
+    },
+    {
+      "path": "images\\claimcheck-sample.jpg",
+      "sha256": "1BE7A77520F8BD41EFBA4523AC2253F98068DBA584B8DA7B0D294C22E65DD9B6"
+    },
+    {
+      "path": "images\\formproof-report.webp",
+      "sha256": "A00CF0E05DCF15E11C9656FC369847B3514EF91802B59BD5062F69CFBC3A1D1E"
+    },
+    {
+      "path": "projects\\index.html",
+      "sha256": "9C7DE5826E3B9218ABB08235C15DF3D0AECA8B4C9DEFE695A8FEF2F5A9C77B86"
+    },
+    {
+      "path": "projects\\claimcheck\\index.html",
+      "sha256": "5470CD1B762BB409A347D621A3EF0333D70B9F6F93E3A746855014C0461BD3F5"
+    },
+    {
+      "path": "projects\\formproof\\index.html",
+      "sha256": "6680362CBE79604D1D3E490A328997AB1C44DC9C4687FC827A9A9941282A65A8"
+    },
+    {
+      "path": "projects\\student-advising-portal\\index.html",
+      "sha256": "0DBFA22D1F9C533BFBD7C11F5FB74C3F965DF5455839134D6F505013A88923C7"
+    },
+    {
+      "path": "vendor\\anime-LICENSE.md",
+      "sha256": "3F3E835A9952CFC2A6CA836FB95B3257C981F24FA3EF51249055ACB09931897B"
+    },
+    {
+      "path": "vendor\\anime.esm.min.js",
+      "sha256": "A19015A1A92D52025A2FB6703B6D67EADD1CC2AEAF880770E96E04CF6AA07BE1"
+    },
+    {
+      "path": "vendor\\gsap.min.js",
+      "sha256": "4B3066E3554DD22603C7827FCD1EF3BBE5FFB0E69011001ADE8E1EBA66207942"
+    },
+    {
+      "path": "vendor\\ScrollTrigger.min.js",
+      "sha256": "71192443449AEE5C5ADC5BBA2D7620567609743C10B8DAB6E0BFB6D567A41F01"
+    },
+    {
+      "path": "world\\animatic\\backplate-night.webp",
+      "sha256": "1FABE76E4BC3797A8C9882AE1A377B82123F8DF5E055444716330C0E5A42FA11"
+    },
+    {
+      "path": "world\\animatic\\backplate.webp",
+      "sha256": "7771B71A3F9472C6A70F69E38F39BDAA9233FB13A05FE16AFF51F0064735ADEF"
+    },
+    {
+      "path": "world\\animatic\\cloud-renderer.js",
+      "sha256": "0250555D550D6515D4A4946872531820671A5FCFAE452FAED609D73E15DD5FB8"
+    },
+    {
+      "path": "world\\animatic\\controller.js",
+      "sha256": "2C986A30EA442D043B07250F080F7FED4B23883DB365E5B2277032CC04FAB33F"
+    },
+    {
+      "path": "world\\animatic\\foreground-night.webp",
+      "sha256": "974C924B6F293BC5247B5F29DDEFD32FB058BD5F02C987848FB93D81AE1DAFED"
+    },
+    {
+      "path": "world\\animatic\\foreground.webp",
+      "sha256": "32A94E64668287116B1175095C2468559825844C933F9C4812DFA4DDEA01A529"
+    },
+    {
+      "path": "world\\animatic\\motion.js",
+      "sha256": "57744B68245DAAA629BBB81A341FF11B45E84C049DE32C5D0C20151D8B39E83B"
+    },
+    {
+      "path": "world\\animatic\\style.css",
+      "sha256": "2AB4672320A6413430CF1C6C775048C3009F70382DBC4C8FEC6BBD4DBDDD92BE"
+    },
+    {
+      "path": "world\\animatic\\clouds\\soft-01.webp",
+      "sha256": "980457A06A46735BF244798C9A76DEB48B2DDB566DFFAE5292C83EEB0CD94851"
+    },
+    {
+      "path": "world\\animatic\\clouds\\soft-02.webp",
+      "sha256": "E43B3A445F945B1E0C7DD1506820184E1390F7A1D9437B57F9CE0834A7907512"
+    },
+    {
+      "path": "world\\animatic\\clouds\\soft-03.webp",
+      "sha256": "DDDB5B6183C943219772C52365D843732FC24D53DA2558D32A31E5C931DCFF55"
+    },
+    {
+      "path": "world\\animatic\\clouds\\soft-04.webp",
+      "sha256": "2140D3F9E060BB59F3ECD7248BB61F42FD400B74CB62D5C686936BAA5882C484"
+    },
+    {
+      "path": "world\\animatic\\clouds\\soft-05.webp",
+      "sha256": "DB4964464587D640E1443A302A27959D92803B4B7E2BEE424FD1BC2910AB39A9"
+    },
+    {
+      "path": "world\\animatic\\clouds\\soft-06.webp",
+      "sha256": "9E042845CE4A5389BE85A64479DFD6CB17F059EF5FC67EA23B038C3B8A85C09D"
+    },
+    {
+      "path": "world\\experience\\atmosphere.css",
+      "sha256": "BE50BF055AD2D49B21FDE9F484E44A1D245AA64D59397C63CBD7D96A76FD3AD6"
+    },
+    {
+      "path": "world\\experience\\atmosphere.js",
+      "sha256": "D85B1BF838DCFD1136D5D411F6F7DC4C9FFF72E287F4CBE9B90D36CABD337DF8"
+    }
+  ]
+}

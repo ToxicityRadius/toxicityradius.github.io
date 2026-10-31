@@ -1,5 +1,6 @@
 import {frameAt,clamp,DURATION_MS,SESSION_KEY} from './motion.js';
 import {createCloudRenderer} from './cloud-renderer.js';
+import {initThemeArtwork} from '/theme-artwork.js';
 
 const world=document.querySelector('.world'),foreground=document.querySelector('.foreground');
 const intro=document.querySelector('.intro'),destinations=document.querySelector('.destinations'),cue=document.querySelector('.cue');
@@ -18,29 +19,33 @@ document.querySelector('footer').hidden=!debug;
 function remember(){seen=true;try{sessionStorage.setItem(SESSION_KEY,'1');}catch{}}
 function controls(){
  const disabled=!assetsReady||staticView();
- control.disabled=disabled;control.hidden=assetsReady&&staticView();
- control.textContent=!assetsReady?'Preparing entrance…':progress<1?'Skip intro':'Replay intro';
+ control.disabled=staticView()||(!assetsReady&&progress===1);control.hidden=assetsReady&&staticView();
+ control.textContent=progress<1?'Skip intro':!assetsReady?'Preparing entrance…':'Replay intro';
  play.disabled=slider.disabled=disabled;
  play.textContent=playing?'Pause':progress>=1?'Replay sequence':progress>0?'Resume sequence':'Play sequence';
 }
 function render(value){
  progress=clamp(value);
  const frame=frameAt(progress),still=staticView(),reachable=still||progress===1;
- if(stage.dataset)stage.dataset.entrance=!assetsReady?'loading':reachable?'arrived':'intro';
+ if(stage.dataset)stage.dataset.entrance=reachable?'arrived':!assetsReady?'loading':'intro';
+ const textPhase=reachable?'settled':progress*DURATION_MS>=1000?'reveal':'waiting';
+ if(stage.dataset&&stage.dataset.textPhase!==textPhase)stage.dataset.textPhase=textPhase;
  world.style.transform=still?'none':`translate(${frame.x}%,${frame.y}%) scale(${frame.scale})`;
+ destinations.style.transform=world.style.transform;
  foreground.style.transform=still?'none':`translate(${frame.foregroundX}%,${frame.foregroundY}%) scale(${frame.foregroundScale})`;
  cloudRenderer.draw(progress,frame,imagesDecoded&&!still);
  intro.style.opacity=still?'1':String(frame.intro);
  destinations.style.opacity=still?'1':String(frame.destinations);
  destinations.style.visibility=reachable||frame.destinations>0?'visible':'hidden';
- destinations.style.pointerEvents=reachable?'auto':'none';destinations.inert=!reachable;
+ const destinationsReady=reachable||frame.destinations===1;
+ destinations.style.pointerEvents=destinationsReady?'auto':'none';destinations.inert=!destinationsReady;
  cue.style.opacity=!still&&progress===1?'1':'0';
  slider.value=String(Math.round(progress*100));
  phase.value=assetFailed?'Artwork unavailable — static overview':still?'Static overview':frame.phase;
  controls();
 }
 function pause(){playing=false;cancelAnimationFrame(request);last=null;controls();}
-function finish(){pause();render(1);}
+function finish(){pause();render(1);stage.classList.remove('is-loading');}
 export function finishEntrance(){allowAutoplay=false;finish();}
 function tick(time){
  if(!playing||document.hidden)return;
@@ -55,10 +60,10 @@ function begin(replay=false){
  playing=true;last=null;remember();render(progress);
  if(!document.hidden)request=requestAnimationFrame(tick);
 }
-control.addEventListener('click',()=>{if(progress<1)finish();else begin(true);});
+control.addEventListener('click',()=>{if(progress<1)finishEntrance();else begin(true);});
 play.addEventListener('click',()=>{if(playing)pause();else begin();});
 slider.addEventListener('input',()=>{if(!assetsReady||staticView())return;pause();render(Number(slider.value)/100);});
-function interrupt(){allowAutoplay=false;if(assetsReady&&progress<1)finish();}
+function interrupt(){allowAutoplay=false;if(progress<1)finish();}
 addEventListener('wheel',interrupt,{passive:true});
 addEventListener('touchmove',interrupt,{passive:true});
 addEventListener('scroll',interrupt,{passive:true});
@@ -87,4 +92,6 @@ async function prepareAssets(){
  assetsReady=true;
  if(allowAutoplay&&!staticView())begin();else finish();
 }
+// Select the initial theme's images before the entrance waits for their decode.
+initThemeArtwork(document,finishEntrance);
 prepareAssets();

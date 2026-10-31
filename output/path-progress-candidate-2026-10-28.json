@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-28",
+  "scope": "Continuous scroll-driven path drawing and leading marker; bounded phone tween",
+  "tests": 158,
+  "files": [
+    {
+      "path": "journey-state.js",
+      "bytes": 2278,
+      "sha256": "cc1a8d64af79ac03b8f1f3ccebd9dd6ce7f51e034e13beedaf7f3df63f705830"
+    },
+    {
+      "path": "journey-geography.js",
+      "bytes": 4935,
+      "sha256": "5834b7123446ec50a21ae4af4dd00cbceb134e589e962c4bb2324a503c7255f3"
+    },
+    {
+      "path": "journey-map.js",
+      "bytes": 7167,
+      "sha256": "083ce23c689866eafcafb30e97a89dbb16946c418c9dd3d50899b7f3e535c630"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 10175,
+      "sha256": "14b8be17cab324bfcb204876427670820710c3f8510f99303ac01950ac70d23f"
+    },
+    {
+      "path": "tests/journey-map.test.mjs",
+      "bytes": 12974,
+      "sha256": "f676b9848e3c8d802f09a5e0575d994a3b20f38c2944948cc1d9f31430efaa99"
+    }
+  ]
+}
