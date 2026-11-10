@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-28",
+  "scope": "Fictional custom story map; no actual locations",
+  "entries": [
+    {
+      "path": "journey-geography.js",
+      "bytes": 2775,
+      "sha256": "50b5a8649f84682fd9fb975c541f8875bda9ee82ec2894c07fee45f479fe7900"
+    },
+    {
+      "path": "journey-map.js",
+      "bytes": 7071,
+      "sha256": "ea452219f31a47173ebc184aedb535699037db3a2a7a4838576b8cdd6b1550a3"
+    },
+    {
+      "path": "journey-state.js",
+      "bytes": 1721,
+      "sha256": "013646c9ce0aeb26499b9e0799246d59527fc9359454894b17964986d769ae51"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 10023,
+      "sha256": "5a497b0b680b45dc8b668f2c191175ad1df2585568a0133c4a29ed48f96435b1"
+    },
+    {
+      "path": "scripts/journey-map.mjs",
+      "bytes": 2147,
+      "sha256": "059d17dd36d8bf7e01a05b85c79b9452f337ccce03275dc4033bde4ac68c8c8c"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 15119,
+      "sha256": "15fda90b1f3486bc4c9a2bf92e92d8090e163f403e568b6773cd157382c8b60e"
+    },
+    {
+      "path": "images/journey/story-map.svg",
+      "bytes": 3305,
+      "sha256": "1c99dca62ed5634b17c8407e0ac60567acdbca4c90b16ee009bc6e9075537c79"
+    },
+    {
+      "path": "images/journey/story-map-night.svg",
+      "bytes": 3305,
+      "sha256": "ae6b4ce1c3f1f0ec322fb249c3ff87b6fd95e98d1aa0daa6f7ad8ee7cd5674df"
+    }
+  ],
+  "mapEngineShipped": false,
+  "tests": 151,
+  "actualPhoneFPS": "Not measured"
+}

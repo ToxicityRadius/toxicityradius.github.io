@@ -1,0 +1,736 @@
+{
+  "date": "2026-10-23",
+  "routeMatrix": [
+    {
+      "brokenImages": [],
+      "heading": "Curious enough to ask.Ready to build.",
+      "overflow": false,
+      "route": "/",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "heading": "The projectnotebook.",
+      "overflow": false,
+      "route": "/projects/",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "heading": "A clearer path through academic advising.",
+      "overflow": false,
+      "route": "/projects/student-advising-portal/",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "heading": "A repair should come with evidence.",
+      "overflow": false,
+      "route": "/projects/formproof/",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "heading": "Bring the evidence back into the conversation.",
+      "overflow": false,
+      "route": "/projects/claimcheck/",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "heading": "A little offthe map.",
+      "overflow": false,
+      "route": "/404.html",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "heading": "Curious enough to ask.Ready to build.",
+      "overflow": false,
+      "route": "/",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "heading": "The projectnotebook.",
+      "overflow": false,
+      "route": "/projects/",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "heading": "A clearer path through academic advising.",
+      "overflow": false,
+      "route": "/projects/student-advising-portal/",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "heading": "A repair should come with evidence.",
+      "overflow": false,
+      "route": "/projects/formproof/",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "heading": "Bring the evidence back into the conversation.",
+      "overflow": false,
+      "route": "/projects/claimcheck/",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "heading": "A little offthe map.",
+      "overflow": false,
+      "route": "/404.html",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "heading": "Curious enough to ask.Ready to build.",
+      "overflow": false,
+      "route": "/",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "heading": "The projectnotebook.",
+      "overflow": false,
+      "route": "/projects/",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "heading": "A clearer path through academic advising.",
+      "overflow": false,
+      "route": "/projects/student-advising-portal/",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "heading": "A repair should come with evidence.",
+      "overflow": false,
+      "route": "/projects/formproof/",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "heading": "Bring the evidence back into the conversation.",
+      "overflow": false,
+      "route": "/projects/claimcheck/",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "heading": "A little offthe map.",
+      "overflow": false,
+      "route": "/404.html",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "heading": "Curious enough to ask.Ready to build.",
+      "overflow": false,
+      "route": "/",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "heading": "The projectnotebook.",
+      "overflow": false,
+      "route": "/projects/",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "heading": "A clearer path through academic advising.",
+      "overflow": false,
+      "route": "/projects/student-advising-portal/",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "heading": "A repair should come with evidence.",
+      "overflow": false,
+      "route": "/projects/formproof/",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "heading": "Bring the evidence back into the conversation.",
+      "overflow": false,
+      "route": "/projects/claimcheck/",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "heading": "A little offthe map.",
+      "overflow": false,
+      "route": "/404.html",
+      "width": 1440
+    }
+  ],
+  "interactions": [
+    {
+      "focus": "preview-student-advising-portal",
+      "hash": "#project-student-advising-portal",
+      "open": true,
+      "overflow": false,
+      "panelWidth": 520,
+      "type": "preview-open",
+      "visibleProjects": 1
+    },
+    {
+      "focus": "student-advising-portal",
+      "hash": "#home",
+      "open": false,
+      "scrollY": 5110.39990234375,
+      "type": "preview-close"
+    },
+    {
+      "focus": "preview-formproof",
+      "hash": "#project-formproof",
+      "open": true,
+      "overflow": false,
+      "panelWidth": 520,
+      "type": "preview-open",
+      "visibleProjects": 1
+    },
+    {
+      "focus": "formproof",
+      "hash": "#home",
+      "open": false,
+      "scrollY": 4993.60009765625,
+      "type": "preview-close"
+    },
+    {
+      "focus": "preview-claimcheck",
+      "hash": "#project-claimcheck",
+      "open": true,
+      "overflow": false,
+      "panelWidth": 520,
+      "type": "preview-open",
+      "visibleProjects": 1
+    },
+    {
+      "focus": "claimcheck",
+      "hash": "#home",
+      "open": false,
+      "scrollY": 5015.2001953125,
+      "type": "preview-close"
+    },
+    {
+      "focus": "preview-student-advising-portal",
+      "hash": "#project-student-advising-portal",
+      "open": true,
+      "overflow": false,
+      "panel": {
+        "bottom": 865.4148559570312,
+        "height": 717.3999633789062,
+        "left": 0,
+        "right": 390.3999938964844,
+        "top": 148.014892578125,
+        "width": 390.3999938964844,
+        "x": 0,
+        "y": 148.014892578125
+      },
+      "type": "phone-preview",
+      "width": 390
+    },
+    {
+      "focus": "preview-formproof",
+      "hash": "#project-formproof",
+      "open": true,
+      "overflow": false,
+      "panel": {
+        "bottom": 860.1528778076172,
+        "height": 717.4000244140625,
+        "left": 0,
+        "right": 390.3999938964844,
+        "top": 142.7528533935547,
+        "width": 390.3999938964844,
+        "x": 0,
+        "y": 142.7528533935547
+      },
+      "type": "phone-preview",
+      "width": 390
+    },
+    {
+      "focus": "preview-claimcheck",
+      "hash": "#project-claimcheck",
+      "open": true,
+      "overflow": false,
+      "panel": {
+        "bottom": 861.3971710205078,
+        "height": 717.4000244140625,
+        "left": 0,
+        "right": 390.3999938964844,
+        "top": 143.9971466064453,
+        "width": 390.3999938964844,
+        "x": 0,
+        "y": 143.9971466064453
+      },
+      "type": "phone-preview",
+      "width": 390
+    },
+    {
+      "type": "keyboard-focus",
+      "steps": [
+        {
+          "inside": true,
+          "name": "Close project preview"
+        },
+        {
+          "inside": true,
+          "name": "Close project preview"
+        },
+        {
+          "inside": true,
+          "name": "Close project preview"
+        },
+        {
+          "inside": true,
+          "name": "Close project preview"
+        },
+        {
+          "inside": true,
+          "name": "Close project preview"
+        }
+      ]
+    },
+    {
+      "hash": "#project-formproof",
+      "open": true,
+      "type": "forward-restores"
+    },
+    {
+      "hash": "",
+      "open": false,
+      "query": "?view=review",
+      "type": "direct-close"
+    },
+    {
+      "status": "Email copied. Say hello when you’re ready.",
+      "type": "copy-email"
+    }
+  ],
+  "filters": [
+    {
+      "count": "8 projects",
+      "selected": "Data science",
+      "visible": 8
+    },
+    {
+      "count": "2 projects",
+      "selected": "Web apps",
+      "visible": 2
+    },
+    {
+      "count": "1 project",
+      "selected": "Websites",
+      "visible": 1
+    },
+    {
+      "count": "11 projects",
+      "selected": "All",
+      "visible": 11
+    }
+  ],
+  "keyboardWalk": [
+    {
+      "bottom": 60,
+      "name": "Skip to content",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 12
+    },
+    {
+      "bottom": 77.5,
+      "name": "Dexter Soriano",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 24
+    },
+    {
+      "bottom": 72.75,
+      "name": "Pause scene motion",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "BUTTON",
+      "top": 28.75
+    },
+    {
+      "bottom": 72.75,
+      "name": "Replay intro",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "BUTTON",
+      "top": 28.75
+    },
+    {
+      "bottom": 72.75,
+      "name": "Switch to night mode",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "BUTTON",
+      "top": 28.75
+    },
+    {
+      "bottom": 458.6000061035156,
+      "name": "View work",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 410.6000061035156
+    },
+    {
+      "bottom": 458.6000061035156,
+      "name": "Contact",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 410.6000061035156
+    },
+    {
+      "bottom": 394.45000076293945,
+      "name": "Campus Student Advising Portal →",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 333
+    },
+    {
+      "bottom": 619.4500007629395,
+      "name": "Workshop FormProof →",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 558
+    },
+    {
+      "bottom": 421.45000076293945,
+      "name": "Library ClaimCheck →",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 360
+    },
+    {
+      "bottom": 436.8000183105469,
+      "name": "Follow the path",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 392.8000183105469
+    },
+    {
+      "bottom": 521.9875183105469,
+      "name": "2022–2023: Start with a question.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 477.9875183105469
+    },
+    {
+      "bottom": 521.9875183105469,
+      "name": "2023–2024: Learn by showing up.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 477.9875183105469
+    },
+    {
+      "bottom": 521.9875183105469,
+      "name": "2024–2025: Take responsibility.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 477.9875183105469
+    },
+    {
+      "bottom": 521.9875183105469,
+      "name": "2025–2026: Build with people.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 477.9875183105469
+    },
+    {
+      "bottom": 521.9875183105469,
+      "name": "Today: Keep making useful things.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 477.9875183105469
+    },
+    {
+      "bottom": 425.9750061035156,
+      "name": "See where that curiosity leads",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 403.4750061035156
+    },
+    {
+      "bottom": 648.9499969482422,
+      "name": "Academic workflows\n            \n            Co-creator & major contrib",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 180.4250030517578
+    },
+    {
+      "bottom": 611.0000152587891,
+      "name": "Developer tooling\n            \n            CreatorFormProofA repair sh",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 180.4250030517578
+    },
+    {
+      "bottom": 611.0000152587891,
+      "name": "AI-assisted research\n            \n            CreatorClaimCheckKeep th",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 180.4250030517578
+    },
+    {
+      "bottom": 440.5500183105469,
+      "name": "Open the notebook · 11 more builds and experiments",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 388.5500183105469
+    },
+    {
+      "bottom": 473.1257019042969,
+      "name": "Open: Web systems Connect the rules to the workflow.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "SUMMARY",
+      "top": 355.8938903808594
+    },
+    {
+      "bottom": 601.0211944580078,
+      "name": "Open: Developer tooling Make a change inspectable.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "SUMMARY",
+      "top": 483.090087890625
+    },
+    {
+      "bottom": 680.0818634033203,
+      "name": "Open: Evidence workflows Keep a claim close to its source.",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "SUMMARY",
+      "top": 561.4451904296875
+    },
+    {
+      "bottom": 946.6750354766846,
+      "name": "Personal photo gallery",
+      "outline": "solid",
+      "overlapsNav": true,
+      "tag": "DIV",
+      "top": -30.92500114440918
+    },
+    {
+      "bottom": 441.7236518859863,
+      "name": "Open: A shared academic workflow",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "SUMMARY",
+      "top": 386.8282165527344
+    },
+    {
+      "bottom": 542.7236289978027,
+      "name": "Open: Evidence before edits",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "SUMMARY",
+      "top": 487.8282165527344
+    },
+    {
+      "bottom": 641.0028343200684,
+      "name": "Open: Inspect the source text",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "SUMMARY",
+      "top": 591.547607421875
+    },
+    {
+      "bottom": 547.8000183105469,
+      "name": "mdasoriano01@tip.edu.ph",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 503.8000183105469
+    },
+    {
+      "bottom": 619.7999877929688,
+      "name": "Email Dexter",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 563.7999877929688
+    },
+    {
+      "bottom": 617.7999877929688,
+      "name": "Copy email",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "BUTTON",
+      "top": 565.7999877929688
+    },
+    {
+      "bottom": 617.7999877929688,
+      "name": "GitHub",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 565.7999877929688
+    },
+    {
+      "bottom": 617.7999877929688,
+      "name": "LinkedIn",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 565.7999877929688
+    },
+    {
+      "bottom": 617.7999877929688,
+      "name": "Request my CV",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 565.7999877929688
+    },
+    {
+      "bottom": 875.2000122070312,
+      "name": "Home",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 829.2000122070312
+    },
+    {
+      "bottom": 875.2000122070312,
+      "name": "Journey",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 829.2000122070312
+    },
+    {
+      "bottom": 875.2000122070312,
+      "name": "Work",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 829.2000122070312
+    },
+    {
+      "bottom": 875.2000122070312,
+      "name": "About",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 829.2000122070312
+    },
+    {
+      "bottom": 875.2000122070312,
+      "name": "Contact",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 829.2000122070312
+    },
+    {
+      "bottom": 789.7999877929688,
+      "name": "Dexter Soriano",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 745.7999877929688
+    },
+    {
+      "bottom": 789.7999877929688,
+      "name": "GitHub",
+      "outline": "solid",
+      "overlapsNav": false,
+      "tag": "A",
+      "top": 745.7999877929688
+    },
+    {
+      "bottom": 899.80078125,
+      "name": "Skip to content\n \n Dexter SorianoPause scene motionReplay introDay\n \n ",
+      "outline": "none",
+      "overlapsNav": true,
+      "tag": "BODY",
+      "top": -9212.7998046875
+    }
+  ],
+  "fallbacks": [
+    {
+      "mode": "nojs",
+      "route": "/",
+      "width": 375,
+      "overflow": false,
+      "projects": 3,
+      "chapters": 5,
+      "shortcuts": [
+        {
+          "href": "#work",
+          "visible": true
+        },
+        {
+          "href": "#contact",
+          "visible": true
+        }
+      ],
+      "brokenImages": [],
+      "scriptRan": false
+    },
+    {
+      "mode": "failed",
+      "route": "/",
+      "width": 375,
+      "overflow": false,
+      "stage": "arrived",
+      "projects": 3,
+      "chapters": 5,
+      "shortcuts": [
+        {
+          "href": "#work",
+          "visible": true
+        },
+        {
+          "href": "#contact",
+          "visible": true
+        }
+      ],
+      "brokenImages": [
+        "/deliberately-missing-valley.png",
+        "/deliberately-missing-valley.png"
+      ],
+      "axeVersion": "4.13.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Chromium viewport emulation, not real devices or other engines",
+    "axe incomplete items require human review; zero violations is not WCAG certification",
+    "No CPU/network throttling or actual 200% browser zoom controls exposed",
+    "Reduced-motion runtime branches covered by unit tests; live OS preference emulation unavailable"
+  ]
+}

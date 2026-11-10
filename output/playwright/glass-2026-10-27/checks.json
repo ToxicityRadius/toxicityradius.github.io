@@ -1,0 +1,39 @@
+[
+  {
+    "background": "rgba(21, 38, 62, 0.96)",
+    "blur": "blur(8px) saturate(1.2)",
+    "focus": "preview-formproof",
+    "overflow": false,
+    "panel": {
+      "bottom": 844.0000228881836,
+      "height": 717.4000244140625,
+      "left": 0,
+      "right": 390.3999938964844,
+      "top": 126.5999984741211,
+      "width": 390.3999938964844,
+      "x": 0,
+      "y": 126.5999984741211
+    },
+    "state": "phone-night-preview",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "blur": "blur(8px) saturate(1.2)",
+    "heroBackground": "rgba(0, 0, 0, 0)",
+    "overflow": false,
+    "state": "small-phone-day",
+    "viewport": [
+      320,
+      568
+    ]
+  },
+  {
+    "background": "rgba(255, 248, 237, 0.94)",
+    "blur": "blur(16px) saturate(1.2)",
+    "focus": "preview-formproof",
+    "state": "final-desktop-preview"
+  }
+]

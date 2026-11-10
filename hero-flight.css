@@ -1,0 +1,23 @@
+.experience-home .entrance-invitation.button{border-radius:0;min-height:48px;font-size:15px;padding:12px 18px;margin-top:12px}
+.entrance-camera{position:relative}
+.entrance-veil,.entrance-story,.entrance-scroll-cue{display:none}
+@media(max-width:350px){.experience-home .entrance h1{font-size:32px}}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ body:has(.entrance[data-flight=ready]) .site-header{position:absolute;top:0;left:0;width:100%;background:transparent}
+ .experience-home .entrance[data-flight=ready]{height:100svh;min-height:0;padding:0;overflow:hidden}
+ .experience-home .entrance[data-flight=ready] .entrance-stage{position:absolute;inset:0;max-width:none;width:100%;margin:0;padding:0}
+ .experience-home .entrance[data-flight=ready] .entrance-camera{position:absolute;bottom:-8svh;left:0;width:100%;transform-origin:52% 58%}
+ .experience-home .entrance[data-flight=ready] .town-scene{width:100%;max-width:none;margin:0}
+ .experience-home .entrance[data-flight=ready] .entrance-copy{top:13svh;left:48%;right:5%;z-index:4}
+ .experience-home .entrance[data-flight=ready] h1{font-size:clamp(44px,4.4vw,68px)}
+ .experience-home .entrance[data-flight=ready] .entrance-veil{display:block;position:absolute;inset:0;background:#173d32;opacity:0;pointer-events:none;z-index:3}
+ .experience-home .entrance[data-flight=ready] .entrance-story{display:block;position:absolute;left:10%;top:27%;z-index:4;color:#fff3d7;opacity:0;pointer-events:none}
+ .experience-home .entrance-story p{color:inherit;font-size:36px;line-height:1.4}
+ .experience-home .entrance-story p span{display:block}
+ .experience-home .entrance-story-next{display:block;font-size:17px;margin-top:28px}
+ .experience-home .entrance:has(.town-scene:focus-within) .entrance-veil,.experience-home .entrance:has(.town-scene:focus-within) .entrance-story{opacity:0!important}
+ .experience-home .entrance[data-flight=ready] .entrance-scroll-cue{display:flex;position:absolute;bottom:28px;left:6%;z-index:4;gap:20px;align-items:center;padding:12px 18px;background:var(--paper);color:var(--ink);font-size:15px;pointer-events:none}
+ .experience-home .entrance[data-flight=ready] .entrance-copy:focus-within{opacity:1!important;transform:none!important}
+ .experience-home .entrance[data-flight=ready]>.town-motion-toggle{top:84px;right:24px;z-index:6}
+ .experience-home .entrance[data-flight=ready] .entrance-caption{display:none}
+}

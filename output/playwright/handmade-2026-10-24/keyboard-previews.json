@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "student-advising-portal",
+    "opened": {
+      "focus": "Student Advising Portal",
+      "open": true,
+      "overflow": false
+    },
+    "closed": {
+      "focus": "student-advising-portal",
+      "open": false
+    }
+  },
+  {
+    "slug": "formproof",
+    "opened": {
+      "focus": "FormProof",
+      "open": true,
+      "overflow": false
+    },
+    "closed": {
+      "focus": "formproof",
+      "open": false
+    }
+  },
+  {
+    "slug": "claimcheck",
+    "opened": {
+      "focus": "ClaimCheck",
+      "open": true,
+      "overflow": false
+    },
+    "closed": {
+      "focus": "claimcheck",
+      "open": false
+    }
+  }
+]

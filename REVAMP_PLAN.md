@@ -1,5 +1,7 @@
 # Implementation Plan: Portfolio UI/UX Revamp
 
+> **Superseded:** this earlier visual direction is retained for historical context. The current product, design, technical requirements, flows, schema, implementation status, and verification evidence are maintained in [`docs/planning/`](docs/planning/PRD.md) and [`docs/VERIFICATION.md`](docs/VERIFICATION.md). Follow those documents for current work.
+
 ## Overview
 Complete visual and UX overhaul of Dexter Soriano's portfolio from a cluttered, inconsistent dark theme with heavy Three.js spheres into a modern, cohesive "Digital Architect" aesthetic — warm dark tones, bold editorial typography, smooth scroll-driven animations, glassmorphism cards, and a refined spatial composition. All existing content (personal info, education, skills, social links, contact info) is preserved exactly.
 

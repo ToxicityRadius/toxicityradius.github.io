@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-29",
+  "tests": 160,
+  "files": [
+    {
+      "path": "journey-geography.js",
+      "bytes": 6405,
+      "sha256": "9db46baa7abf0c005fe8fb38fd34f037867a932d0bf04bb7520466c69d6e26e5"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 11097,
+      "sha256": "687884e919514adf0dd6498274e7029c4e870efae4df508467bd326f2d7d97a4"
+    },
+    {
+      "path": "tests/journey-map.test.mjs",
+      "bytes": 15164,
+      "sha256": "9d4a9bc2c748856c8723155d8f66a81ce797264fa9016c3186b4daacbfc0bbad"
+    }
+  ]
+}

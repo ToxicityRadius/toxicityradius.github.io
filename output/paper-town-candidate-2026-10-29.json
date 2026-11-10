@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-29",
+  "tests": 166,
+  "visual": "Pending: browser access disabled",
+  "files": [
+    {
+      "path": "connected-home.css",
+      "bytes": 36292,
+      "sha256": "9aff302e908dce01d898fc6394b665c99d62a190efebf7b043ffd72ebfc1dff3"
+    },
+    {
+      "path": "scripts/connected-home.mjs",
+      "bytes": 8407,
+      "sha256": "2ab2b2bdff174c500d3f390eb3fb4b31a2e79a4afd3cc79287f8dc12cf9576a2"
+    },
+    {
+      "path": "scripts/engineering-spaces.mjs",
+      "bytes": 3874,
+      "sha256": "e0af989fd3eef6d553cd7a4a5f464b979daeb8cfd5169fb617eca31691d34a16"
+    },
+    {
+      "path": "journey-geography.js",
+      "bytes": 7425,
+      "sha256": "7f7eaeca167414537aa343feaa41709aea2629e6070b15c738a33ea3ada4db00"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 13465,
+      "sha256": "ba3ac165ba9aab31729108aa2c38f87a7376ba34e3ca7abe5cd1ed5a801627a1"
+    },
+    {
+      "path": "images/journey/story-map.svg",
+      "bytes": 8794,
+      "sha256": "3ff8457b772ab61e39904e704654b7bf728f1dbfbdefbe924504ea2d8c6c9079"
+    },
+    {
+      "path": "images/journey/story-map-night.svg",
+      "bytes": 8823,
+      "sha256": "7d3979996aa447ec1ccc148a26fee4fdb9909a09a69f7e8c49b37d80d0c9c9b8"
+    }
+  ]
+}

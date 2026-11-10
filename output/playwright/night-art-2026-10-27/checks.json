@@ -1,0 +1,60 @@
+[
+  {
+    "complete": true,
+    "foreground": "/world/animatic/foreground-night.webp",
+    "foregroundTransform": "matrix(1.07812, 0, 0, 1.07812, -38.6913, 34.045)",
+    "phase": "intro",
+    "progress": "35",
+    "state": "night-intro",
+    "theme": "night"
+  },
+  {
+    "phase": "arrived",
+    "sources": [
+      "/world/animatic/backplate.webp",
+      "/world/animatic/foreground.webp",
+      "/world/animatic/backplate.webp"
+    ],
+    "state": "switch-to-day",
+    "theme": "day"
+  },
+  {
+    "filter": "none",
+    "overflow": false,
+    "sources": [
+      {
+        "complete": true,
+        "src": "/world/animatic/backplate-night.webp",
+        "width": 1671
+      },
+      {
+        "complete": true,
+        "src": "/world/animatic/foreground-night.webp",
+        "width": 1672
+      },
+      {
+        "complete": true,
+        "src": "/world/animatic/backplate-night.webp",
+        "width": 1671
+      }
+    ],
+    "state": "saved-night-reload",
+    "theme": "night"
+  },
+  {
+    "focus": "workshop",
+    "state": "preview-close"
+  },
+  {
+    "foregroundDisplay": "none",
+    "overflow": false,
+    "phase": "arrived",
+    "plate": "/world/animatic/backplate-night.webp",
+    "state": "phone-night",
+    "theme": "night",
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

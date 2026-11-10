@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "tests": 165,
+  "visual": "Pending: browser access disabled",
+  "files": [
+    {
+      "path": "journey-state.js",
+      "sha256": "3944ca7b270390e4b09aae6d509e4e930f4ff7e61ed98fc7d9f2bb74c0c63f3f",
+      "bytes": 2572
+    },
+    {
+      "path": "journey-map.js",
+      "sha256": "2d1b61c8014f7e3b72fee6a4910b6e23cad20f9783603dd80aed8cfd72e3bfaa",
+      "bytes": 8578
+    },
+    {
+      "path": "tests/journey-map.test.mjs",
+      "sha256": "4afb7c7971b85d960fc35955db353a68b1ea810e092ddb643e3bcc54526f92d7",
+      "bytes": 18214
+    }
+  ]
+}

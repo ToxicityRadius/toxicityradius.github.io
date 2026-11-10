@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-29",
+  "tests": 163,
+  "visualStatus": "Initial desktop only; browser disabled during follow-up checks",
+  "files": [
+    {
+      "path": "journey-state.js",
+      "bytes": 2494,
+      "sha256": "c95da624399121294e59a3134c94b2b80a287bc09acac7e48d1597c7f71a654d"
+    },
+    {
+      "path": "journey-geography.js",
+      "bytes": 6686,
+      "sha256": "0fe0160ba712f2e6805f7d3ee4bf01bafdfc8a5295c5e07a14ebfe894bbed503"
+    },
+    {
+      "path": "journey-map.js",
+      "bytes": 8564,
+      "sha256": "068da0bd76c0f6c8c3856ed16b83d3af3631534da0de0918756265d57b733caa"
+    },
+    {
+      "path": "journey-map.css",
+      "bytes": 12566,
+      "sha256": "ad6cdc10df1ea3183804cc8b57b13209b4bb82f131e99a967680229a89e2f8bc"
+    },
+    {
+      "path": "scripts/journey-map.mjs",
+      "bytes": 2232,
+      "sha256": "dbcf34994486948e11b73a407801229a8938500afb04b5dd5fee8fe4d0f2c269"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-27",
+  "head": "a8779caa288a2ed8129bd80817e5bb322cbc2c2b",
+  "files": [
+    {
+      "path": "connected-home.css",
+      "sha256": "7B913B7829B51511C304FA133056CFAADE70F636DF03E061527831965B85ABBF"
+    },
+    {
+      "path": "connected-home.js",
+      "sha256": "24381C7BBB5EDC11A49B6E77965590BBEEFBB3F3F3AEA73769146EA0C5829EB8"
+    },
+    {
+      "path": "scripts/connected-home.mjs",
+      "sha256": "8BBF70EC94072AB012DB9618B6231CB59B83210B2571102814E84B68777F1501"
+    },
+    {
+      "path": "review/animatic/controller.js",
+      "sha256": "2C986A30EA442D043B07250F080F7FED4B23883DB365E5B2277032CC04FAB33F"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "D0B03673DEDC3278217F27244A2F406EF1BE579A622C58E3EEEB1E1BB1397E1A"
+    },
+    {
+      "path": "dist/connected-home.css",
+      "sha256": "7B913B7829B51511C304FA133056CFAADE70F636DF03E061527831965B85ABBF"
+    },
+    {
+      "path": "dist/connected-home.js",
+      "sha256": "24381C7BBB5EDC11A49B6E77965590BBEEFBB3F3F3AEA73769146EA0C5829EB8"
+    }
+  ]
+}

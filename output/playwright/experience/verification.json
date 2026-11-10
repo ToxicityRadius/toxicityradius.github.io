@@ -1,0 +1,100 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "touch": false,
+    "entryDuration": 600,
+    "history": true,
+    "resume": true,
+    "replay": true,
+    "pause": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "touch": false,
+    "entryDuration": 600,
+    "history": true,
+    "resume": true,
+    "replay": true,
+    "pause": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "touch": true,
+    "entryDuration": 320,
+    "history": true,
+    "resume": true,
+    "replay": true,
+    "pause": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "touch": true,
+    "entryDuration": 320,
+    "history": true,
+    "resume": true,
+    "replay": true,
+    "pause": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "touch": true,
+    "entryDuration": 320,
+    "history": true,
+    "resume": true,
+    "replay": true,
+    "pause": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "directHash": true,
+    "rapidCloseReopen": true,
+    "escapeDuringApproach": true,
+    "resizeDuringApproach": true
+  },
+  {
+    "noScript": true
+  },
+  {
+    "failedArt": true
+  },
+  {
+    "stalledArtDoesNotBlockNavigation": true
+  },
+  {
+    "storageAndCanvasFailure": true
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-27",
+  "head": "a8779caa288a2ed8129bd80817e5bb322cbc2c2b",
+  "maplibre": "6.16.0",
+  "tests": 148,
+  "files": [
+    {
+      "path": "journey-map.js",
+      "sha256": "D89CF21BF2434499B0BCB05EA9B8D9AE95BD420F49C53C8C5B8C8824E77CE9EC"
+    },
+    {
+      "path": "journey-map.css",
+      "sha256": "EF628656202E647E55B28B49AF0B1BCDA617F64F15F90C48D734249A0AA8530A"
+    },
+    {
+      "path": "journey-state.js",
+      "sha256": "2F20A811846D5028DFF58CBE4DEAD38B2B7D69537496022B734C063B2E869094"
+    },
+    {
+      "path": "journey-geography.js",
+      "sha256": "A6FB1D80F0626E7B4808259DD51E790B52CC971E0B8005E78D74145601F22B61"
+    },
+    {
+      "path": "scroll-scenes.js",
+      "sha256": "71CD4493F10F857F25A5C5B467D43C8BE378C3B521A30DB0A7185FE1C7856676"
+    },
+    {
+      "path": "scroll-scenes.css",
+      "sha256": "EE395C3BA53FC4218665E1737883DE5D31232EF426DF41083851B9F10EA3340C"
+    },
+    {
+      "path": "scripts/journey-map.mjs",
+      "sha256": "69675351B46F6337C64407800CE9FCDDE3685E9995B9DAFB2BEF6B73A11EADE6"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "3AEF9B6DD55EEC2DE4B2FD906658526FAB802AEF253813C922473371B7BD0BDA"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "04D03D4B3C111EF89D5E072A4656A0640ACBBBF25F544F6658381677DEADCD9F"
+    },
+    {
+      "path": "images/journey/earth-nasa.png",
+      "sha256": "B5E0139834C638D10C2C747F4BAC63DF5F9387680C00D87E5A2A9ED9A3DFEA71"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "15E5C3A302C9FBC0B05BEA571B0C2522966679FD9FEFBD265E1E54B111EC5E6D"
+    },
+    {
+      "path": "dist/journey-map.js",
+      "sha256": "D89CF21BF2434499B0BCB05EA9B8D9AE95BD420F49C53C8C5B8C8824E77CE9EC"
+    },
+    {
+      "path": "dist/journey-map.css",
+      "sha256": "EF628656202E647E55B28B49AF0B1BCDA617F64F15F90C48D734249A0AA8530A"
+    },
+    {
+      "path": "dist/vendor/maplibre/maplibre-gl.js",
+      "sha256": "80B11A8E728007345DF6A9532489FFA1B73FE7223F3526B82320AA67F41F9295"
+    },
+    {
+      "path": "dist/vendor/maplibre/maplibre-gl-worker.js",
+      "sha256": "5F89A4A82987C4AA2C3BE194DD79BA816FAA140476B6552521A2832ED872A08F"
+    },
+    {
+      "path": "dist/vendor/maplibre/LICENSE.txt",
+      "sha256": "EE5FC05A0677EAF69601D2C7DB0D9ECD6CC27C3ABC1D0733BC9ED34707CF8EF2"
+    }
+  ]
+}
