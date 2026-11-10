@@ -67,8 +67,8 @@ test('focus during reveal settles every card immediately and cancels the reveal 
   assert.equal(f.box.dataset.revealState, 'settled');
 });
 
-test('reduced motion, touch and global pause start in a complete direct state', () => {
-  for (const options of [{ reduced: true }, { coarse: true }, { paused: true }]) {
+test('reduced motion and global pause start in a complete direct state', () => {
+  for (const options of [{ reduced: true }, { paused: true }]) {
     const f = fixture(options);
     assert.equal(f.box.dataset.open, 'true');
   }
@@ -76,6 +76,15 @@ test('reduced motion, touch and global pause start in a complete direct state', 
   f.documentListeners['portfolio:motionchange']({ detail: { paused: true } });
   assert.equal(f.box.dataset.open, 'true');
   assert.equal(f.box.dataset.motionPaused, 'true');
+});
+
+test('touch reveal starts on visibility and settles immediately on tap', () => {
+  const f = fixture({coarse: true});
+  assert.equal(f.box.dataset.open, undefined);
+  f.intersection([{isIntersecting: true}]);
+  assert.equal(f.box.dataset.open, 'true');
+  f.listeners.pointerdown();
+  assert.equal(f.box.dataset.revealState, 'settled');
 });
 
 test('renderer keeps all three truthful evidence cards available without JavaScript', () => {

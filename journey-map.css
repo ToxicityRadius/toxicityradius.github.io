@@ -10,7 +10,7 @@
 .journey-heading>p{color:#e2eaf4;font-size:15px}.journey-heading .marker::before{inset:-.03em -.1em -.08em;transform:none}.journey-heading .marker::after{content:none}
 .journey-orientation{display:flex;align-items:center;gap:20px;position:absolute;right:4vw;top:48px;z-index:1;color:#fff8ed;font-size:13px}
 .journey-compass{border:1px solid #ffffff55;border-radius:50%;width:44px;height:44px;display:grid;place-items:center}
-.journey-loading{position:relative;margin:28px 0!important;color:#d6e6fa!important;font-size:14px}
+.journey-loading{position:relative;margin:28px 0!important;color:var(--muted)!important;font-size:14px}
 .journey-story{position:relative;list-style:none;padding:0;margin:40px 0 32px auto;max-width:460px}
 .journey-chapter{scroll-margin-top:110px;margin-bottom:20px}
 .journey-chapter-copy{padding:28px 30px;background:#15263ef2;color:#fff8ed;border:1px solid #ffffff38;border-radius:20px;box-shadow:0 16px 45px -16px #0009}

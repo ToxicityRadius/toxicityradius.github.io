@@ -37,8 +37,8 @@
  .project-box.is-enhanced[data-open=true] .project-box-card-2{transform:translateY(-18px) rotate(4deg)}
  .project-box.is-enhanced .project-box-card:focus-within{transition:none;z-index:5}
 }
-@media(min-width:761px) and (pointer:fine) and (prefers-reduced-motion:no-preference){.project-box.is-enhanced:not([data-motion-paused=true]) .project-box-card:focus-within{transform:translateY(-45px) rotate(0deg)}}
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.project-box-pull:hover .project-box-action{text-decoration-thickness:2px}.project-box.is-enhanced[data-open=true][data-reveal-state=settled]:not([data-motion-paused=true]) .project-box-card:hover{transform:translateY(-48px) rotate(0deg);transition-delay:0ms;z-index:5}}
+@media(min-width:761px) and (pointer:fine) and (prefers-reduced-motion:no-preference){.project-box.is-enhanced:not([data-motion-paused=true]) .project-box-card:focus-within{translate:0 -6px}}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.project-box-pull:hover .project-box-action{text-decoration-thickness:2px}.project-box.is-enhanced[data-open=true][data-reveal-state=settled]:not([data-motion-paused=true]) .project-box-card:hover{translate:0 -6px;transition:translate 180ms var(--ease-out);z-index:5}}
 @media(max-width:760px),(pointer:coarse){
  .project-box{padding-top:35px;padding-bottom:40px}
  .project-box-cards{grid-template-columns:1fr;gap:38px;max-width:520px;margin:auto}
@@ -55,3 +55,31 @@
 html[data-theme=night] .project-box{--box-dark:#503e2b;--box-light:#a17b52}
 html[data-theme=night] .project-box-card{background:var(--cream);color:#15263e}
 html[data-theme=night] .project-box-tab{background:var(--mustard)}
+
+/* A shared baseline makes the three project files readable side by side. */
+.connected-work .project-box-evidence{font-size:14px;line-height:1.55}
+.connected-work .project-box-tab{box-shadow:inset 0 -2px 0 #15263e19}
+.connected-work .project-box-role{font-size:14px;color:#425168}
+.connected-work .world-section-heading p{margin-bottom:0}
+.connected-work .world-archive{width:fit-content;max-width:calc(100% - 44px);min-height:44px;margin:0 auto;padding:10px 20px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+.connected-work .project-box{padding-bottom:30px}
+@media(min-width:761px) and (pointer:fine){
+ .project-box-cards{align-items:stretch}
+ .project-box-card h3{min-height:2.5em}
+ .project-box.is-enhanced[data-reveal-state=settled] .project-box-card{transition:translate 180ms var(--ease-out)}
+ .project-box.is-enhanced[data-open=true] .project-box-card{transform:translateY(-24px) rotate(-1deg)}
+ .project-box.is-enhanced[data-open=true] .project-box-card-1{transform:translateY(-24px)}
+ .project-box.is-enhanced[data-open=true] .project-box-card-2{transform:translateY(-24px) rotate(1deg)}
+}
+@media(max-width:900px) and (min-width:761px){
+ .project-box-cards{gap:12px}
+ .project-box.is-enhanced .project-box-stage{padding-inline:8px}
+}
+@media(max-width:760px),(pointer:coarse){
+ .project-box.is-enhanced:not([data-open=true]) .project-box-card{translate:0 8px}
+ .project-box.is-enhanced[data-open=true] .project-box-card{translate:0;transition:translate 240ms var(--ease-out)}
+}
+@keyframes work-heading-mark{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+@media(prefers-reduced-motion:no-preference){
+ .connected-home:not([data-motion-paused=true]) .work-heading-arrived .marker::after{animation:work-heading-mark 240ms var(--ease-out)}
+}

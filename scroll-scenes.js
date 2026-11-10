@@ -35,8 +35,6 @@ export function initScrollScenes(doc=document,win=window){
   el.style.rotate=`${(i?1:-1)*(1.3+(1-settle)*5)}deg`;el.style.opacity=String(.7+.3*settle);
   const icon=el.querySelector('.sign-icon');if(icon)icon.style.transform=`rotate(${(1-settle)*(i?-12:18)}deg) scale(${.92+.08*settle})`;
  },{start:'top 90%',end:'top 42%'});
- const work=doc.querySelector('.project-box-stage');
- effect(work,work?[work]:[],(el,p)=>{el.style.translate=`0 ${(1-p)*(phone.matches?16:50)}px`;});
  const toolbox=doc.querySelector('.engineering-tool-chest');
  effect(toolbox,[...doc.querySelectorAll('.engineering-drawer')],(el,p,i)=>{el.style.translate=`${(1-p)*(i%2?32:-32)}px 0`;el.style.opacity=String(.6+.4*p);});
  const wall=doc.querySelector('.photo-wall');
@@ -44,8 +42,8 @@ export function initScrollScenes(doc=document,win=window){
  const desk=doc.querySelector('.engineering-desk');
  effect(desk,[...doc.querySelectorAll('.engineering-desk>figure,.engineering-desk-notebook,.engineering-pinned-notes')],(el,p,i)=>{el.style.translate=`0 ${(1-p)*(i===1?36:20)}px`;});
  const contact=doc.querySelector('.contact-desk');
- effect(contact,contact?[...contact.children]:[],(el,p)=>{el.style.translate=`0 ${(1-p)*16}px`;el.style.opacity=String(.7+.3*p);});
- for(const heading of doc.querySelectorAll('.world-section-heading h2,.engineering-space-heading h2,.world-services h2,.world-contact h2')){
+ effect(contact,contact?[...contact.children]:[],(el,p)=>{el.style.translate=`0 ${(1-p)*16}px`;el.style.opacity=String(.8+.2*p);});
+ for(const heading of doc.querySelectorAll('.engineering-space-heading h2,.world-services h2,.world-contact h2')){
   const marks=[...heading.querySelectorAll('.marker')];
   effect(heading,marks,(el,p)=>{el.classList.add('scroll-mark');el.style.setProperty('--mark-progress',String(p));});
  }

@@ -16,12 +16,14 @@
       }
       box.dataset.open = 'true';
       observer?.disconnect();
+      const heading = box.closest?.('#work')?.querySelector('#work-title');
+      heading?.classList.toggle('work-heading-arrived', !immediate);
       if (!immediate) settleTimer = setTimeout(() => { box.dataset.revealState = 'settled'; }, 420);
     };
     const syncMotion = () => {
       const paused = document.querySelector('.experience-shell')?.dataset.motionPaused === 'true';
       box.dataset.motionPaused = String(paused);
-      if (paused || reducedMotion.matches || shallow.matches) reveal(true);
+      if (paused || reducedMotion.matches || document.hidden) reveal(true);
     };
     box.classList.add('is-enhanced');
     box.addEventListener('focusin', () => reveal(true));
@@ -32,7 +34,8 @@
       if (event.detail?.paused) reveal(true);
     });
     reducedMotion.addEventListener('change', syncMotion);
-    shallow.addEventListener('change', syncMotion);
+    shallow.addEventListener('change', () => reveal(true));
+    document.addEventListener('visibilitychange', syncMotion);
     syncMotion();
     if (!revealed && 'IntersectionObserver' in window) {
       observer = new IntersectionObserver(entries => {
